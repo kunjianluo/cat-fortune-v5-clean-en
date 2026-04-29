@@ -1,0 +1,474 @@
+{
+  "schema_version": "asset-map-0427-v1",
+  "project": "cat-fortune-v3",
+  "source_prd": "_source_docs/《猫猫占卜》PRD_0427.md",
+  "source_audit": "cat-fortune-v3/docs/asset-audit-0427.md",
+  "asset_root": "assets/0427/images",
+  "notes": [
+    "PRD sizes are visual references, not strict CSS constraints.",
+    "Use this map to avoid fragile direct references to filenames with spaces, typo variants, or l/I ambiguity.",
+    "Do not rename original teammate-provided assets unless explicitly requested.",
+    "The audit report recorded unit/reture.png, but the current filesystem contains unit/return.png."
+  ],
+  "assets": {
+    "opening.coverBackground": {
+      "prd_name": "street_MeowracleHat.jpg",
+      "path": "assets/0427/images/background/street_MeowracleHat.jpg",
+      "type": "image",
+      "group": "opening",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "opening.pushButton": {
+      "prd_name": "PUSH button.png",
+      "path": "assets/0427/images/others/PUSH button.png",
+      "type": "image",
+      "group": "opening",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "opening.streetToBarTransition": {
+      "prd_name": "transformation_1.gif",
+      "path": "assets/0427/images/others/transformation_1.gif",
+      "type": "gif",
+      "group": "opening",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "opening.barRestBackground": {
+      "prd_name": "bar-rest cat.png",
+      "path": "assets/0427/images/background/bar-rest cat.png",
+      "type": "image",
+      "group": "opening",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "opening.barWizardBackground": {
+      "prd_name": "bar-wizard cat.png",
+      "path": "assets/0427/images/background/bar-wizard cat.png",
+      "type": "image",
+      "group": "opening",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "opening.catTransformationGif": {
+      "prd_name": "image transformation.gif",
+      "path": "assets/0427/images/others/image transformation.gif",
+      "type": "gif",
+      "group": "opening",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "ui.home": {
+      "prd_name": "home.png",
+      "path": "assets/0427/images/unit/home.png",
+      "type": "image",
+      "group": "ui",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "ui.return": {
+      "prd_name": "return.png",
+      "path": "assets/0427/images/unit/return.png",
+      "type": "image",
+      "group": "ui",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": "Audit report recorded actual file as reture.png; current filesystem contains return.png."
+    },
+    "ui.logo": {
+      "prd_name": "logo.png",
+      "path": "assets/0427/images/unit/logo.png",
+      "type": "image",
+      "group": "ui",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "ui.dialogBox": {
+      "prd_name": "dialog box.png",
+      "path": "assets/0427/images/others/dialog box.png",
+      "type": "image",
+      "group": "ui",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "ui.optionFrame": {
+      "prd_name": "option frame.png",
+      "path": "assets/0427/images/card/option frame.png",
+      "type": "image",
+      "group": "ui",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": "PRD places this asset under card; map exposes it as a UI frame."
+    },
+    "ui.ring": {
+      "prd_name": "ring.png",
+      "path": "assets/0427/images/others/ring.png",
+      "type": "image",
+      "group": "ui",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "card.career": {
+      "prd_name": "l.career.png",
+      "path": "assets/0427/images/card/I.career.png",
+      "type": "image",
+      "group": "card",
+      "status": "ready",
+      "match_type": "fuzzy",
+      "notes": "PRD says l.career.png; actual file is I.career.png."
+    },
+    "card.society": {
+      "prd_name": "l.society.png",
+      "path": "assets/0427/images/card/I.society.png",
+      "type": "image",
+      "group": "card",
+      "status": "ready",
+      "match_type": "fuzzy",
+      "notes": "PRD says l.society.png; actual file is I.society.png."
+    },
+    "card.emotion": {
+      "prd_name": "l.emotion.png",
+      "path": "assets/0427/images/card/I.emotion.png",
+      "type": "image",
+      "group": "card",
+      "status": "ready",
+      "match_type": "fuzzy",
+      "notes": "PRD says l.emotion.png; actual file is I.emotion.png."
+    },
+    "card.city": {
+      "prd_name": "l.city.png",
+      "path": "assets/0427/images/card/I.city.png",
+      "type": "image",
+      "group": "card",
+      "status": "ready",
+      "match_type": "fuzzy",
+      "notes": "PRD says l.city.png; actual file is I.city.png."
+    },
+    "card.desire": {
+      "prd_name": "l.desire.png",
+      "path": "assets/0427/images/card/I.desire.png",
+      "type": "image",
+      "group": "card",
+      "status": "ready",
+      "match_type": "fuzzy",
+      "notes": "PRD says l.desire.png; actual file is I.desire.png."
+    },
+    "shopStreet.background": {
+      "prd_name": "street_3shop back.png",
+      "path": "assets/0427/images/background/street_3shop back.png",
+      "type": "image",
+      "group": "shopStreet",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "shopBuilding.dessertStation": {
+      "prd_name": "dessert_building.png",
+      "path": "assets/0427/images/others/dessert_building.png",
+      "type": "image",
+      "group": "shopBuilding",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "shopBuilding.iceRoom": {
+      "prd_name": "ice cafe_building.png",
+      "path": "assets/0427/images/others/ice cafe_building.png",
+      "type": "image",
+      "group": "shopBuilding",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "shopBuilding.streetStall": {
+      "prd_name": "food stall_building.png",
+      "path": "assets/0427/images/others/food stall_building.png",
+      "type": "image",
+      "group": "shopBuilding",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "shopInterior.dessertStation": {
+      "prd_name": "dessert_inside.png",
+      "path": "assets/0427/images/background/dessert_inside.png",
+      "type": "image",
+      "group": "shopInterior",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "shopInterior.iceRoom": {
+      "prd_name": "ice cafe_inside.png",
+      "path": "assets/0427/images/background/ice cafe_inside.png",
+      "type": "image",
+      "group": "shopInterior",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "shopInterior.streetStall": {
+      "prd_name": "food stall_inside.png",
+      "path": "assets/0427/images/background/food stall_inside.png",
+      "type": "image",
+      "group": "shopInterior",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "shopkeeper.dessertStation": {
+      "prd_name": "dessert_cat.png",
+      "path": "assets/0427/images/cat images/dessert_cat.png",
+      "type": "image",
+      "group": "shopkeeper",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": "Actual folder name contains a space: cat images."
+    },
+    "shopkeeper.iceRoom": {
+      "prd_name": "ice cafe_cat.png",
+      "path": "assets/0427/images/cat images/ice cafe_cat.png",
+      "type": "image",
+      "group": "shopkeeper",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": "Actual folder name contains a space: cat images."
+    },
+    "shopkeeper.streetStall": {
+      "prd_name": "food stall_cat.png",
+      "path": "assets/0427/images/cat images/food stall_cat.png",
+      "type": "image",
+      "group": "shopkeeper",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": "Actual folder name contains a space: cat images."
+    },
+    "food.beef": {
+      "prd_name": "beef.png",
+      "path": "assets/0427/images/food/beef.png",
+      "type": "image",
+      "group": "food",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "food.butter": {
+      "prd_name": "butter.png",
+      "path": "assets/0427/images/food/butter.png",
+      "type": "image",
+      "group": "food",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "food.coconut": {
+      "prd_name": "Coconut.png",
+      "path": "assets/0427/images/food/Coconut.png",
+      "type": "image",
+      "group": "food",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "food.currySauce": {
+      "prd_name": "Currysauce.png",
+      "path": "assets/0427/images/food/Currysauce.png",
+      "type": "image",
+      "group": "food",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "food.fishBalls": {
+      "prd_name": "Fishballs.png",
+      "path": "assets/0427/images/food/Fishballs.png",
+      "type": "image",
+      "group": "food",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "food.ginger": {
+      "prd_name": "Ginger.png",
+      "path": "assets/0427/images/food/Ginger.png",
+      "type": "image",
+      "group": "food",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "food.glutinousRiceBalls": {
+      "prd_name": "Glutinous rice balls.png",
+      "path": "assets/0427/images/food/Glutinous rice balls.png",
+      "type": "image",
+      "group": "food",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "food.lemon": {
+      "prd_name": "lemon.png",
+      "path": "assets/0427/images/food/lemon.png",
+      "type": "image",
+      "group": "food",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "food.mango": {
+      "prd_name": "Mango.png",
+      "path": "assets/0427/images/food/Mango.png",
+      "type": "image",
+      "group": "food",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "food.milk": {
+      "prd_name": "milk.png",
+      "path": "assets/0427/images/food/milk.png",
+      "type": "image",
+      "group": "food",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "food.pineappleBun": {
+      "prd_name": "Pineapplebun.png",
+      "path": "assets/0427/images/food/Pineapplebun.png",
+      "type": "image",
+      "group": "food",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "food.pomelo": {
+      "prd_name": "Pomelo.png",
+      "path": "assets/0427/images/food/Pomelo.png",
+      "type": "image",
+      "group": "food",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "food.radish": {
+      "prd_name": "Radish.png",
+      "path": "assets/0427/images/food/Radish.png",
+      "type": "image",
+      "group": "food",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "food.riceNoodleRoll": {
+      "prd_name": "Ricenoodleroll.png",
+      "path": "assets/0427/images/food/Ricenoodleroll.png",
+      "type": "image",
+      "group": "food",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "food.sago": {
+      "prd_name": "Sago.png",
+      "path": "assets/0427/images/food/Sago.png",
+      "type": "image",
+      "group": "food",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "food.tea": {
+      "prd_name": "tea.png",
+      "path": "assets/0427/images/food/tea.png",
+      "type": "image",
+      "group": "food",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "food.thickNoodles": {
+      "prd_name": "Thicknoodles.png",
+      "path": "assets/0427/images/food/Thicknoodles.png",
+      "type": "image",
+      "group": "food",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": ""
+    },
+    "food.coffeeBeans": {
+      "prd_name": "coffee.png",
+      "path": "assets/0427/images/food/coffee.png",
+      "type": "image",
+      "group": "food",
+      "status": "ready",
+      "match_type": "extra",
+      "notes": "Playable ingredient image added outside the food reference table."
+    },
+    "catMaster.wizard": {
+      "prd_name": "wizard cat.png",
+      "path": "assets/0427/images/cat images/wizard cat.png",
+      "type": "image",
+      "group": "catMaster",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": "Actual folder name contains a space: cat images."
+    },
+    "catMaster.halfSuccess": {
+      "prd_name": "half-successful.png",
+      "path": "assets/0427/images/cat images/half-successful.png",
+      "type": "image",
+      "group": "catMaster",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": "Actual folder name contains a space: cat images."
+    },
+    "catMaster.fail": {
+      "prd_name": "fail.png",
+      "path": "assets/0427/images/cat images/fail.png",
+      "type": "image",
+      "group": "catMaster",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": "Actual folder name contains a space: cat images."
+    },
+    "catMaster.success": {
+      "prd_name": "successful.png",
+      "path": "assets/0427/images/cat images/successful.png",
+      "type": "image",
+      "group": "catMaster",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": "Actual folder name contains a space: cat images."
+    },
+    "punishment.claw": {
+      "prd_name": "claw.png",
+      "path": "assets/0427/images/unit/claw.png",
+      "type": "image",
+      "group": "punishment",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": "PRD mentions unt; current actual folder is unit."
+    },
+    "punishment.feather": {
+      "prd_name": "feather.png",
+      "path": "assets/0427/images/unit/feather.png",
+      "type": "image",
+      "group": "punishment",
+      "status": "ready",
+      "match_type": "exact",
+      "notes": "PRD mentions unt; current actual folder is unit."
+    }
+  }
+}

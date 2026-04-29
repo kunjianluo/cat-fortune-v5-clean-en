@@ -1,0 +1,15 @@
+{
+  "project_id": "cat-fortune-v2",
+  "title": "大馋猫：深夜占卜",
+  "version": "0.1.0",
+  "design_resolution": "2400x1080",
+  "theme_keywords": [
+    "深夜",
+    "港风",
+    "治愈中带一点毒舌",
+    "食物隐喻",
+    "情绪翻译"
+  ],
+  "default_locale": "zh-CN"
+}
+

@@ -1,0 +1,167 @@
+{
+  "_comment": "Ingredient names and short_desc values are directly sourced from Markdown PRD Appendix Four. ids and sprite_key values are implementation-friendly slugs.",
+  "ingredients": [
+    {
+      "id": "coffee-beans",
+      "name": "咖啡豆",
+      "shop_id": "ice-room",
+      "short_desc": "极度的清醒，用来切断深夜谎言。",
+      "sprite_key": "coffee-beans",
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "id": "evaporated-milk",
+      "name": "黑白淡奶",
+      "shop_id": "ice-room",
+      "short_desc": "温柔的假面，掩盖了生活苦底。",
+      "sprite_key": "evaporated-milk",
+      "order": 2,
+      "is_active": true
+    },
+    {
+      "id": "strong-tea",
+      "name": "浓茶",
+      "shop_id": "ice-room",
+      "short_desc": "经过八次撞击，锁住陈年苦涩。",
+      "sprite_key": "strong-tea",
+      "order": 3,
+      "is_active": true
+    },
+    {
+      "id": "lemon-slice",
+      "name": "柠檬片",
+      "shop_id": "ice-room",
+      "short_desc": "尖刻的酸，给真相加一点锋芒。",
+      "sprite_key": "lemon-slice",
+      "order": 4,
+      "is_active": true
+    },
+    {
+      "id": "pineapple-bun-base",
+      "name": "菠萝包底",
+      "shop_id": "ice-room",
+      "short_desc": "甜美酥脆，是面具最好的外壳。",
+      "sprite_key": "pineapple-bun-base",
+      "order": 5,
+      "is_active": true
+    },
+    {
+      "id": "butter",
+      "name": "黄油",
+      "shop_id": "ice-room",
+      "short_desc": "厚重危险，让安稳跳进黏腻里。",
+      "sprite_key": "butter",
+      "order": 6,
+      "is_active": true
+    },
+    {
+      "id": "rice-roll",
+      "name": "肠粉",
+      "shop_id": "street-stall",
+      "short_desc": "洁白单调，空虚需要苍白来填。",
+      "sprite_key": "rice-roll",
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "id": "curry-sauce",
+      "name": "咖喱酱",
+      "shop_id": "street-stall",
+      "short_desc": "浓稠脏酱汁，让平凡瞬间堕落。",
+      "sprite_key": "curry-sauce",
+      "order": 2,
+      "is_active": true
+    },
+    {
+      "id": "thick-noodles",
+      "name": "粗面",
+      "shop_id": "street-stall",
+      "short_desc": "基础碳水，是机械续命的链条。",
+      "sprite_key": "thick-noodles",
+      "order": 3,
+      "is_active": true
+    },
+    {
+      "id": "fish-ball",
+      "name": "鱼蛋",
+      "shop_id": "street-stall",
+      "short_desc": "没脑子的肉球，意义由你自己加。",
+      "sprite_key": "fish-ball",
+      "order": 4,
+      "is_active": true
+    },
+    {
+      "id": "beef-brisket",
+      "name": "牛腩",
+      "shop_id": "street-stall",
+      "short_desc": "难嚼的油脂，负重前行的代价。",
+      "sprite_key": "beef-brisket",
+      "order": 5,
+      "is_active": true
+    },
+    {
+      "id": "radish",
+      "name": "萝卜",
+      "shop_id": "street-stall",
+      "short_desc": "吸油的根茎，卑微地吸附着欲望。",
+      "sprite_key": "radish",
+      "order": 6,
+      "is_active": true
+    },
+    {
+      "id": "tangyuan",
+      "name": "汤圆",
+      "shop_id": "dessert-station",
+      "short_desc": "假装圆满，包裹着黏糊糊的拥抱。",
+      "sprite_key": "tangyuan",
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "id": "ginger-juice",
+      "name": "姜汁",
+      "shop_id": "dessert-station",
+      "short_desc": "滚烫辛辣，让眼眶发热的冲撞。",
+      "sprite_key": "ginger-juice",
+      "order": 2,
+      "is_active": true
+    },
+    {
+      "id": "mango",
+      "name": "芒果",
+      "shop_id": "dessert-station",
+      "short_desc": "金色香气，熟透到腐烂的美梦。",
+      "sprite_key": "mango",
+      "order": 3,
+      "is_active": true
+    },
+    {
+      "id": "coconut-milk",
+      "name": "椰浆",
+      "shop_id": "dessert-station",
+      "short_desc": "纯白海洋，溺死在醇厚柔情里。",
+      "sprite_key": "coconut-milk",
+      "order": 4,
+      "is_active": true
+    },
+    {
+      "id": "pomelo",
+      "name": "柚子",
+      "shop_id": "dessert-station",
+      "short_desc": "苦涩外皮，剥开后才见酸楚心。",
+      "sprite_key": "pomelo",
+      "order": 5,
+      "is_active": true
+    },
+    {
+      "id": "sago",
+      "name": "西米",
+      "shop_id": "dessert-station",
+      "short_desc": "透明碎片，孤独需要它们作伴。",
+      "sprite_key": "sago",
+      "order": 6,
+      "is_active": true
+    }
+  ]
+}

@@ -1,0 +1,1049 @@
+{
+  "_comment": "Recipes, food names, half-success hints, success wisdom, nonsense slips, shops, and ingredients are sourced from the Markdown PRD. Issue titles, taxonomy, and riddle_text remain explicitly annotated where inferred or generated.",
+  "issues": [
+    {
+      "id": "Q01",
+      "title": "Deadline 任务过载",
+      "title_display": "Deadline 任务过载",
+      "category_lv1_id": "career-study",
+      "category_lv2_id": "task-overload",
+      "shop_id": "ice-room",
+      "recipe": [
+        "coffee-beans",
+        "evaporated-milk"
+      ],
+      "food_name": "热奶茶",
+      "riddle_text": "猫大师说：把「极度的清醒，用来切断深夜谎言。」和「温柔的假面，掩盖了生活苦底。」献上，才会显出「热奶茶」的答案。",
+      "success_wisdom_id": "wisdom-Q01",
+      "half_success_hint_id": "hint-Q01",
+      "special_case": null,
+      "is_live": true,
+      "order": 1,
+      "source_notes": {
+        "title_source": "direct",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD includes this issue title as an example in the card-selection flow. Recipe, food name, half-success hint, and success wisdom are direct appendix content; taxonomy and riddle text still need human review."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q02",
+      "title": "创作起步恐惧",
+      "title_display": "创作起步恐惧",
+      "category_lv1_id": "career-study",
+      "category_lv2_id": "creative-stuckness",
+      "shop_id": "street-stall",
+      "recipe": [
+        "rice-roll",
+        "curry-sauce"
+      ],
+      "food_name": "咖喱肠粉",
+      "riddle_text": "猫大师说：把「洁白单调，空虚需要苍白来填。」和「浓稠脏酱汁，让平凡瞬间堕落。」献上，才会显出「咖喱肠粉」的答案。",
+      "success_wisdom_id": "wisdom-Q02",
+      "half_success_hint_id": "hint-Q02",
+      "special_case": null,
+      "is_live": true,
+      "order": 2,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q03",
+      "title": "机械式续命",
+      "title_display": "机械式续命",
+      "category_lv1_id": "career-study",
+      "category_lv2_id": "routine-boredom",
+      "shop_id": "street-stall",
+      "recipe": [
+        "thick-noodles",
+        "fish-ball"
+      ],
+      "food_name": "鱼蛋粗面",
+      "riddle_text": "猫大师说：把「基础碳水，是机械续命的链条。」和「没脑子的肉球，意义由你自己加。」献上，才会显出「鱼蛋粗面」的答案。",
+      "success_wisdom_id": "wisdom-Q03",
+      "half_success_hint_id": "hint-Q03",
+      "special_case": null,
+      "is_live": true,
+      "order": 3,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q04",
+      "title": "重复劳动麻木",
+      "title_display": "重复劳动麻木",
+      "category_lv1_id": "career-study",
+      "category_lv2_id": "routine-boredom",
+      "shop_id": "street-stall",
+      "recipe": [
+        "thick-noodles",
+        "rice-roll"
+      ],
+      "food_name": "双拼碳水",
+      "riddle_text": "猫大师说：把「基础碳水，是机械续命的链条。」和「洁白单调，空虚需要苍白来填。」献上，才会显出「双拼碳水」的答案。",
+      "success_wisdom_id": "wisdom-Q04",
+      "half_success_hint_id": "hint-Q04",
+      "special_case": null,
+      "is_live": true,
+      "order": 4,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q05",
+      "title": "柠檬朋友委屈",
+      "title_display": "柠檬朋友委屈",
+      "category_lv1_id": "relationships",
+      "category_lv2_id": "friendship-boundaries",
+      "shop_id": "ice-room",
+      "recipe": [
+        "lemon-slice",
+        "strong-tea"
+      ],
+      "food_name": "冻柠茶",
+      "riddle_text": "猫大师说：把「尖刻的酸，给真相加一点锋芒。」和「经过八次撞击，锁住陈年苦涩。」献上，才会显出「冻柠茶」的答案。",
+      "success_wisdom_id": "wisdom-Q05",
+      "half_success_hint_id": "hint-Q05",
+      "special_case": null,
+      "is_live": true,
+      "order": 5,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q06",
+      "title": "温柔面具戴太久",
+      "title_display": "温柔面具戴太久",
+      "category_lv1_id": "career-study",
+      "category_lv2_id": "social-mask",
+      "shop_id": "ice-room",
+      "recipe": [
+        "strong-tea",
+        "pineapple-bun-base"
+      ],
+      "food_name": "菠萝油套餐",
+      "riddle_text": "猫大师说：把「经过八次撞击，锁住陈年苦涩。」和「甜美酥脆，是面具最好的外壳。」献上，才会显出「菠萝油套餐」的答案。",
+      "success_wisdom_id": "wisdom-Q06",
+      "half_success_hint_id": "hint-Q06",
+      "special_case": null,
+      "is_live": true,
+      "order": 6,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q07",
+      "title": "想跳出安稳",
+      "title_display": "想跳出安稳",
+      "category_lv1_id": "life-rhythm",
+      "category_lv2_id": "change-and-risk",
+      "shop_id": "ice-room",
+      "recipe": [
+        "pineapple-bun-base",
+        "butter"
+      ],
+      "food_name": "冰火菠萝油",
+      "riddle_text": "猫大师说：把「甜美酥脆，是面具最好的外壳。」和「厚重危险，让安稳跳进黏腻里。」献上，才会显出「冰火菠萝油」的答案。",
+      "success_wisdom_id": "wisdom-Q07",
+      "half_success_hint_id": "hint-Q07",
+      "special_case": null,
+      "is_live": true,
+      "order": 7,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q08",
+      "title": "两条路都想选",
+      "title_display": "两条路都想选",
+      "category_lv1_id": "life-rhythm",
+      "category_lv2_id": "decision-paralysis",
+      "shop_id": "ice-room",
+      "recipe": [
+        "strong-tea",
+        "coffee-beans"
+      ],
+      "food_name": "鸳鸯奶茶",
+      "riddle_text": "猫大师说：把「经过八次撞击，锁住陈年苦涩。」和「极度的清醒，用来切断深夜谎言。」献上，才会显出「鸳鸯奶茶」的答案。",
+      "success_wisdom_id": "wisdom-Q08",
+      "half_success_hint_id": "hint-Q08",
+      "special_case": null,
+      "is_live": true,
+      "order": 8,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q09",
+      "title": "同辈比较上头",
+      "title_display": "同辈比较上头",
+      "category_lv1_id": "desire-money",
+      "category_lv2_id": "envy-comparison",
+      "shop_id": "dessert-station",
+      "recipe": [
+        "tangyuan",
+        "ginger-juice"
+      ],
+      "food_name": "姜汁汤圆",
+      "riddle_text": "猫大师说：把「假装圆满，包裹着黏糊糊的拥抱。」和「滚烫辛辣，让眼眶发热的冲撞。」献上，才会显出「姜汁汤圆」的答案。",
+      "success_wisdom_id": "wisdom-Q09",
+      "half_success_hint_id": "hint-Q09",
+      "special_case": null,
+      "is_live": true,
+      "order": 9,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q10",
+      "title": "盯着别人碗里香",
+      "title_display": "盯着别人碗里香",
+      "category_lv1_id": "desire-money",
+      "category_lv2_id": "envy-comparison",
+      "shop_id": "street-stall",
+      "recipe": [
+        "fish-ball",
+        "curry-sauce"
+      ],
+      "food_name": "咖喱鱼蛋",
+      "riddle_text": "猫大师说：把「没脑子的肉球，意义由你自己加。」和「浓稠脏酱汁，让平凡瞬间堕落。」献上，才会显出「咖喱鱼蛋」的答案。",
+      "success_wisdom_id": "wisdom-Q10",
+      "half_success_hint_id": "hint-Q10",
+      "special_case": null,
+      "is_live": true,
+      "order": 10,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q11",
+      "title": "觉得自己不够闪亮",
+      "title_display": "觉得自己不够闪亮",
+      "category_lv1_id": "self-mood",
+      "category_lv2_id": "self-worth",
+      "shop_id": "dessert-station",
+      "recipe": [
+        "mango",
+        "coconut-milk"
+      ],
+      "food_name": "芒果椰汁西米露",
+      "riddle_text": "猫大师说：把「金色香气，熟透到腐烂的美梦。」和「纯白海洋，溺死在醇厚柔情里。」献上，才会显出「芒果椰汁西米露」的答案。",
+      "success_wisdom_id": "wisdom-Q11",
+      "half_success_hint_id": "hint-Q11",
+      "special_case": null,
+      "is_live": true,
+      "order": 11,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q12",
+      "title": "欲望填不满",
+      "title_display": "欲望填不满",
+      "category_lv1_id": "desire-money",
+      "category_lv2_id": "desire-balance",
+      "shop_id": "street-stall",
+      "recipe": [
+        "beef-brisket",
+        "radish"
+      ],
+      "food_name": "萝卜牛腩",
+      "riddle_text": "猫大师说：把「难嚼的油脂，负重前行的代价。」和「吸油的根茎，卑微地吸附着欲望。」献上，才会显出「萝卜牛腩」的答案。",
+      "success_wisdom_id": "wisdom-Q12",
+      "half_success_hint_id": "hint-Q12",
+      "special_case": null,
+      "is_live": true,
+      "order": 12,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q13",
+      "title": "找不到归属感",
+      "title_display": "找不到归属感",
+      "category_lv1_id": "relationships",
+      "category_lv2_id": "belonging",
+      "shop_id": "street-stall",
+      "recipe": [
+        "radish",
+        "beef-brisket"
+      ],
+      "food_name": "炖萝卜牛腩",
+      "riddle_text": "猫大师说：把「吸油的根茎，卑微地吸附着欲望。」和「难嚼的油脂，负重前行的代价。」献上，才会显出「炖萝卜牛腩」的答案。",
+      "success_wisdom_id": "wisdom-Q13",
+      "half_success_hint_id": "hint-Q13",
+      "special_case": null,
+      "is_live": true,
+      "order": 13,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q14",
+      "title": "空房间孤独",
+      "title_display": "空房间孤独",
+      "category_lv1_id": "relationships",
+      "category_lv2_id": "loneliness",
+      "shop_id": "street-stall",
+      "recipe": [
+        "rice-roll",
+        "radish"
+      ],
+      "food_name": "斋肠萝卜糕",
+      "riddle_text": "猫大师说：把「洁白单调，空虚需要苍白来填。」和「吸油的根茎，卑微地吸附着欲望。」献上，才会显出「斋肠萝卜糕」的答案。",
+      "success_wisdom_id": "wisdom-Q14",
+      "half_success_hint_id": "hint-Q14",
+      "special_case": null,
+      "is_live": true,
+      "order": 14,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q15",
+      "title": "演出来的真实",
+      "title_display": "演出来的真实",
+      "category_lv1_id": "self-mood",
+      "category_lv2_id": "authenticity-performance",
+      "shop_id": "ice-room",
+      "recipe": [
+        "strong-tea",
+        "lemon-slice"
+      ],
+      "food_name": "咸柠七",
+      "riddle_text": "猫大师说：把「经过八次撞击，锁住陈年苦涩。」和「尖刻的酸，给真相加一点锋芒。」献上，才会显出「咸柠七」的答案。",
+      "success_wisdom_id": "wisdom-Q15",
+      "half_success_hint_id": "hint-Q15",
+      "special_case": null,
+      "is_live": true,
+      "order": 15,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q16",
+      "title": "热闹场合空心",
+      "title_display": "热闹场合空心",
+      "category_lv1_id": "relationships",
+      "category_lv2_id": "social-fatigue",
+      "shop_id": "dessert-station",
+      "recipe": [
+        "pomelo",
+        "sago"
+      ],
+      "food_name": "柚子西米露",
+      "riddle_text": "猫大师说：把「苦涩外皮，剥开后才见酸楚心。」和「透明碎片，孤独需要它们作伴。」献上，才会显出「柚子西米露」的答案。",
+      "success_wisdom_id": "wisdom-Q16",
+      "half_success_hint_id": "hint-Q16",
+      "special_case": null,
+      "is_live": true,
+      "order": 16,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q17",
+      "title": "等一个同频的人",
+      "title_display": "等一个同频的人",
+      "category_lv1_id": "relationships",
+      "category_lv2_id": "belonging",
+      "shop_id": "dessert-station",
+      "recipe": [
+        "coconut-milk",
+        "tangyuan"
+      ],
+      "food_name": "椰汁汤圆",
+      "riddle_text": "猫大师说：把「纯白海洋，溺死在醇厚柔情里。」和「假装圆满，包裹着黏糊糊的拥抱。」献上，才会显出「椰汁汤圆」的答案。",
+      "success_wisdom_id": "wisdom-Q17",
+      "half_success_hint_id": "hint-Q17",
+      "special_case": null,
+      "is_live": true,
+      "order": 17,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q18",
+      "title": "苦到反胃的关系",
+      "title_display": "苦到反胃的关系",
+      "category_lv1_id": "relationships",
+      "category_lv2_id": "breakup-attachment",
+      "shop_id": "ice-room",
+      "recipe": [
+        "strong-tea",
+        "coffee-beans"
+      ],
+      "food_name": "苦鸳鸯",
+      "riddle_text": "猫大师说：把「经过八次撞击，锁住陈年苦涩。」和「极度的清醒，用来切断深夜谎言。」献上，才会显出「苦鸳鸯」的答案。",
+      "success_wisdom_id": "wisdom-Q18",
+      "half_success_hint_id": "hint-Q18",
+      "special_case": null,
+      "is_live": true,
+      "order": 18,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q19",
+      "title": "被旧回忆粘住",
+      "title_display": "被旧回忆粘住",
+      "category_lv1_id": "relationships",
+      "category_lv2_id": "breakup-attachment",
+      "shop_id": "dessert-station",
+      "recipe": [
+        "tangyuan",
+        "mango"
+      ],
+      "food_name": "芒果汤圆",
+      "riddle_text": "猫大师说：把「假装圆满，包裹着黏糊糊的拥抱。」和「金色香气，熟透到腐烂的美梦。」献上，才会显出「芒果汤圆」的答案。",
+      "success_wisdom_id": "wisdom-Q19",
+      "half_success_hint_id": "hint-Q19",
+      "special_case": null,
+      "is_live": true,
+      "order": 19,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q20",
+      "title": "哭完还舍不得空碗",
+      "title_display": "哭完还舍不得空碗",
+      "category_lv1_id": "relationships",
+      "category_lv2_id": "breakup-attachment",
+      "shop_id": "dessert-station",
+      "recipe": [
+        "ginger-juice",
+        "mango"
+      ],
+      "food_name": "姜芒撞奶",
+      "riddle_text": "猫大师说：把「滚烫辛辣，让眼眶发热的冲撞。」和「金色香气，熟透到腐烂的美梦。」献上，才会显出「姜芒撞奶」的答案。",
+      "success_wisdom_id": "wisdom-Q20",
+      "half_success_hint_id": "hint-Q20",
+      "special_case": null,
+      "is_live": true,
+      "order": 20,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q21",
+      "title": "嫌弃自己的不完美",
+      "title_display": "嫌弃自己的不完美",
+      "category_lv1_id": "self-mood",
+      "category_lv2_id": "self-acceptance",
+      "shop_id": "ice-room",
+      "recipe": [
+        "pineapple-bun-base",
+        "butter"
+      ],
+      "food_name": "黄金菠萝油",
+      "riddle_text": "猫大师说：把「甜美酥脆，是面具最好的外壳。」和「厚重危险，让安稳跳进黏腻里。」献上，才会显出「黄金菠萝油」的答案。",
+      "success_wisdom_id": "wisdom-Q21",
+      "half_success_hint_id": "hint-Q21",
+      "special_case": null,
+      "is_live": true,
+      "order": 21,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q22",
+      "title": "碎裂后的重组",
+      "title_display": "碎裂后的重组",
+      "category_lv1_id": "self-mood",
+      "category_lv2_id": "rebuilding",
+      "shop_id": "dessert-station",
+      "recipe": [
+        "sago",
+        "coconut-milk"
+      ],
+      "food_name": "椰汁西米露",
+      "riddle_text": "猫大师说：把「透明碎片，孤独需要它们作伴。」和「纯白海洋，溺死在醇厚柔情里。」献上，才会显出「椰汁西米露」的答案。",
+      "success_wisdom_id": "wisdom-Q22",
+      "half_success_hint_id": "hint-Q22",
+      "special_case": null,
+      "is_live": true,
+      "order": 22,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q23",
+      "title": "讨好到负重",
+      "title_display": "讨好到负重",
+      "category_lv1_id": "relationships",
+      "category_lv2_id": "people-pleasing-boundaries",
+      "shop_id": "street-stall",
+      "recipe": [
+        "thick-noodles",
+        "beef-brisket"
+      ],
+      "food_name": "牛腩捞面",
+      "riddle_text": "猫大师说：把「基础碳水，是机械续命的链条。」和「难嚼的油脂，负重前行的代价。」献上，才会显出「牛腩捞面」的答案。",
+      "success_wisdom_id": "wisdom-Q23",
+      "half_success_hint_id": "hint-Q23",
+      "special_case": null,
+      "is_live": true,
+      "order": 23,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q24",
+      "title": "外酸内甜的评价焦虑",
+      "title_display": "外酸内甜的评价焦虑",
+      "category_lv1_id": "self-mood",
+      "category_lv2_id": "external-judgment",
+      "shop_id": "dessert-station",
+      "recipe": [
+        "lemon-slice",
+        "mango"
+      ],
+      "food_name": "柠香芒果",
+      "riddle_text": "猫大师说：把「尖刻的酸，给真相加一点锋芒。」和「金色香气，熟透到腐烂的美梦。」献上，才会显出「柠香芒果」的答案。",
+      "success_wisdom_id": "wisdom-Q24",
+      "half_success_hint_id": "hint-Q24",
+      "special_case": null,
+      "is_live": true,
+      "order": 24,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q25",
+      "title": "深夜虚无感",
+      "title_display": "深夜虚无感",
+      "category_lv1_id": "self-mood",
+      "category_lv2_id": "late-night-void",
+      "shop_id": "ice-room",
+      "recipe": [
+        "strong-tea",
+        "evaporated-milk"
+      ],
+      "food_name": "丝袜奶茶",
+      "riddle_text": "猫大师说：把「经过八次撞击，锁住陈年苦涩。」和「温柔的假面，掩盖了生活苦底。」献上，才会显出「丝袜奶茶」的答案。",
+      "success_wisdom_id": "wisdom-Q25",
+      "half_success_hint_id": "hint-Q25",
+      "special_case": null,
+      "is_live": true,
+      "order": 25,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q26",
+      "title": "生活没味道",
+      "title_display": "生活没味道",
+      "category_lv1_id": "life-rhythm",
+      "category_lv2_id": "meaning-in-routine",
+      "shop_id": "street-stall",
+      "recipe": [
+        "thick-noodles",
+        "fish-ball"
+      ],
+      "food_name": "鱼蛋粉",
+      "riddle_text": "猫大师说：把「基础碳水，是机械续命的链条。」和「没脑子的肉球，意义由你自己加。」献上，才会显出「鱼蛋粉」的答案。",
+      "success_wisdom_id": "wisdom-Q26",
+      "half_success_hint_id": "hint-Q26",
+      "special_case": null,
+      "is_live": true,
+      "order": 26,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q27",
+      "title": "刷到别人人生切片",
+      "title_display": "刷到别人人生切片",
+      "category_lv1_id": "self-mood",
+      "category_lv2_id": "social-media-comparison",
+      "shop_id": "ice-room",
+      "recipe": [
+        "coffee-beans",
+        "lemon-slice"
+      ],
+      "food_name": "柠啡",
+      "riddle_text": "猫大师说：把「极度的清醒，用来切断深夜谎言。」和「尖刻的酸，给真相加一点锋芒。」献上，才会显出「柠啡」的答案。",
+      "success_wisdom_id": "wisdom-Q27",
+      "half_success_hint_id": "hint-Q27",
+      "special_case": null,
+      "is_live": true,
+      "order": 27,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q28",
+      "title": "未来还没来就害怕",
+      "title_display": "未来还没来就害怕",
+      "category_lv1_id": "self-mood",
+      "category_lv2_id": "future-anxiety",
+      "shop_id": "dessert-station",
+      "recipe": [
+        "ginger-juice",
+        "tangyuan"
+      ],
+      "food_name": "姜汁汤圆",
+      "riddle_text": "猫大师说：把「滚烫辛辣，让眼眶发热的冲撞。」和「假装圆满，包裹着黏糊糊的拥抱。」献上，才会显出「姜汁汤圆」的答案。",
+      "success_wisdom_id": "wisdom-Q28",
+      "half_success_hint_id": "hint-Q28",
+      "special_case": null,
+      "is_live": true,
+      "order": 28,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q29",
+      "title": "空间太窄喘不过气",
+      "title_display": "空间太窄喘不过气",
+      "category_lv1_id": "life-rhythm",
+      "category_lv2_id": "living-space",
+      "shop_id": "street-stall",
+      "recipe": [
+        "radish",
+        "rice-roll"
+      ],
+      "food_name": "萝卜肠粉",
+      "riddle_text": "猫大师说：把「吸油的根茎，卑微地吸附着欲望。」和「洁白单调，空虚需要苍白来填。」献上，才会显出「萝卜肠粉」的答案。",
+      "success_wisdom_id": "wisdom-Q29",
+      "half_success_hint_id": "hint-Q29",
+      "special_case": null,
+      "is_live": true,
+      "order": 29,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q30",
+      "title": "想让味觉先旅行",
+      "title_display": "想让味觉先旅行",
+      "category_lv1_id": "life-rhythm",
+      "category_lv2_id": "living-space",
+      "shop_id": "dessert-station",
+      "recipe": [
+        "pomelo",
+        "mango"
+      ],
+      "food_name": "杨枝甘露",
+      "riddle_text": "猫大师说：把「苦涩外皮，剥开后才见酸楚心。」和「金色香气，熟透到腐烂的美梦。」献上，才会显出「杨枝甘露」的答案。",
+      "success_wisdom_id": "wisdom-Q30",
+      "half_success_hint_id": "hint-Q30",
+      "special_case": null,
+      "is_live": true,
+      "order": 30,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q31",
+      "title": "时间被榨干",
+      "title_display": "时间被榨干",
+      "category_lv1_id": "life-rhythm",
+      "category_lv2_id": "rest-time",
+      "shop_id": "ice-room",
+      "recipe": [
+        "strong-tea",
+        "butter"
+      ],
+      "food_name": "茶走",
+      "riddle_text": "猫大师说：把「经过八次撞击，锁住陈年苦涩。」和「厚重危险，让安稳跳进黏腻里。」献上，才会显出「茶走」的答案。",
+      "success_wisdom_id": "wisdom-Q31",
+      "half_success_hint_id": "hint-Q31",
+      "special_case": null,
+      "is_live": true,
+      "order": 31,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q32",
+      "title": "熬夜换自由",
+      "title_display": "熬夜换自由",
+      "category_lv1_id": "life-rhythm",
+      "category_lv2_id": "rest-time",
+      "shop_id": "ice-room",
+      "recipe": [
+        "coffee-beans",
+        "strong-tea"
+      ],
+      "food_name": "魔鬼特饮",
+      "riddle_text": "猫大师说：把「极度的清醒，用来切断深夜谎言。」和「经过八次撞击，锁住陈年苦涩。」献上，才会显出「魔鬼特饮」的答案。",
+      "success_wisdom_id": "wisdom-Q32",
+      "half_success_hint_id": "hint-Q32",
+      "special_case": null,
+      "is_live": true,
+      "order": 32,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q33",
+      "title": "钱与欲望高汤",
+      "title_display": "钱与欲望高汤",
+      "category_lv1_id": "desire-money",
+      "category_lv2_id": "money-desire",
+      "shop_id": "street-stall",
+      "recipe": [
+        "beef-brisket",
+        "radish"
+      ],
+      "food_name": "柱候牛腩",
+      "riddle_text": "猫大师说：把「难嚼的油脂，负重前行的代价。」和「吸油的根茎，卑微地吸附着欲望。」献上，才会显出「柱候牛腩」的答案。",
+      "success_wisdom_id": "wisdom-Q33",
+      "half_success_hint_id": "hint-Q33",
+      "special_case": null,
+      "is_live": true,
+      "order": 33,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q34",
+      "title": "幻想一夜暴富",
+      "title_display": "幻想一夜暴富",
+      "category_lv1_id": "desire-money",
+      "category_lv2_id": "money-desire",
+      "shop_id": "dessert-station",
+      "recipe": [
+        "mango",
+        "tangyuan"
+      ],
+      "food_name": "金玉满堂",
+      "riddle_text": "猫大师说：把「金色香气，熟透到腐烂的美梦。」和「假装圆满，包裹着黏糊糊的拥抱。」献上，才会显出「金玉满堂」的答案。",
+      "success_wisdom_id": "wisdom-Q34",
+      "half_success_hint_id": "hint-Q34",
+      "special_case": null,
+      "is_live": true,
+      "order": 34,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q35",
+      "title": "跌到底等转机",
+      "title_display": "跌到底等转机",
+      "category_lv1_id": "desire-money",
+      "category_lv2_id": "low-point-rebound",
+      "shop_id": "street-stall",
+      "recipe": [
+        "ginger-juice",
+        "radish"
+      ],
+      "food_name": "姜汁萝卜",
+      "riddle_text": "猫大师说：把「滚烫辛辣，让眼眶发热的冲撞。」和「吸油的根茎，卑微地吸附着欲望。」献上，才会显出「姜汁萝卜」的答案。",
+      "success_wisdom_id": "wisdom-Q35",
+      "half_success_hint_id": "hint-Q35",
+      "special_case": null,
+      "is_live": true,
+      "order": 35,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q36",
+      "title": "苦到极致等回甘",
+      "title_display": "苦到极致等回甘",
+      "category_lv1_id": "desire-money",
+      "category_lv2_id": "low-point-rebound",
+      "shop_id": "ice-room",
+      "recipe": [
+        "strong-tea",
+        "coffee-beans"
+      ],
+      "food_name": "苦尽甘来",
+      "riddle_text": "猫大师说：把「经过八次撞击，锁住陈年苦涩。」和「极度的清醒，用来切断深夜谎言。」献上，才会显出「苦尽甘来」的答案。",
+      "success_wisdom_id": "wisdom-Q36",
+      "half_success_hint_id": "hint-Q36",
+      "special_case": null,
+      "is_live": true,
+      "order": 36,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q37",
+      "title": "未知恐惧与控制欲",
+      "title_display": "未知恐惧与控制欲",
+      "category_lv1_id": "self-mood",
+      "category_lv2_id": "health-overthinking",
+      "shop_id": "street-stall",
+      "recipe": [
+        "radish",
+        "lemon-slice"
+      ],
+      "food_name": "柠香萝卜",
+      "riddle_text": "猫大师说：把「吸油的根茎，卑微地吸附着欲望。」和「尖刻的酸，给真相加一点锋芒。」献上，才会显出「柠香萝卜」的答案。",
+      "success_wisdom_id": "wisdom-Q37",
+      "half_success_hint_id": "hint-Q37",
+      "special_case": null,
+      "is_live": true,
+      "order": 37,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q38",
+      "title": "撑太久想软弱",
+      "title_display": "撑太久想软弱",
+      "category_lv1_id": "self-mood",
+      "category_lv2_id": "exhaustion-softness",
+      "shop_id": "dessert-station",
+      "recipe": [
+        "coconut-milk",
+        "tangyuan"
+      ],
+      "food_name": "云朵椰奶汤圆",
+      "riddle_text": "猫大师说：把「纯白海洋，溺死在醇厚柔情里。」和「假装圆满，包裹着黏糊糊的拥抱。」献上，才会显出「云朵椰奶汤圆」的答案。",
+      "success_wisdom_id": "wisdom-Q38",
+      "half_success_hint_id": "hint-Q38",
+      "special_case": null,
+      "is_live": true,
+      "order": 38,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q39",
+      "title": "聪明过头不快乐",
+      "title_display": "聪明过头不快乐",
+      "category_lv1_id": "self-mood",
+      "category_lv2_id": "overthinking-simplicity",
+      "shop_id": "street-stall",
+      "recipe": [
+        "fish-ball",
+        "fish-ball"
+      ],
+      "food_name": "双份鱼蛋",
+      "riddle_text": "猫大师说：这个心结需要双份同样的没脑子肉球，才会显出「双份鱼蛋」的答案。",
+      "success_wisdom_id": "wisdom-Q39",
+      "half_success_hint_id": "hint-Q39",
+      "special_case": {
+        "type": "repeated_ingredient",
+        "ingredient_id": "fish-ball",
+        "note": "两个原料相同；半成功提示使用共享文案。"
+      },
+      "is_live": true,
+      "order": 39,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    },
+    {
+      "id": "Q40",
+      "title": "需要一个出门理由",
+      "title_display": "需要一个出门理由",
+      "category_lv1_id": "life-rhythm",
+      "category_lv2_id": "getting-outside",
+      "shop_id": "dessert-station",
+      "recipe": [
+        "pomelo",
+        "mango"
+      ],
+      "food_name": "柚子芒捞",
+      "riddle_text": "猫大师说：把「苦涩外皮，剥开后才见酸楚心。」和「金色香气，熟透到腐烂的美梦。」献上，才会显出「柚子芒捞」的答案。",
+      "success_wisdom_id": "wisdom-Q40",
+      "half_success_hint_id": "hint-Q40",
+      "special_case": null,
+      "is_live": true,
+      "order": 40,
+      "source_notes": {
+        "title_source": "inferred",
+        "riddle_source": "generated-from-ingredient-descriptions",
+        "taxonomy_source": "inferred",
+        "notes": "Markdown PRD does not provide a canonical title, full taxonomy placement, or per-issue riddle copy for this issue. Title and taxonomy are inferred from success wisdom themes; riddle_text is generated from Appendix Four ingredient descriptions."
+      },
+      "needs_review": true
+    }
+  ]
+}

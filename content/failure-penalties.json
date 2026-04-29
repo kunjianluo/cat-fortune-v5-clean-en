@@ -1,0 +1,38 @@
+{
+  "_comment": "Failure penalty weights and behavior hooks are sourced from the Markdown PRD. V2 implementation scope only actively supports nonsense-slip; mud-paw and cat-hair remain future hooks.",
+  "failure_penalties": [
+    {
+      "id": "nonsense-slip",
+      "name": "猫咪废话签",
+      "weight": 50,
+      "return_mode": "must_close",
+      "ui_type": "modal_slip",
+      "requires_manual_close": true,
+      "timeout_ms": null,
+      "is_active_in_v2": true,
+      "implementation_status": "active"
+    },
+    {
+      "id": "mud-paw",
+      "name": "泥巴猫爪印",
+      "weight": 25,
+      "return_mode": "clear_all_marks",
+      "ui_type": "screen_paw_marks",
+      "requires_manual_close": true,
+      "timeout_ms": null,
+      "is_active_in_v2": false,
+      "implementation_status": "future_hook"
+    },
+    {
+      "id": "cat-hair",
+      "name": "猫毛过敏",
+      "weight": 25,
+      "return_mode": "clear_or_timeout",
+      "ui_type": "floating_cat_hair",
+      "requires_manual_close": false,
+      "timeout_ms": 15000,
+      "is_active_in_v2": false,
+      "implementation_status": "future_hook"
+    }
+  ]
+}

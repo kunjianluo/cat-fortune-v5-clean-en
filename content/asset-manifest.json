@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "project": "cat-fortune-v3",
+  "description": "V3 immersive demo asset manifest. Placeholder records may point to files that do not exist yet; CSS, emoji, or text fallbacks should keep the V2 gameplay loop playable.",
+  "assets": [
+    {
+      "id": "opening-rainy-street-bg",
+      "type": "image",
+      "scene": "opening",
+      "path": "assets/images/opening/opening-rainy-street-bg.webp",
+      "recommended_size": "1920x1080",
+      "status": "placeholder",
+      "fallback": "Existing rainy opening CSS background",
+      "required_for_v3_demo": true,
+      "notes": "Primary opening background for the rainy street / doorway mood."
+    },
+    {
+      "id": "cat-master-idle-image",
+      "type": "image",
+      "scene": "cat-master",
+      "path": "assets/images/cat-master/cat-master-idle.png",
+      "recommended_size": "1024x1024",
+      "status": "placeholder",
+      "fallback": "Existing cat emoji / text presentation",
+      "required_for_v3_demo": true,
+      "notes": "Idle cat master still before persona shift."
+    },
+    {
+      "id": "cat-master-intro-image",
+      "type": "image",
+      "scene": "cat-master-intro",
+      "path": "assets/images/cat-master/cat-master-intro.png",
+      "recommended_size": "1024x1024",
+      "status": "placeholder",
+      "fallback": "Existing intro panel styling",
+      "required_for_v3_demo": true,
+      "notes": "Cat master intro image used after entering the shop."
+    },
+    {
+      "id": "cat-master-judging-image",
+      "type": "image",
+      "scene": "judgement",
+      "path": "assets/images/cat-master/cat-master-judging.png",
+      "recommended_size": "1024x1024",
+      "status": "placeholder",
+      "fallback": "Immediate judgement overlay without image",
+      "required_for_v3_demo": false,
+      "notes": "Judgement pose placeholder for later sacrifice transition."
+    },
+    {
+      "id": "shop-bg-noodle-night",
+      "type": "image",
+      "scene": "shop",
+      "path": "assets/images/shops/shop-bg-noodle-night.webp",
+      "recommended_size": "1920x1080",
+      "status": "placeholder",
+      "fallback": "Existing shop text block and ingredient list",
+      "required_for_v3_demo": false,
+      "notes": "Placeholder for a warm late-night noodle shop interior."
+    },
+    {
+      "id": "shop-bg-dessert-night",
+      "type": "image",
+      "scene": "shop",
+      "path": "assets/images/shops/shop-bg-dessert-night.webp",
+      "recommended_size": "1920x1080",
+      "status": "placeholder",
+      "fallback": "Existing shop text block and ingredient list",
+      "required_for_v3_demo": false,
+      "notes": "Placeholder for a neon dessert / sweet soup shop interior."
+    },
+    {
+      "id": "shop-bg-tea-night",
+      "type": "image",
+      "scene": "shop",
+      "path": "assets/images/shops/shop-bg-tea-night.webp",
+      "recommended_size": "1920x1080",
+      "status": "placeholder",
+      "fallback": "Existing shop text block and ingredient list",
+      "required_for_v3_demo": false,
+      "notes": "Placeholder for a tea cafe or cha chaan teng interior."
+    },
+    {
+      "id": "shopkeeper-noodle-idle",
+      "type": "sprite",
+      "scene": "shopkeeper",
+      "path": "assets/sprites/shopkeepers/shopkeeper-noodle-idle.png",
+      "recommended_size": "768x1024",
+      "status": "placeholder",
+      "fallback": "Shop name and description text",
+      "required_for_v3_demo": false,
+      "notes": "Idle shopkeeper sprite for the noodle shop."
+    },
+    {
+      "id": "shopkeeper-dessert-idle",
+      "type": "sprite",
+      "scene": "shopkeeper",
+      "path": "assets/sprites/shopkeepers/shopkeeper-dessert-idle.png",
+      "recommended_size": "768x1024",
+      "status": "placeholder",
+      "fallback": "Shop name and description text",
+      "required_for_v3_demo": false,
+      "notes": "Idle shopkeeper sprite for the dessert shop."
+    },
+    {
+      "id": "shopkeeper-tea-idle",
+      "type": "sprite",
+      "scene": "shopkeeper",
+      "path": "assets/sprites/shopkeepers/shopkeeper-tea-idle.png",
+      "recommended_size": "768x1024",
+      "status": "placeholder",
+      "fallback": "Shop name and description text",
+      "required_for_v3_demo": false,
+      "notes": "Idle shopkeeper sprite for the tea shop."
+    },
+    {
+      "id": "ingredient-icon-placeholder-group",
+      "type": "image",
+      "scene": "ingredients",
+      "path": "assets/images/ingredients/ingredient-icons-placeholder.png",
+      "recommended_size": "256x256 per icon",
+      "status": "placeholder",
+      "fallback": "Existing ingredient emoji / text labels",
+      "required_for_v3_demo": false,
+      "notes": "Placeholder group or sprite sheet for ingredient icons."
+    },
+    {
+      "id": "result-food-card-placeholder",
+      "type": "image",
+      "scene": "result",
+      "path": "assets/images/results/result-food-card-placeholder.webp",
+      "recommended_size": "1200x1600",
+      "status": "placeholder",
+      "fallback": "Existing success result overlay text card",
+      "required_for_v3_demo": false,
+      "notes": "Generic result card image slot until final food cards exist."
+    }
+  ]
+}

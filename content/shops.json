@@ -1,0 +1,38 @@
+{
+  "shops": [
+    {
+      "id": "dessert-station",
+      "name": "失眠甜品站",
+      "short_name": "甜品站",
+      "order": 1,
+      "description": "治愈系的甜蜜避风港，软糯梦幻的终点。",
+      "door_type": "glass_slide",
+      "theme_color": "pink",
+      "bgm_key": "dessert_room",
+      "npc_id": "shopkeeper-ragdoll"
+    },
+    {
+      "id": "ice-room",
+      "name": "零点冰室",
+      "short_name": "冰室",
+      "order": 2,
+      "description": "冰火交融的港味经典，苦涩中带点温柔。",
+      "door_type": "wooden_swing",
+      "theme_color": "blue",
+      "bgm_key": "midnight_ice_room",
+      "npc_id": "waiter-orange-cat"
+    },
+    {
+      "id": "street-stall",
+      "name": "霓虹大排档",
+      "short_name": "大排档",
+      "order": 3,
+      "description": "深夜烟火气的聚集地，热辣滚烫的转机。",
+      "door_type": "rolling_shutter",
+      "theme_color": "orange",
+      "bgm_key": "neon_stall",
+      "npc_id": "cook-cow-cat"
+    }
+  ],
+  "_comment": "Shop display names and hover descriptions are directly sourced from the Markdown PRD 三个商店 section. Implementation ids remain stable English-like ids."
+}

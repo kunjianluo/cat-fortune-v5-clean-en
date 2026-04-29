@@ -1,0 +1,405 @@
+{
+  "_comment": "Half-success hints are directly sourced from Markdown PRD Appendix One. Q39 uses shared because the PRD states both ingredients are the same.",
+  "half_success_hints": [
+    {
+      "id": "hint-Q01",
+      "issue_id": "Q01",
+      "type": "dual",
+      "ingredient_a_id": "coffee-beans",
+      "ingredient_b_id": "evaporated-milk",
+      "hint_a": "苦味倒是有了，可那层伪装温柔的白色泡沫呢？没有它，心脏跳得太孤单。",
+      "hint_b": "奶白泡沫来了，但缺少能让心脏狂跳的苦味。温柔的假面需要苦底撑着。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q02",
+      "issue_id": "Q02",
+      "type": "dual",
+      "ingredient_a_id": "rice-roll",
+      "ingredient_b_id": "curry-sauce",
+      "hint_a": "洁白的粉皮已到位，但最浓稠最脏的酱汁还没淋上来。没有淹没，就不算堕落。",
+      "hint_b": "浓稠脏酱汁有了，可那块洁白无瑕的本体呢？没有粉皮，酱汁无处施展。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q03",
+      "issue_id": "Q03",
+      "type": "dual",
+      "ingredient_a_id": "thick-noodles",
+      "ingredient_b_id": "fish-ball",
+      "hint_a": "基础碳水对了，但廉价的肉球还没滚进来。没有鱼蛋，你拿什么机械续命？",
+      "hint_b": "肉球来了，可最基础的碳水还没下锅。没有粗面，能量链条断了。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q04",
+      "issue_id": "Q04",
+      "type": "dual",
+      "ingredient_a_id": "thick-noodles",
+      "ingredient_b_id": "rice-roll",
+      "hint_a": "一种重复碳水有了，可另一种同样无聊的肠粉呢？双倍乏味才够味。",
+      "hint_b": "苍白肠粉到场，但缺少另一种平淡碳水。营养毫无波澜，还差一半。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q05",
+      "issue_id": "Q05",
+      "type": "dual",
+      "ingredient_a_id": "lemon-slice",
+      "ingredient_b_id": "strong-tea",
+      "hint_a": "清冷的酸味对了，可刮油的苦涩还没倒进来。委屈的配方缺一不可。",
+      "hint_b": "苦涩液体有了，但酸味柠檬片呢？没有酸，清冷感全无。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q06",
+      "issue_id": "Q06",
+      "type": "dual",
+      "ingredient_a_id": "strong-tea",
+      "ingredient_b_id": "pineapple-bun-base",
+      "hint_a": "最苦的液体已备，可甜美酥脆的外壳呢？面具缺一半，戴不牢。",
+      "hint_b": "酥脆外壳有了，但最苦的液体还没端来。没有苦底，甜就变成虚伪。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q07",
+      "issue_id": "Q07",
+      "type": "dual",
+      "ingredient_a_id": "pineapple-bun-base",
+      "ingredient_b_id": "butter",
+      "hint_a": "酥脆底座正确，可那块厚重危险的油脂呢？没有黄油，安稳跳不出黏腻。",
+      "hint_b": "油脂到位，但缺少酥脆底座。没有面包，油腻无处附着。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q08",
+      "issue_id": "Q08",
+      "type": "dual",
+      "ingredient_a_id": "strong-tea",
+      "ingredient_b_id": "coffee-beans",
+      "hint_a": "一种彻夜难眠的苦水对了，还差另一种更苦的粉末。让它们在你胃里打架。",
+      "hint_b": "咖啡苦味有了，但浓茶的涩还没来。双倍失眠，缺一味都不行。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q09",
+      "issue_id": "Q09",
+      "type": "dual",
+      "ingredient_a_id": "tangyuan",
+      "ingredient_b_id": "ginger-juice",
+      "hint_a": "假装圆满的白色球体有了，但滚烫的辛辣还没来。没有姜汁，烫只烫一半。",
+      "hint_b": "辛辣姜汁到位，可那几颗软糯白球呢？没有汤圆，辣得没目标。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q10",
+      "issue_id": "Q10",
+      "type": "dual",
+      "ingredient_a_id": "fish-ball",
+      "ingredient_b_id": "curry-sauce",
+      "hint_a": "弹牙鱼蛋已在，但辛辣黄色酱汁还没淋上。嫉妒需要完整包裹。",
+      "hint_b": "浓稠咖喱来了，可圆润鱼蛋呢？没有球体，酱汁裹空气。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q11",
+      "issue_id": "Q11",
+      "type": "dual",
+      "ingredient_a_id": "mango",
+      "ingredient_b_id": "coconut-milk",
+      "hint_a": "热带香气有了，但纯白醇厚的液体还没倒。阳光需要奶浴才温柔。",
+      "hint_b": "白色椰浆到场，可金色芒果呢？没有果香，奶浴太寡淡。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q12",
+      "issue_id": "Q12",
+      "type": "dual",
+      "ingredient_a_id": "beef-brisket",
+      "ingredient_b_id": "radish",
+      "hint_a": "难嚼肉块对了，但最廉价吸油的萝卜呢？没有它，油脂无处安放。",
+      "hint_b": "萝卜到位，可厚重牛腩还没来。没有肉，萝卜只是清汤。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q13",
+      "issue_id": "Q13",
+      "type": "dual",
+      "ingredient_a_id": "radish",
+      "ingredient_b_id": "beef-brisket",
+      "hint_a": "土里长的根茎对了，但浓郁高汤里的牛腩呢？归属需要互相熬煮。",
+      "hint_b": "牛腩来了，可萝卜还没下锅。没有根茎，高汤缺了底味。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q14",
+      "issue_id": "Q14",
+      "type": "dual",
+      "ingredient_a_id": "rice-roll",
+      "ingredient_b_id": "radish",
+      "hint_a": "最单调的碳水有了，可苍白的根茎呢？空虚需要双倍苍白。",
+      "hint_b": "苍白萝卜到场，但单调肠粉还没来。没有碳水，苍白不够厚。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q15",
+      "issue_id": "Q15",
+      "type": "dual",
+      "ingredient_a_id": "strong-tea",
+      "ingredient_b_id": "lemon-slice",
+      "hint_a": "清冷尖刻的液体对了，但酸涩的另一半还没加。真相从来不是单数。",
+      "hint_b": "酸涩柠檬片有了，可苦涩浓茶呢？没有茶底，酸得没灵魂。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q16",
+      "issue_id": "Q16",
+      "type": "dual",
+      "ingredient_a_id": "pomelo",
+      "ingredient_b_id": "sago",
+      "hint_a": "苦涩外皮剥开了，可里面那堆拼命聚在一起的透明珠子呢？孤独需要西米作伴。",
+      "hint_b": "透明珠子有了，但苦涩柚子肉还没来。没有果粒，空有颗粒感。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q17",
+      "issue_id": "Q17",
+      "type": "dual",
+      "ingredient_a_id": "coconut-milk",
+      "ingredient_b_id": "tangyuan",
+      "hint_a": "一种醇厚白色对了，可另一种同样浓郁的汤圆呢？融合需要两方都到场。",
+      "hint_b": "软糯汤圆到位，但白色椰浆还没倒。没有奶香，黏腻无解。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q18",
+      "issue_id": "Q18",
+      "type": "dual",
+      "ingredient_a_id": "strong-tea",
+      "ingredient_b_id": "coffee-beans",
+      "hint_a": "苦涩液体已在，可更苦涩的粉末呢？反胃就要双倍剂量。",
+      "hint_b": "咖啡粉末有了，但浓茶的涩还没来。没有茶，苦得单一。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q19",
+      "issue_id": "Q19",
+      "type": "dual",
+      "ingredient_a_id": "tangyuan",
+      "ingredient_b_id": "mango",
+      "hint_a": "黏糊糊的拥抱有了，但熟透的金色回忆还没切块。甜到腐烂要成双。",
+      "hint_b": "金色芒果到位，可软糯汤圆呢？没有黏糊，甜得没依托。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q20",
+      "issue_id": "Q20",
+      "type": "dual",
+      "ingredient_a_id": "ginger-juice",
+      "ingredient_b_id": "mango",
+      "hint_a": "让你眼眶发热的火辣对了，可远去的金色香气呢？哭完需要另一半调味。",
+      "hint_b": "金色香气有了，但火辣姜汁还没来。没有冲撞，眼泪流不出。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q21",
+      "issue_id": "Q21",
+      "type": "dual",
+      "ingredient_a_id": "pineapple-bun-base",
+      "ingredient_b_id": "butter",
+      "hint_a": "面包底座对了，可那块会腻的黄色油脂呢？没有黄油，不完美的搭配缺一半。",
+      "hint_b": "油脂到位，但没了它就不行的面包呢？没有底座，油腻无处寄生。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q22",
+      "issue_id": "Q22",
+      "type": "dual",
+      "ingredient_a_id": "sago",
+      "ingredient_b_id": "coconut-milk",
+      "hint_a": "碎裂的透明残片有了，可那片纯白海洋还没端来。重组需要跳进液体。",
+      "hint_b": "纯白椰浆到场，但透明西米呢？没有碎片，海洋太安静。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q23",
+      "issue_id": "Q23",
+      "type": "dual",
+      "ingredient_a_id": "thick-noodles",
+      "ingredient_b_id": "beef-brisket",
+      "hint_a": "承载的底座对了，但最沉重最难嚼的肉块呢？讨好需要负重来压。",
+      "hint_b": "难嚼牛腩到位，可粗面还没下锅。没有面条，肉块无处落座。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q24",
+      "issue_id": "Q24",
+      "type": "dual",
+      "ingredient_a_id": "lemon-slice",
+      "ingredient_b_id": "mango",
+      "hint_a": "外面极度的酸拿来了，可里面极度的甜还没剥开。壳与心要同时出现。",
+      "hint_b": "里面极度的甜有了，但外面极度的酸呢？没有酸壳，甜会腻。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q25",
+      "issue_id": "Q25",
+      "type": "dual",
+      "ingredient_a_id": "strong-tea",
+      "ingredient_b_id": "evaporated-milk",
+      "hint_a": "深夜的茶色有了，可清晨的白色淡奶呢？天亮需要黑白相撞。",
+      "hint_b": "白色淡奶来了，但深夜的茶色还没倒。没有茶，奶只是昏睡。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q26",
+      "issue_id": "Q26",
+      "type": "dual",
+      "ingredient_a_id": "thick-noodles",
+      "ingredient_b_id": "fish-ball",
+      "hint_a": "毫无味道的碳水对了，可另一颗同样乏味的肉球呢？意义是你自己加戏。",
+      "hint_b": "肉球到位，但平淡粗面还没来。没有碳水，肉球飘着没根。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q27",
+      "issue_id": "Q27",
+      "type": "dual",
+      "ingredient_a_id": "coffee-beans",
+      "ingredient_b_id": "lemon-slice",
+      "hint_a": "极度的清醒（咖啡）对了，还差一点酸涩的视角（柠檬）。切断谎言需要两味。",
+      "hint_b": "酸涩视角有了，但清醒的苦味还没来。没有咖啡，酸得迷路。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q28",
+      "issue_id": "Q28",
+      "type": "dual",
+      "ingredient_a_id": "ginger-juice",
+      "ingredient_b_id": "tangyuan",
+      "hint_a": "辣得满头大汗的姜水有了，可那几颗软弱白嫩的心呢？未来需要保护对象。",
+      "hint_b": "软弱白嫩的心到位，但火辣姜水还没熬。没有辣，保护无力。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q29",
+      "issue_id": "Q29",
+      "type": "dual",
+      "ingredient_a_id": "radish",
+      "ingredient_b_id": "rice-roll",
+      "hint_a": "一种苍白底层食材对了，可另一种同样廉价的肠粉呢？挤就挤一对。",
+      "hint_b": "苍白肠粉到场，但土里长的萝卜还没来。没有根茎，苍白太单调。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q30",
+      "issue_id": "Q30",
+      "type": "dual",
+      "ingredient_a_id": "pomelo",
+      "ingredient_b_id": "mango",
+      "hint_a": "树上的阳光果酸拿来了，还差另一种热带香气。让味觉旅行要结伴。",
+      "hint_b": "金色芒果到位，但苦涩柚子呢？没有酸，甜得没层次。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q31",
+      "issue_id": "Q31",
+      "type": "dual",
+      "ingredient_a_id": "strong-tea",
+      "ingredient_b_id": "butter",
+      "hint_a": "刮油的涩味对了，但肥腻的时间块还没放。透支需要双主角。",
+      "hint_b": "肥腻黄油有了，可刮油的浓茶呢？没有茶，油腻无处消解。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q32",
+      "issue_id": "Q32",
+      "type": "dual",
+      "ingredient_a_id": "coffee-beans",
+      "ingredient_b_id": "strong-tea",
+      "hint_a": "一种透支的苦水对了，另一种更苦的茶叶呢？愚蠢交换要两败俱伤。",
+      "hint_b": "苦涩茶叶到位，但咖啡粉末还没撒。没有咖啡，苦得不够猛。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q33",
+      "issue_id": "Q33",
+      "type": "dual",
+      "ingredient_a_id": "beef-brisket",
+      "ingredient_b_id": "radish",
+      "hint_a": "厚重结实的脂肪对了，可难嚼的肉块呢？幻觉需要双倍分量。",
+      "hint_b": "萝卜到位，但牛腩还没来。没有肉，萝卜吸不到油脂。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q34",
+      "issue_id": "Q34",
+      "type": "dual",
+      "ingredient_a_id": "mango",
+      "ingredient_b_id": "tangyuan",
+      "hint_a": "金色的美梦有了，但软糯的幻想底座呢？暴富需要金垫子。",
+      "hint_b": "软糯幻想到位，可金色芒果还没切。没有金，梦不够亮。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q35",
+      "issue_id": "Q35",
+      "type": "dual",
+      "ingredient_a_id": "ginger-juice",
+      "ingredient_b_id": "radish",
+      "hint_a": "土里长的辣味对了，可另一种土里长的苍白呢？转机埋在地下，得挖一双。",
+      "hint_b": "苍白萝卜到位，但火辣姜汁还没来。没有辣，萝卜只是水。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q36",
+      "issue_id": "Q36",
+      "type": "dual",
+      "ingredient_a_id": "strong-tea",
+      "ingredient_b_id": "coffee-beans",
+      "hint_a": "苦味之一对了，还差另一种涩味。熬到回甘需要双苦联手。",
+      "hint_b": "咖啡苦味有了，但浓茶的涩还没来。没有双苦，甘不会来。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q37",
+      "issue_id": "Q37",
+      "type": "dual",
+      "ingredient_a_id": "radish",
+      "ingredient_b_id": "lemon-slice",
+      "hint_a": "老实的根茎对了，但清冷的酸味还没切。清理系统需要两样扫帚。",
+      "hint_b": "清冷酸味有了，可老实萝卜呢？没有根茎，酸得没目标。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q38",
+      "issue_id": "Q38",
+      "type": "dual",
+      "ingredient_a_id": "coconut-milk",
+      "ingredient_b_id": "tangyuan",
+      "hint_a": "云朵一样柔软的奶脂对了，可温润的汤圆呢？软弱需要双倍拥抱。",
+      "hint_b": "温润汤圆到位，但云朵椰浆还没倒。没有奶，黏腻缺润滑。",
+      "shared_hint": null
+    },
+    {
+      "id": "hint-Q39",
+      "issue_id": "Q39",
+      "type": "shared",
+      "ingredient_a_id": "fish-ball",
+      "ingredient_b_id": "fish-ball",
+      "hint_a": "一颗没脑子的圆形肉球对了，可另一颗同样的呢？愚蠢要双份才够味。",
+      "hint_b": "一颗没脑子的圆形肉球对了，可另一颗同样的呢？愚蠢要双份才够味。",
+      "shared_hint": "一颗没脑子的圆形肉球对了，可另一颗同样的呢？愚蠢要双份才够味。"
+    },
+    {
+      "id": "hint-Q40",
+      "issue_id": "Q40",
+      "type": "dual",
+      "ingredient_a_id": "pomelo",
+      "ingredient_b_id": "mango",
+      "hint_a": "苦涩的皮剥开了，可金色的惊喜还没挖出来。出门的理由必须成对。",
+      "hint_b": "金色惊喜有了，但苦涩柚子呢？没有酸，出门像梦游。",
+      "shared_hint": null
+    }
+  ]
+}

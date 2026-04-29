@@ -1,0 +1,581 @@
+{
+  "ui": {
+    "languageButtonToEnglish": "EN",
+    "languageButtonToChinese": "中",
+    "chooseMood": "Choose your mood...",
+    "selected": "Selected:",
+    "get": "Get!",
+    "selectAgain": "Select Again",
+    "home": "Home",
+    "return": "Return",
+    "drawCards": "Draw",
+    "continue": "Continue",
+    "backToDefaultCards": "Back to five cards",
+    "backToCategories": "Back to categories",
+    "backToDirections": "Back to directions",
+    "categoryTitle": "Choose a mood direction",
+    "categorySubtitle": "Let the cat master sniff tonight's problem by type.",
+    "categoryEmpty": "The full deck is still being sorted. Try the five default worries for now.",
+    "subcategoryEmpty": "The cards in this direction are still being sorted.",
+    "issueSelectionTitle": "Pick a specific mood card",
+    "issueCardSubtitle": "Let the cat master sniff this",
+    "categoryCount": "{directions} directions / {cards} mood cards",
+    "subcategoryCount": "{cards} mood cards",
+    "tasteCatLine": "Meow... this is a flavor riddle.",
+    "shopStreetSubtitle": "Follow \"{prompt}\" to the right midnight shop.",
+    "shopStreetKicker": "Midnight Three-Shop Street",
+    "tonightFlavorHere": "Tonight's flavor is here",
+    "targetShopAria": "{shop}, tonight's flavor is here",
+    "shopAria": "{shop}",
+    "shopAnchor": "Go to {shop}. Offer two ingredients.",
+    "issueEyebrow": "The cat master heard that",
+    "shopMeta": "Chef: {npc} / Door: {door}",
+    "ingredientRackTitle": "Ingredient Rack",
+    "ingredientRackNote": "Pick two for the counter",
+    "counterTitle": "Offering Counter",
+    "counterNote": "Tap a slot to take it back",
+    "counterHint": "Fill both slots, then ring the counter bell for the cat master.",
+    "slotLabel": "Offering Slot {index}",
+    "slotEmpty": "Waiting for ingredient",
+    "submitLabel": "Ring bell: Ready",
+    "selectedCount": "Selected x{count}",
+    "removeIngredient": "Remove {ingredient}",
+    "chooseIngredient": "Choose {ingredient}",
+    "chooseIngredientWithDescription": "Choose {ingredient}: {description}",
+    "shopkeeperInteract": "Talk to {npc}",
+    "shopkeeperGeneric": "shop cat",
+    "mysteryIngredient": "Mystery Ingredient",
+    "midnightShop": "Midnight Shop",
+    "shopDefaultKicker": "Midnight Stall"
+  },
+  "intro": {
+    "line1": "(Yawn)... Same hour. Same smell.",
+    "line2": "Tell me, two-legged creature, what is keeping you awake tonight?"
+  },
+  "categories": {
+    "职场与学业": "Work & Study",
+    "关系与亲密": "Bonds & Intimacy",
+    "生活节奏": "Daily Rhythm",
+    "欲望与金钱": "Desire & Money",
+    "自我与情绪": "Self & Emotion"
+  },
+  "subcategories": {
+    "Deadline / 绩效焦虑": "Deadlines & Performance",
+    "创作卡壳": "Creative Block",
+    "重复劳动": "Repetitive Work",
+    "友情边界": "Friendship Boundaries",
+    "情绪面具": "Emotional Mask",
+    "改变与冒险": "Change & Risk",
+    "报复性熬夜": "Revenge Bedtime",
+    "嫉妒 / 同辈压力": "Jealousy & Peer Pressure",
+    "自我价值": "Self-Worth",
+    "欲望平衡": "Desire Balance",
+    "归属感缺失": "Lack of Belonging",
+    "孤独感": "Loneliness",
+    "真实与表演": "Truth & Performance",
+    "社交疲惫": "Social Fatigue",
+    "关系消耗": "Draining Relationships",
+    "旧关系牵扯": "Old Attachments",
+    "自我接纳": "Self-Acceptance",
+    "自我修复": "Self-Repair",
+    "讨好与边界": "People-Pleasing & Boundaries",
+    "外部评价": "Outside Judgment",
+    "深夜情绪": "Midnight Feelings",
+    "平淡与意义": "Blandness & Meaning",
+    "信息流比较": "Feed Comparison",
+    "未来焦虑": "Future Anxiety",
+    "空间压迫": "Cramped Space",
+    "空间与远方": "Space & Faraway Places",
+    "休息与时间": "Rest & Time",
+    "金钱欲望": "Money Hunger",
+    "金钱幻想": "Money Fantasy",
+    "低谷转机": "Rock Bottom Turnaround",
+    "过度担心": "Over-Worrying",
+    "疲惫与脆弱": "Tiredness & Fragility",
+    "过度思考": "Overthinking",
+    "出门与行动": "Going Out & Acting"
+  },
+  "issues": {
+    "Q01": "Deadline Overload",
+    "Q02": "Fear of Starting",
+    "Q03": "Mechanical Survival Mode",
+    "Q04": "Numb From Repetition",
+    "Q05": "Hurt by a Lemon Friend",
+    "Q06": "The Gentle Mask Stayed On Too Long",
+    "Q07": "Wanting to Escape Safety",
+    "Q08": "Revenge Bedtime Spiral",
+    "Q09": "Peer Comparison Fever",
+    "Q10": "Jealous Right This Second",
+    "Q11": "Not Feeling Shiny Enough",
+    "Q12": "Desire That Won't Fill Up",
+    "Q13": "No Sense of Belonging",
+    "Q14": "Lonely Empty Room",
+    "Q15": "Performed Authenticity",
+    "Q16": "Hollow in a Crowd",
+    "Q17": "Waiting for Someone on Your Frequency",
+    "Q18": "A Relationship Bitter Enough to Nauseate",
+    "Q19": "Stuck to Old Memories",
+    "Q20": "Still Holding the Empty Bowl After Crying",
+    "Q21": "Doubting Your Personality Flaws",
+    "Q22": "Reassembling After Cracking",
+    "Q23": "People-Pleasing Until It Hurts",
+    "Q24": "Sour Outside, Sweet Inside Review Anxiety",
+    "Q25": "Midnight Emptiness",
+    "Q26": "Life Has No Flavor",
+    "Q27": "Scrolling Other People's Highlight Slices",
+    "Q28": "Afraid Before the Future Arrives",
+    "Q29": "Too Cramped to Breathe",
+    "Q30": "Let the Taste Buds Travel First",
+    "Q31": "Time Squeezed Dry",
+    "Q32": "Trading Sleep for Freedom",
+    "Q33": "Money-and-Desire Broth",
+    "Q34": "Dreaming of Getting Rich Overnight",
+    "Q35": "So Unlucky You Need a Turnaround",
+    "Q36": "Waiting for Sweetness After Maximum Bitter",
+    "Q37": "Fear of the Unknown and Control Hunger",
+    "Q38": "Strong Too Long, Wanting to Go Soft",
+    "Q39": "Too Smart to Be Happy",
+    "Q40": "Need a Reason to Go Outside"
+  },
+  "riddles": {
+    "Q01": "\"Bring me the bitterness that makes a heart race, then cover it with white foam pretending to be gentle.\"",
+    "Q02": "\"Fetch the cleanest, most flawless body, then drown it in the thickest, dirtiest sauce.\"",
+    "Q03": "\"Bring the plainest carbs and the cheapest meat balls. Mechanical fuel for people like you.\"",
+    "Q04": "\"Stack two bland, repetitive carbs together, just like another nutrient-free day.\"",
+    "Q05": "\"Mix a cold, clean sourness with oil-cutting bitterness. That is what grievance tastes like.\"",
+    "Q06": "\"Take the bitterest liquid and pair it with the sweetest, crispiest shell. That is a mask.\"",
+    "Q07": "\"On the crispiest base, place a heavy, tempting, dangerous slab of fat.\"",
+    "Q08": "\"Two bitter waters that keep humans awake all night collide. Drink this and you won't need choices anymore.\"",
+    "Q09": "\"A boiling spicy bowl hiding a few white balls pretending to be whole. Hot, isn't it?\"",
+    "Q10": "\"Round, springy balls wrapped in thick yellow spice. That is jealousy, obviously.\"",
+    "Q11": "\"Sun-scented tropical things drowned in rich white liquid. They were born under actual light.\"",
+    "Q12": "\"Fetch the toughest meat with tendon and the cheapest plant that has soaked up all the oil.\"",
+    "Q13": "\"A cheap root from the dirt, stewed soft in rich broth. It belongs here now.\"",
+    "Q14": "\"The plainest carb and the palest root squeezed into one tiny bowl. Familiar, no?\"",
+    "Q15": "\"This cat wants a cold, sharp liquid, sour and astringent like the truth you refuse to stare at.\"",
+    "Q16": "\"Peel away the bitter skin; inside are tiny transparent beads trying desperately to gather.\"",
+    "Q17": "\"Find two rich, thick whites and see whether they can truly blend in one bowl.\"",
+    "Q18": "\"Bitter liquid with even more bitter powder. If you're already nauseous, why not pour it out?\"",
+    "Q19": "\"A sticky hug and a golden memory gone overripe. Sweet, yes. Also nearly rotten.\"",
+    "Q20": "\"A heat that warms the eyes, and a golden scent already far away. Eat it, then forget it.\"",
+    "Q21": "\"This yellow fat is cloying alone, but the bun needs it. Do you get it now?\"",
+    "Q22": "\"Transparent shards can come alive again if they leap into the white ocean.\"",
+    "Q23": "\"Since you adore carrying other people, bring me the heaviest, hardest thing to chew.\"",
+    "Q24": "\"Extreme sour outside, extreme sweet inside. Stop confusing your shell with your heart.\"",
+    "Q25": "\"Night-colored tea and morning-white milk. Finish it, and dawn will have the decency to arrive.\"",
+    "Q26": "\"Flavorless carbs piled on carbs. Meaning? Meaning is the chili sauce you add at the end.\"",
+    "Q27": "\"You need brutal clarity and one sour angle. Cut through those glowing lies.\"",
+    "Q28": "\"Make a bowl of sweat-inducing spicy water to protect those soft, pale little hearts.\"",
+    "Q29": "\"Two cheap, pale ingredients from the bottom shelf. So close together. So cramped.\"",
+    "Q30": "\"Bring me the tree-grown scents of sun and fruit acid. It is much too stuffy here.\"",
+    "Q31": "\"Use oil-cutting astringency to force down that greasy chunk of time. You are overdrawing yourself.\"",
+    "Q32": "\"Humanity's dumbest trade: borrowed energy for one bitter sip of alertness.\"",
+    "Q33": "\"Heavy, sturdy, hallucination-grade fat with tough meat. Pretend it feels safe.\"",
+    "Q34": "\"A golden daydream over a soft, sticky fantasy. Bring the gift that looks most like gold.\"",
+    "Q35": "\"A heat grown from the dirt collides with another pale thing from the dirt. Your turnaround is underground.\"",
+    "Q36": "\"Bitter on bitter, astringent inside astringent. If life gave you no exit, steep a little longer.\"",
+    "Q37": "\"Cold sourness and an honest root. Time to clean your internal system.\"",
+    "Q38": "\"Bring this cat comfort as soft as clouds and as warm as milk fat. Quickly.\"",
+    "Q39": "\"Bring double the brainless bouncing round meat balls. Yes, that is you people.\"",
+    "Q40": "\"Peel the bitter skin and look for the golden surprise. The sun has not set yet.\""
+  },
+  "shops": {
+    "dessert-station": {
+      "name": "Insomnia Dessert Stop",
+      "shortName": "Dessert Stop",
+      "description": "A sweet shelter for soft, chewy midnight feelings.",
+      "npc": "Ragdoll chef",
+      "doorType": "glass sliding door"
+    },
+    "ice-room": {
+      "name": "Midnight Ice Cafe",
+      "shortName": "Ice Cafe",
+      "description": "Hong Kong comfort, bitter and warm in the same breath.",
+      "npc": "orange tabby chef",
+      "doorType": "wooden swing door"
+    },
+    "street-stall": {
+      "name": "Neon Dai Pai Dong",
+      "shortName": "Dai Pai Dong",
+      "description": "Late-night smoke, heat, and a suspicious chance at luck.",
+      "npc": "tuxedo chef",
+      "doorType": "metal roll-up gate"
+    },
+    "失眠甜品站": "Insomnia Dessert Stop",
+    "零点冰室": "Midnight Ice Cafe",
+    "霓虹大排档": "Neon Dai Pai Dong"
+  },
+  "ingredients": {
+    "咖啡豆": "Coffee Beans",
+    "黑白淡奶": "Evaporated Milk",
+    "浓茶": "Strong Tea",
+    "柠檬片": "Lemon Slice",
+    "菠萝包底": "Pineapple Bun Base",
+    "黄油": "Butter",
+    "肠粉": "Rice Noodle Roll",
+    "咖喱酱": "Curry Sauce",
+    "粗面": "Thick Noodles",
+    "鱼蛋": "Fish Balls",
+    "牛腩": "Beef Brisket",
+    "萝卜": "Radish",
+    "汤圆": "Glutinous Rice Balls",
+    "姜汁": "Ginger Juice",
+    "芒果": "Mango",
+    "椰浆": "Coconut Milk",
+    "柚子": "Pomelo",
+    "西米": "Sago"
+  },
+  "ingredientDescriptions": {
+    "咖啡豆": "Extreme alertness, used to cut through midnight lies.",
+    "黑白淡奶": "A gentle mask covering life's bitter base note.",
+    "浓茶": "Struck eight times to lock in old bitterness.",
+    "柠檬片": "Sharp sourness that gives truth a proper edge.",
+    "菠萝包底": "Sweet and crisp, the perfect shell for a mask.",
+    "黄油": "Heavy and risky; it lets stability dive into stickiness.",
+    "肠粉": "White and plain; emptiness likes pale filler.",
+    "咖喱酱": "Thick, dirty sauce that instantly corrupts the ordinary.",
+    "粗面": "Basic carbs, the chain belt of mechanical survival.",
+    "鱼蛋": "Brainless meat balls. Meaning sold separately.",
+    "牛腩": "Hard-to-chew fat, the price of carrying too much.",
+    "萝卜": "An oil-soaking root, humbly absorbing desire.",
+    "汤圆": "Pretending to be whole, wrapped in a sticky hug.",
+    "姜汁": "Hot and spicy, the collision that warms your eyes.",
+    "芒果": "Golden fragrance, a dream ripe enough to rot.",
+    "椰浆": "A white ocean to drown in rich tenderness.",
+    "柚子": "Bitter peel; only after opening does the sour heart show.",
+    "西米": "Transparent fragments; loneliness needs little companions."
+  },
+  "foods": {
+    "Q01": "Hot Milk Tea",
+    "Q02": "Curry Rice Noodle Rolls",
+    "Q03": "Fish Ball Thick Noodles",
+    "Q04": "Double Carb Combo",
+    "Q05": "Iced Lemon Tea",
+    "Q06": "Pineapple Bun Set",
+    "Q07": "Hot-and-Cold Pineapple Bun",
+    "Q08": "Yuenyeung Milk Tea",
+    "Q09": "Ginger Rice Balls",
+    "Q10": "Curry Fish Balls",
+    "Q11": "Mango Coconut Sago",
+    "Q12": "Radish Beef Brisket",
+    "Q13": "Stewed Radish Beef Brisket",
+    "Q14": "Plain Roll Radish Cake",
+    "Q15": "Salted Lemon 7-Up",
+    "Q16": "Pomelo Sago",
+    "Q17": "Coconut Rice Balls",
+    "Q18": "Bitter Yuenyeung",
+    "Q19": "Mango Rice Balls",
+    "Q20": "Ginger Mango Milk Curd",
+    "Q21": "Golden Pineapple Bun",
+    "Q22": "Coconut Sago",
+    "Q23": "Beef Brisket Tossed Noodles",
+    "Q24": "Lemon Mango",
+    "Q25": "Silk-Stocking Milk Tea",
+    "Q26": "Fish Ball Rice Noodles",
+    "Q27": "Lemon Coffee",
+    "Q28": "Ginger Rice Balls",
+    "Q29": "Radish Rice Noodle Rolls",
+    "Q30": "Mango Pomelo Sago",
+    "Q31": "Tea Without Milk",
+    "Q32": "Devil's Special Drink",
+    "Q33": "Chu Hou Beef Brisket",
+    "Q34": "Golden Plenty Bowl",
+    "Q35": "Ginger Radish",
+    "Q36": "Bitter Ends, Sweet Returns",
+    "Q37": "Lemon Radish",
+    "Q38": "Cloud Coconut Rice Balls",
+    "Q39": "Double Fish Balls",
+    "Q40": "Pomelo Mango Bowl"
+  },
+  "wisdom": {
+    "Q01": "Do not borrow tomorrow to patch today's hole. Finish this cup, then sleep. If the sky falls, someone taller can hold it. Your job is to snore.",
+    "Q02": "Afraid of ruining the canvas, so you never make a mark? In this city, rice rolls untouched by sauce have no soul. Do not live like blank paper. Cats shred that.",
+    "Q03": "Even a screw has bite. If life feels dull, add chili sauce tomorrow. Either endure the plainness or cry from the spice. Both count as being alive.",
+    "Q04": "Repetition is not scary. Forgetting you can choose the sauce ratio is. If it is all boring carbs, let them collide and make a double-sized burp.",
+    "Q05": "Lemons are sour. You cannot boil them sweet. Pick out the sourness and protect yourself. As for that lemon-like friend, let them sour someone else's cup.",
+    "Q06": "Wear a mask too long and it sticks. Here, you may peel off that crispy shell. At midnight, nobody docks your pay for having a bitter center.",
+    "Q07": "If you want to leave safety, endure the butter melting into uncertainty. Cats landing from high shelves are not always elegant either. Elegance is for witnesses. Pleasure is yours.",
+    "Q08": "The price of forced alertness is total insomnia. If you cannot choose one road, stir both together and empty your head in this ridiculous night.",
+    "Q09": "You are jealous because you think everyone is in the same bowl. You are ginger, they are sugar. No need to compare. Stay hot enough, and someone will sweat for you.",
+    "Q10": "The kibble in the window does smell good, but do not forget the fish balls in your paw. Jealousy shrinks your pupils until you miss the sunlight behind you.",
+    "Q11": "Some ingredients are born in sunlight. But in this sweet soup, everyone ends up in the stomach. Being sago is fine. At least you can roll freely through the white sea.",
+    "Q12": "Desire never fills up, like brisket that never chews through. Find balance before grease coats your heart. A cat does not chase ten cans. Its stomach fits one.",
+    "Q13": "You think you are plain as radish? That is exactly what absorbs the broth. You already belong here. You just have not noticed how flavorful you have become.",
+    "Q14": "Loneliness is not the problem. Trying to fill it with hollow things is. Eat something solid, like carbs squeezed together, and forget the empty room for a while.",
+    "Q15": "If you can perform it for a lifetime, it becomes true enough. Stop staring at the bitterness. In this fictional city, if the act holds, you are the realest cup.",
+    "Q16": "Many gatherings look lively and bite hollow. Loneliness can be advanced self-protection. If you do not want that crowd, leave it unopened like a pomelo.",
+    "Q17": "Same frequency is not found. It is simmered slowly. Do not rush the heat. If your heart stays soft, you will meet the white broth willing to hold you.",
+    "Q18": "If you are unhappy, stop torturing each other. This nausea-bitter relationship leaves nothing but insomnia. Push it off the table and enjoy the sound.",
+    "Q19": "The past was sweet because memory added a filter. Do not let yesterday's syrup glue today's paws. Keep looking back and you will hit the cat tree.",
+    "Q20": "Clashing flavors can make eyes water. Cry over this bowl, then pour it out. Stop licking the dried empty bowl. Tomorrow's can may be a new flavor.",
+    "Q21": "Do not despise your grease. Those imperfect traits give you a silhouette. Without butter, a pineapple bun is just a very ordinary lump of bread.",
+    "Q22": "Breaking can also be recombining. Give yourself a chance to leap into something new. Sago starts shattered and transparent, then shines inside coconut milk.",
+    "Q23": "If you are hard to chew, grow a few edges and stand firm. Then people will not swallow you casually and blame you for getting stuck in their teeth.",
+    "Q24": "Outside judgment is sour. Inner longing is sweet. Do not make yourself bitter for someone else's review. Even if the world calls you lemon, remember the mango inside.",
+    "Q25": "Do not make decisions at midnight. Tea-dark hours make humans stupid. Drink, sleep, and when the sun comes up, emptiness will blow away like shed fur.",
+    "Q26": "Life is bland by default. Your choices and experiences are the chili sauce that colors it. If you stop adding drama, this bowl is actually pretty stable.",
+    "Q27": "You have eaten too many slices of other people's lives. Put down the glowing slab and feel the food's warmth. Their feast or tree bark is not worth your 5.5 seconds.",
+    "Q28": "The future has not happened yet. What are you scared of? Warm your stomach with ginger and finish the roundness. A full stomach gives the spine ideas.",
+    "Q29": "The room may be narrow, but flavor can be wide. Light something nice for yourself. A cat with a cardboard box would call any place a palace.",
+    "Q30": "If you cannot go out, let your taste buds travel first. Here is sunlight, tropics, and a little sourness. When the rain stops, we can go lie down in the park.",
+    "Q31": "Time is not saved. It is stolen back. Even five minutes can be empty on purpose. Sleep sixteen hours like me and you will discover the elegant absence of problems.",
+    "Q32": "Freedom bought with sleeplessness is poisonous. Go sleep. Dream freedom has unlimited refills. If you must overdraw something, try the neighbor's cat food first.",
+    "Q33": "Money is broth. Desire is brisket. You do not need endless fat, you need digestion. Hoarding money without using it is like catching a mouse only to toy with it.",
+    "Q34": "The thrill of imagining a jackpot is real, but so is dessert money. Feed yourself before dreaming. If you dream of a gold mountain, bring me. I want golden cans.",
+    "Q35": "Once you hit bottom, every road points up. Like radish, the deeper it is buried, the better it tastes. Do not sprout too soon. Drink more underground water first.",
+    "Q36": "Extreme bitterness turns sweet. If this is hard to swallow, you are changing at the deepest level. This bitter path leads to the catnip forest.",
+    "Q37": "Fear comes from wanting to control the unknown. Starting today: drink water, walk more, pet a cat. Throw complicated thoughts in the trash, where they belong.",
+    "Q38": "You have held up for long enough. Be soft for a while. Sink into the sofa and think of nothing. You are not saving the world. You are a two-legged creature who needs a hug.",
+    "Q39": "Being a little dumb is fine. The not-too-clever survive this mad city longer. Look at these two fish balls. They know nothing but bounce, and they are happy.",
+    "Q40": "Even going out just to buy a mango counts. Let the wind hit your face. The street cat may be waiting. It may ignore you, but that beats sighing at a screen."
+  },
+  "halfSuccessHints": {
+    "Q01": {
+      "咖啡豆": "The bitterness is here, but where is the white foam pretending to be gentle? Without it, your heartbeat is lonely.",
+      "黑白淡奶": "The milky foam has arrived, but the racing bitter base is missing. A gentle mask needs bitterness underneath."
+    },
+    "Q02": {
+      "肠粉": "The white rice sheet is ready, but the thick dirty sauce has not drowned it yet. No drowning, no glorious corruption.",
+      "咖喱酱": "The thick dirty sauce is here, but where is the flawless white body? Sauce needs a stage."
+    },
+    "Q03": {
+      "粗面": "Basic carbs are correct, but the cheap meat balls have not rolled in. Without fish balls, what fuels this mechanical survival?",
+      "鱼蛋": "The meat balls are here, but the basic carbs are not in the pot. No thick noodles, no energy chain."
+    },
+    "Q04": {
+      "粗面": "One repetitive carb is here, but where are the equally boring rice rolls? Double blandness is the flavor.",
+      "肠粉": "Pale rice rolls showed up, but another plain carb is missing. Nutritionally uneventful, still only half done."
+    },
+    "Q05": {
+      "柠檬片": "The cool sourness is right, but the oil-cutting bitterness is missing. This grievance recipe needs both claws.",
+      "浓茶": "The bitter liquid is here, but where is the lemon sourness? Without acid, the cold edge is gone."
+    },
+    "Q06": {
+      "浓茶": "The bitterest liquid is ready, but where is the sweet crisp shell? Half a mask will not stay on.",
+      "菠萝包底": "The crisp shell is here, but the bitter liquid has not arrived. Without a bitter base, sweetness becomes fake."
+    },
+    "Q07": {
+      "菠萝包底": "The crisp base is right, but where is the heavy dangerous fat? Without butter, safety cannot jump into stickiness.",
+      "黄油": "The fat is ready, but the crisp base is missing. Without bread, greasiness has nowhere to cling."
+    },
+    "Q08": {
+      "浓茶": "One sleepless bitter water is right. You still need the even harsher powder. Let them fight in your stomach.",
+      "咖啡豆": "The coffee bitterness is here, but the strong tea has not arrived. Double insomnia requires both."
+    },
+    "Q09": {
+      "汤圆": "The white balls pretending to be whole are here, but the burning spice is missing. Without ginger, the heat is only half.",
+      "姜汁": "The spicy ginger is ready, but where are the soft white rice balls? Heat needs a target."
+    },
+    "Q10": {
+      "鱼蛋": "The springy fish balls are in, but the spicy yellow sauce is missing. Jealousy needs full coverage.",
+      "咖喱酱": "The thick curry is here, but where are the round fish balls? Otherwise the sauce is just hugging air."
+    },
+    "Q11": {
+      "芒果": "Tropical fragrance is here, but the rich white liquid has not poured in. Sunshine needs a milk bath.",
+      "椰浆": "White coconut milk has arrived, but where is the golden mango? Without fruit, the bath is bland."
+    },
+    "Q12": {
+      "牛腩": "The hard-to-chew meat is right, but where is the cheap oil-soaking radish? Grease needs somewhere to land.",
+      "萝卜": "The radish is ready, but the heavy brisket is missing. Without meat, radish is just clear soup."
+    },
+    "Q13": {
+      "萝卜": "The root from the dirt is right, but where is the brisket in rich broth? Belonging needs mutual simmering.",
+      "牛腩": "The brisket is here, but the radish is not in the pot. Without roots, the broth lacks a base note."
+    },
+    "Q14": {
+      "肠粉": "The plainest carb is here, but where is the pale root? Emptiness needs double pallor.",
+      "萝卜": "Pale radish is present, but plain rice rolls are missing. Without carbs, the paleness is too thin."
+    },
+    "Q15": {
+      "浓茶": "The cold sharp liquid is right, but the sour other half is missing. Truth is never singular.",
+      "柠檬片": "The sour lemon is here, but where is the bitter strong tea? Without tea, sourness has no soul."
+    },
+    "Q16": {
+      "柚子": "The bitter peel is opened, but where are the transparent beads trying to gather? Loneliness needs sago company.",
+      "西米": "Transparent beads are here, but the bitter pomelo flesh is missing. Without fruit, it is only texture."
+    },
+    "Q17": {
+      "椰浆": "One rich white ingredient is right, but where are the equally rich rice balls? Fusion needs both sides.",
+      "汤圆": "Soft rice balls are ready, but the white coconut milk has not poured in. Without milk, stickiness has no answer."
+    },
+    "Q18": {
+      "浓茶": "The bitter liquid is present, but where is the even more bitter powder? Nausea calls for a double dose.",
+      "咖啡豆": "Coffee powder is here, but the strong tea has not arrived. Without tea, the bitterness is too one-note."
+    },
+    "Q19": {
+      "汤圆": "The sticky hug is here, but the overripe golden memory is not sliced yet. Rotten sweetness comes in pairs.",
+      "芒果": "Golden mango is ready, but where are the soft rice balls? Without stickiness, sweetness has no support."
+    },
+    "Q20": {
+      "姜汁": "The fire that warms your eyes is right, but where is the faraway golden scent? Crying needs the other flavor.",
+      "芒果": "The golden scent is here, but the hot ginger has not arrived. Without collision, tears will not come."
+    },
+    "Q21": {
+      "菠萝包底": "The bread base is right, but where is the cloying yellow fat? Without butter, the imperfect pairing is incomplete.",
+      "黄油": "The fat is ready, but where is the bread that needs it? Without a base, grease has nowhere to live."
+    },
+    "Q22": {
+      "西米": "The shattered transparent pieces are here, but the white ocean has not arrived. Reassembly needs liquid to leap into.",
+      "椰浆": "White coconut milk is present, but where is the transparent sago? Without fragments, the ocean is too quiet."
+    },
+    "Q23": {
+      "粗面": "The carrying base is right, but where is the heaviest, hardest meat? People-pleasing needs weight pressing down.",
+      "牛腩": "The tough brisket is ready, but thick noodles are not in the pot. Without noodles, the meat has no seat."
+    },
+    "Q24": {
+      "柠檬片": "The extreme outside sourness is here, but the extreme inner sweetness is not opened yet. Shell and heart must appear together.",
+      "芒果": "The extreme inner sweetness is here, but where is the outside sourness? Without a sour shell, sweet turns cloying."
+    },
+    "Q25": {
+      "浓茶": "The midnight tea color is here, but where is the morning-white evaporated milk? Dawn needs black and white to collide.",
+      "黑白淡奶": "The white milk is here, but midnight tea has not poured in. Without tea, milk is just sleepy."
+    },
+    "Q26": {
+      "粗面": "Flavorless carbs are right, but where is another equally dull meat ball? Meaning is the drama you add.",
+      "鱼蛋": "The meat ball is ready, but plain thick noodles are missing. Without carbs, it floats without roots."
+    },
+    "Q27": {
+      "咖啡豆": "Extreme clarity is right, but you still need a sour angle. Cutting through lies takes two flavors.",
+      "柠檬片": "The sour angle is here, but the clear bitterness is missing. Without coffee, the sourness gets lost."
+    },
+    "Q28": {
+      "姜汁": "The sweat-making ginger water is here, but where are those soft pale hearts? The future needs something to protect.",
+      "汤圆": "The soft pale hearts are ready, but the hot ginger has not simmered. Without heat, protection is weak."
+    },
+    "Q29": {
+      "萝卜": "One pale bottom-shelf ingredient is right, but where is the equally cheap rice roll? If cramped, be cramped in pairs.",
+      "肠粉": "Pale rice rolls are present, but the dirt-grown radish is missing. Without roots, the pallor is too plain."
+    },
+    "Q30": {
+      "柚子": "Tree-grown fruit acid is here, but another tropical scent is missing. Taste-bud travel needs company.",
+      "芒果": "Golden mango is ready, but where is the bitter pomelo? Without acid, sweetness has no layers."
+    },
+    "Q31": {
+      "浓茶": "The oil-cutting astringency is right, but the greasy block of time is missing. Overdrawing needs two leads.",
+      "黄油": "Greasy butter is here, but where is the strong tea that cuts it? Without tea, the oil has no exit."
+    },
+    "Q32": {
+      "咖啡豆": "One overdrafted bitter water is right, but where is the even bitterer tea? A dumb trade needs mutual damage.",
+      "浓茶": "Bitter tea is ready, but coffee powder is missing. Without coffee, it is not reckless enough."
+    },
+    "Q33": {
+      "牛腩": "The heavy solid fat is right, but where is the hard-to-chew meat? Hallucination needs a double portion.",
+      "萝卜": "Radish is ready, but the brisket is missing. Without meat, radish has no oil to absorb."
+    },
+    "Q34": {
+      "芒果": "The golden dream is here, but where is the soft sticky fantasy base? Getting rich needs a golden cushion.",
+      "汤圆": "The sticky fantasy is ready, but golden mango is not sliced. Without gold, the dream is dim."
+    },
+    "Q35": {
+      "姜汁": "The dirt-grown heat is right, but where is the other dirt-grown pallor? A turnaround is buried underground. Dig up a pair.",
+      "萝卜": "Pale radish is ready, but hot ginger is missing. Without heat, radish is just water."
+    },
+    "Q36": {
+      "浓茶": "One bitterness is right. You still need the other astringency. Sweetness after suffering takes double bitter teamwork.",
+      "咖啡豆": "Coffee bitterness is here, but strong tea has not arrived. Without double bitter, sweet will not come."
+    },
+    "Q37": {
+      "萝卜": "The honest root is right, but the cold sourness has not been sliced. System cleanup needs two little brooms.",
+      "柠檬片": "The cold sourness is here, but where is the honest radish? Without roots, the acid has no target."
+    },
+    "Q38": {
+      "椰浆": "The cloud-soft milk fat is right, but where are the warm rice balls? Weakness needs a double hug.",
+      "汤圆": "Warm rice balls are ready, but the cloud coconut milk has not poured in. Without milk, softness lacks glide."
+    },
+    "Q39": {
+      "鱼蛋": "One brainless round meat ball is right, but where is its equally brainless twin? Foolishness tastes better double."
+    },
+    "Q40": {
+      "柚子": "The bitter peel is opened, but the golden surprise is not dug out yet. Reasons to go outside come in pairs.",
+      "芒果": "The golden surprise is here, but where is the bitter pomelo? Without acid, going out feels like sleepwalking."
+    }
+  },
+  "failurePenalties": {
+    "mudPaw": {
+      "title": "Mud Paw Prints",
+      "message": "Your food disgusts the cat. She slaps paw prints on your screen and bolts.",
+      "clearAria": "Wipe away the paw print"
+    },
+    "catHair": {
+      "title": "Cat Hair Allergy",
+      "message": "The cat is so angry its fur is flying everywhere. You cannot stop sneezing. Shoo the hairs away.",
+      "clearAria": "Shoo away the cat hair"
+    },
+    "nonsenseSlip": {
+      "title": "Cat Nonsense Slip"
+    }
+  },
+  "nonsenseSlips": {
+    "今日运势：大凶。建议不要试图去抓红外线光点，那是虚无的。": "Today's fortune: terrible. Do not try to catch the red laser dot. It is pure emptiness.",
+    "不要因为内耗而熬夜。实在睡不着，建议你把桌子上的玻璃杯推到地上去，听个响。": "Do not stay up because your brain is chewing itself. If sleep refuses you, push a glass off the table and enjoy the sound.",
+    "你以为你在思考人生，其实你只是需要一个纸箱子。": "You think you are pondering life. Actually, you just need a cardboard box.",
+    "根据猫体力学，你现在的姿势是错误的。请立刻躺平，缩成一团，然后打一个哈欠。什么？你不是猫？那关我什么事。": "According to cat mechanics, your current posture is wrong. Lie down, curl up, and yawn. Not a cat? How is that my problem?",
+    "成功秘诀：每天舔自己的毛100次。如果你没毛，就去买一顶假发。舔完你会觉得自己很成功，虽然别人觉得你疯了。": "Success tip: lick your fur 100 times a day. No fur? Buy a wig. You will feel accomplished. Others may have notes.",
+    "研究发现，99%的猫咪认为自己的铲屎官是智障。你是那1%吗？不是，因为猫咪不会做研究。": "Studies show 99% of cats think their humans are idiots. Are you the 1%? No. Cats do not conduct studies.",
+    "如果你觉得孤独，试着把手机从高处推下去。它会‘啪’一声，然后你就有了新手机要买——再也不孤独了。": "If you feel lonely, push your phone from somewhere high. It will go splat, and then you have a new phone to buy. No more loneliness.",
+    "人生的意义是什么？是追自己的尾巴。永远追不到，但很快乐。所以别问了，去追吧。": "What is life's meaning? Chasing your own tail. You never catch it, but it is fun. Stop asking and go chase.",
+    "今天的幸运物是：你刚刚扔掉的纸团。快去捡回来，它现在是你的导师。它会教你‘如何被揉成一团依然保持优雅’。": "Today's lucky object: the paper ball you just threw away. Retrieve it. It is your mentor now. It teaches elegance while crumpled.",
+    "如何解决拖延症？明天告诉你。哦不对，后天？算了，等我想起来再说。反正你也不急，对吧？": "How do you fix procrastination? I will tell you tomorrow. Or the day after. I will remember eventually. You are not in a rush, right?",
+    "不要相信任何告诉你‘猫有九条命’的人。因为我只用了三条就验证出：从柜子上摔下来还是会痛。": "Do not trust anyone who says cats have nine lives. I used only three to confirm falling off a cabinet still hurts.",
+    "你的问题太深奥了，我建议你先把家里所有纸箱子叠成一个塔，然后站在上面思考。摔下来那一刻你就顿悟了——‘原来我不该站着’。": "Your problem is too deep. Stack every cardboard box at home, stand on top, and think. When you fall, enlightenment arrives: standing was the mistake.",
+    "人类总是想太多。猫生哲学：有罐头就行，没有就抢。你的问题同理：有答案就行，没有就编一个。": "Humans overthink. Cat philosophy: if there is a can, eat it; if not, steal one. Your problem is the same: if no answer exists, invent one.",
+    "你刚刚浪费了5秒钟读这条签。而猫咪用这5秒钟打翻了一个水杯。看，谁更有生产效率？": "You just spent five seconds reading this slip. A cat used those five seconds to knock over water. See who is more productive?",
+    "晚上睡不着的时候，不要数羊。数你曾经打翻过的水杯数量——那才是真正的成就感。": "When you cannot sleep, do not count sheep. Count the cups you have knocked over. That is real achievement.",
+    "猫咪打了个哈欠，你什么也没得到。": "The cat yawns. You receive absolutely nothing."
+  },
+  "resultUi": {
+    "successTitle": "The cat accepts your offering.",
+    "halfSuccessEyebrow": "The cat master narrows her eyes.",
+    "halfSuccessTitle": "Almost. The cat is not fully impressed.",
+    "failureTitle": "The cat rejects your food.",
+    "tasteThisFood": "Taste this food",
+    "iGet": "I get",
+    "get": "Get!",
+    "selectAgain": "Select Again",
+    "tearOff": "Tear off",
+    "collected": "Collected",
+    "alreadyCollected": "Same flavor, fresh wisdom.",
+    "collectionSessionOnly": "Saved in this round for now.",
+    "trayCleared": "Tray cleared. Select two ingredients again."
+  },
+  "collection": {
+    "title": "Wisdom Ledger",
+    "eyebrow": "Midnight Ledger",
+    "buttonLabel": "Ledger",
+    "buttonAria": "Open Wisdom Ledger, {count} collected",
+    "countAria": "{count} collected",
+    "close": "Close ledger",
+    "empty": "No cat wisdom collected yet."
+  },
+  "shopkeeper": {
+    "少冰？少熬夜才是真的。": "Less ice? Less staying up is the real order.",
+    "苦的、甜的、醒的，都在这排架子上。": "Bitter, sweet, awake: all on this shelf.",
+    "别盯着奶茶桶发呆，先选食材。": "Stop staring at the milk-tea bucket. Pick ingredients.",
+    "凌晨的冰室不收眼泪，只收配方。": "This cafe does not take tears after midnight, only recipes.",
+    "你看起来需要热奶茶，也可能只是需要睡觉。": "You look like you need hot milk tea. Or sleep. Mostly sleep.",
+    "别站着发呆，鱼蛋不会自己跳进碗里。": "Do not just stand there. Fish balls do not leap into bowls.",
+    "想转运，就别怕烟火气。": "If you want luck to turn, don't fear a little smoke.",
+    "手快点，后面还有猫排队。": "Move your paws. Cats are queueing behind you.",
+    "咖喱酱很辣，但有些心事更辣。": "Curry sauce is spicy. Some worries are worse.",
+    "选错也没事，大不了猫大师嫌弃你一下。": "Pick wrong if you must. The cat master will only judge you.",
+    "甜的不能治百病，但能让你先坐一会儿。": "Sweetness cannot cure everything, but it can make you sit down.",
+    "软糯的东西，最适合接住深夜。": "Soft, chewy things are best at catching midnight.",
+    "别急，糖水要慢慢等。": "Do not rush. Sweet soup makes everyone wait.",
+    "如果今晚睡不着，就先吃点温柔的。": "If sleep won't come, eat something gentle first.",
+    "有些答案，藏在椰浆和汤圆之间。": "Some answers hide between coconut milk and rice balls.",
+    "猫店员看了看你，又看了看食材架。": "The shop cat looks at you, then at the ingredient rack.",
+    "猫店员轻轻敲了敲柜台，示意你先选两味食材。": "The shop cat taps the counter: pick two ingredients first.",
+    "别紧张，配方会自己露出尾巴。": "Relax. The recipe will show its tail eventually.",
+    "先选食材，剩下的交给猫大师。": "Pick the ingredients. Leave the rest to the cat master.",
+    "深夜小店只收心事，不收解释。": "Midnight shops take worries, not explanations."
+  },
+  "messages": {
+    "notEnoughIngredients": "Not enough ingredients yet.",
+    "wrongShopHint": "The cat master shakes their head: this flavor is not here.",
+    "bothSlotsFull": "Both offering slots are full. Tap a slot to take an ingredient back.",
+    "issuePromptEmpty": "Tonight's flavor has not been written yet.",
+    "shopLoading": "The cats are lighting the three-shop street...",
+    "counterLoading": "The cats are setting the counter...",
+    "cardShuffling": "The cats are shuffling the cards..."
+  }
+}

@@ -1,0 +1,297 @@
+{
+  "categories": [
+    {
+      "id": "career-study",
+      "name": "职场与学业",
+      "order": 1,
+      "children": [
+        {
+          "id": "task-overload",
+          "name": "任务过载",
+          "order": 1,
+          "issues": [
+            "Q01"
+          ]
+        },
+        {
+          "id": "creative-stuckness",
+          "name": "创作卡壳",
+          "order": 2,
+          "issues": [
+            "Q02"
+          ]
+        },
+        {
+          "id": "routine-boredom",
+          "name": "机械重复",
+          "order": 3,
+          "issues": [
+            "Q03",
+            "Q04"
+          ]
+        },
+        {
+          "id": "social-mask",
+          "name": "情绪面具",
+          "order": 4,
+          "issues": [
+            "Q06"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "relationships",
+      "name": "关系与亲密",
+      "order": 2,
+      "children": [
+        {
+          "id": "friendship-boundaries",
+          "name": "友情边界",
+          "order": 1,
+          "issues": [
+            "Q05"
+          ]
+        },
+        {
+          "id": "belonging",
+          "name": "归属与同频",
+          "order": 2,
+          "issues": [
+            "Q13",
+            "Q17"
+          ]
+        },
+        {
+          "id": "loneliness",
+          "name": "孤独空房间",
+          "order": 3,
+          "issues": [
+            "Q14"
+          ]
+        },
+        {
+          "id": "social-fatigue",
+          "name": "社交疲惫",
+          "order": 4,
+          "issues": [
+            "Q16"
+          ]
+        },
+        {
+          "id": "breakup-attachment",
+          "name": "分离与旧回忆",
+          "order": 5,
+          "issues": [
+            "Q18",
+            "Q19",
+            "Q20"
+          ]
+        },
+        {
+          "id": "people-pleasing-boundaries",
+          "name": "讨好与边界",
+          "order": 6,
+          "issues": [
+            "Q23"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "self-mood",
+      "name": "自我与情绪",
+      "order": 3,
+      "children": [
+        {
+          "id": "self-worth",
+          "name": "自我价值",
+          "order": 1,
+          "issues": [
+            "Q11"
+          ]
+        },
+        {
+          "id": "authenticity-performance",
+          "name": "真实与表演",
+          "order": 2,
+          "issues": [
+            "Q15"
+          ]
+        },
+        {
+          "id": "self-acceptance",
+          "name": "接纳不完美",
+          "order": 3,
+          "issues": [
+            "Q21"
+          ]
+        },
+        {
+          "id": "rebuilding",
+          "name": "碎裂后重组",
+          "order": 4,
+          "issues": [
+            "Q22"
+          ]
+        },
+        {
+          "id": "external-judgment",
+          "name": "外部评价",
+          "order": 5,
+          "issues": [
+            "Q24"
+          ]
+        },
+        {
+          "id": "late-night-void",
+          "name": "深夜虚无",
+          "order": 6,
+          "issues": [
+            "Q25"
+          ]
+        },
+        {
+          "id": "social-media-comparison",
+          "name": "信息流比较",
+          "order": 7,
+          "issues": [
+            "Q27"
+          ]
+        },
+        {
+          "id": "future-anxiety",
+          "name": "未来焦虑",
+          "order": 8,
+          "issues": [
+            "Q28"
+          ]
+        },
+        {
+          "id": "health-overthinking",
+          "name": "未知恐惧",
+          "order": 9,
+          "issues": [
+            "Q37"
+          ]
+        },
+        {
+          "id": "exhaustion-softness",
+          "name": "疲惫与软弱",
+          "order": 10,
+          "issues": [
+            "Q38"
+          ]
+        },
+        {
+          "id": "overthinking-simplicity",
+          "name": "过度聪明",
+          "order": 11,
+          "issues": [
+            "Q39"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "life-rhythm",
+      "name": "生活节奏",
+      "order": 4,
+      "children": [
+        {
+          "id": "change-and-risk",
+          "name": "改变与风险",
+          "order": 1,
+          "issues": [
+            "Q07"
+          ]
+        },
+        {
+          "id": "decision-paralysis",
+          "name": "选择困难",
+          "order": 2,
+          "issues": [
+            "Q08"
+          ]
+        },
+        {
+          "id": "meaning-in-routine",
+          "name": "平淡意义",
+          "order": 3,
+          "issues": [
+            "Q26"
+          ]
+        },
+        {
+          "id": "living-space",
+          "name": "空间与远方",
+          "order": 4,
+          "issues": [
+            "Q29",
+            "Q30"
+          ]
+        },
+        {
+          "id": "rest-time",
+          "name": "休息与时间",
+          "order": 5,
+          "issues": [
+            "Q31",
+            "Q32"
+          ]
+        },
+        {
+          "id": "getting-outside",
+          "name": "走出门去",
+          "order": 6,
+          "issues": [
+            "Q40"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "desire-money",
+      "name": "欲望与金钱",
+      "order": 5,
+      "children": [
+        {
+          "id": "envy-comparison",
+          "name": "嫉妒与比较",
+          "order": 1,
+          "issues": [
+            "Q09",
+            "Q10"
+          ]
+        },
+        {
+          "id": "desire-balance",
+          "name": "欲望平衡",
+          "order": 2,
+          "issues": [
+            "Q12"
+          ]
+        },
+        {
+          "id": "money-desire",
+          "name": "金钱幻想",
+          "order": 3,
+          "issues": [
+            "Q33",
+            "Q34"
+          ]
+        },
+        {
+          "id": "low-point-rebound",
+          "name": "低谷转机",
+          "order": 4,
+          "issues": [
+            "Q35",
+            "Q36"
+          ]
+        }
+      ]
+    }
+  ],
+  "_comment": "Taxonomy is a conservative inferred grouping from the Markdown PRD themes. The Markdown explicitly shows examples such as 职场与学业, 绩效焦虑, 价值迷失, and Q01. Full category mapping still needs human review."
+}

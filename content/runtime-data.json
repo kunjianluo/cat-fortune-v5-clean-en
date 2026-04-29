@@ -1,0 +1,4746 @@
+{
+  "meta": {
+    "project_id": "cat-fortune-v3",
+    "data_version": "csv-runtime-v3-seed-entry",
+    "generated_at": "2026-04-28T16:01:06.022Z",
+    "generated_by": "scripts/compile-csv-to-runtime.js",
+    "source_dir": "cat_fortune_csv_exports",
+    "source_files": [
+      "cat_fortune_v1_seed_issues.csv",
+      "cat_fortune_issue_master_full.csv",
+      "cat_fortune_recipes_and_half_success_hints.csv",
+      "cat_fortune_success_wisdom.csv",
+      "cat_fortune_ingredients.csv",
+      "cat_fortune_shops.csv",
+      "cat_fortune_nonsense_slips.csv",
+      "cat_fortune_failure_penalties.csv",
+      "cat_fortune_flow_states.csv",
+      "cat_fortune_game_rules.csv",
+      "cat_fortune_ui_copy.csv",
+      "cat_fortune_shop_scene_specs.csv",
+      "cat_fortune_asset_placeholders.csv",
+      "cat_fortune_issue_taxonomy_review.csv",
+      "cat_fortune_card_flow_40_review.csv",
+      "cat_fortune_riddles_0427.csv",
+      "cat_fortune_csv_manifest.csv"
+    ],
+    "all_csv_files": [
+      "cat_fortune_asset_placeholders.csv",
+      "cat_fortune_card_flow_40_review.csv",
+      "cat_fortune_csv_manifest.csv",
+      "cat_fortune_failure_penalties.csv",
+      "cat_fortune_flow_states.csv",
+      "cat_fortune_game_rules.csv",
+      "cat_fortune_ingredients.csv",
+      "cat_fortune_issue_master_compact.csv",
+      "cat_fortune_issue_master_full.csv",
+      "cat_fortune_issue_taxonomy_review.csv",
+      "cat_fortune_nonsense_slips.csv",
+      "cat_fortune_recipes_and_half_success_hints.csv",
+      "cat_fortune_riddles_0427.csv",
+      "cat_fortune_shop_scene_specs.csv",
+      "cat_fortune_shops.csv",
+      "cat_fortune_success_wisdom.csv",
+      "cat_fortune_ui_copy.csv",
+      "cat_fortune_v1_seed_issues.csv"
+    ],
+    "row_counts": {
+      "cat_fortune_v1_seed_issues.csv": 5,
+      "cat_fortune_issue_master_full.csv": 40,
+      "cat_fortune_recipes_and_half_success_hints.csv": 40,
+      "cat_fortune_success_wisdom.csv": 40,
+      "cat_fortune_ingredients.csv": 18,
+      "cat_fortune_shops.csv": 3,
+      "cat_fortune_nonsense_slips.csv": 16,
+      "cat_fortune_failure_penalties.csv": 3,
+      "cat_fortune_flow_states.csv": 17,
+      "cat_fortune_game_rules.csv": 6,
+      "cat_fortune_ui_copy.csv": 16,
+      "cat_fortune_shop_scene_specs.csv": 3,
+      "cat_fortune_asset_placeholders.csv": 10,
+      "cat_fortune_issue_taxonomy_review.csv": 40,
+      "cat_fortune_card_flow_40_review.csv": 40,
+      "cat_fortune_riddles_0427.csv": 40,
+      "cat_fortune_csv_manifest.csv": 15
+    },
+    "notes": [
+      "Default gameplay starts from seed_issues, the five V1 heart-knot choices.",
+      "The full 40 issue dataset remains in issues for future expansion.",
+      "Cross-shop recipes keep both recipe ingredients in the playable ingredient list."
+    ],
+    "warnings": [
+      "Q24 recipe spans shops (lemon-slice/ice-room, mango/dessert-station); default shop is ice-room, with both recipe ingredients added to the playable list.",
+      "Q35 recipe spans shops (ginger-juice/dessert-station, radish/street-stall); default shop is dessert-station, with both recipe ingredients added to the playable list.",
+      "Q37 recipe spans shops (radish/street-stall, lemon-slice/ice-room); default shop is street-stall, with both recipe ingredients added to the playable list."
+    ],
+    "seed_issue_validation": {
+      "all_map_to_full_issue": true,
+      "all_have_playable_recipe": true,
+      "all_have_success_wisdom": true,
+      "all_have_half_success_hints": true,
+      "missing_full_issue_ids": [],
+      "missing_recipe_issue_ids": [],
+      "missing_success_wisdom_issue_ids": [],
+      "missing_half_success_hint_issue_ids": []
+    },
+    "prd_0427_riddle_validation": {
+      "consumed": true,
+      "loaded_count": 40,
+      "expected_count": 40,
+      "missing_issue_ids": [],
+      "duplicate_issue_ids": [],
+      "unknown_issue_ids": [],
+      "blank_riddle_issue_ids": []
+    }
+  },
+  "seed_issues": [
+    {
+      "id": "Q01",
+      "issue_id": "Q01",
+      "order": 1,
+      "title": "Deadline 任务过载",
+      "riddle_text": "给我那种能让心脏狂跳的苦，和伪装温柔的白色泡沫。",
+      "shop_id": "ice-room",
+      "shop_name": "冰室",
+      "recipe_ingredient_ids": [
+        "coffee-beans",
+        "evaporated-milk"
+      ],
+      "food_name": "热奶茶",
+      "wisdom_text_v1": "别试图用透支明天来填补今天的洞。喝完这杯，先睡一觉。",
+      "source": {
+        "doc": "0421.md",
+        "section": "7.4 当前心结配置表"
+      }
+    },
+    {
+      "id": "Q10",
+      "issue_id": "Q10",
+      "order": 2,
+      "title": "此时此刻的嫉妒心",
+      "riddle_text": "圆润弹牙的球体，被辛辣浓稠的黄色浆汁淹没。",
+      "shop_id": "street-stall",
+      "shop_name": "大排档",
+      "recipe_ingredient_ids": [
+        "fish-ball",
+        "curry-sauce"
+      ],
+      "food_name": "咖喱鱼蛋",
+      "wisdom_text_v1": "橱窗里的猫粮确实香，但别因为盯着它而忘了手里这串鱼蛋的滋味。",
+      "source": {
+        "doc": "0421.md",
+        "section": "7.4 当前心结配置表"
+      }
+    },
+    {
+      "id": "Q07",
+      "issue_id": "Q07",
+      "order": 3,
+      "title": "对性格短板的怀疑",
+      "riddle_text": "这块油脂单吃很腻，但这块面包没它又不行。懂了吗？",
+      "shop_id": "ice-room",
+      "shop_name": "冰室",
+      "recipe_ingredient_ids": [
+        "pineapple-bun-base",
+        "butter"
+      ],
+      "food_name": "冰火菠萝油",
+      "wisdom_text_v1": "别嫌弃你的『油脂』。正是那些不完美的特质，才让你在人群中有了辨识度。",
+      "source": {
+        "doc": "0421.md",
+        "section": "7.4 当前心结配置表"
+      }
+    },
+    {
+      "id": "Q08",
+      "issue_id": "Q08",
+      "order": 4,
+      "title": "报复性熬夜",
+      "riddle_text": "人类最愚蠢的交换：用透支的精力，换取那一点点苦涩的清醒。",
+      "shop_id": "ice-room",
+      "shop_name": "冰室",
+      "recipe_ingredient_ids": [
+        "coffee-beans",
+        "strong-tea"
+      ],
+      "food_name": "鸳鸯奶茶",
+      "wisdom_text_v1": "熬夜换来的自由是带毒的。去睡觉，梦里的自由是不限量的。",
+      "source": {
+        "doc": "0421.md",
+        "section": "7.4 当前心结配置表"
+      }
+    },
+    {
+      "id": "Q35",
+      "issue_id": "Q35",
+      "order": 5,
+      "title": "倒霉透顶求转机",
+      "riddle_text": "一种从土里长出来的辣，撞上土里的白。转机在地下。",
+      "shop_id": "street-stall",
+      "shop_name": "大排档",
+      "recipe_ingredient_ids": [
+        "ginger-juice",
+        "radish"
+      ],
+      "food_name": "姜汁萝卜",
+      "wisdom_text_v1": "跌到底了，剩下的路都是向上的。就像萝卜，埋得够深才够入味。",
+      "source": {
+        "doc": "0421.md",
+        "section": "7.4 当前心结配置表"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "Q01",
+      "title": "Deadline 任务过载",
+      "title_source": "direct_0421_v1",
+      "riddle_text": "\"给我那种能让心脏狂跳的苦味，再盖上一层伪装成温柔的白色泡沫。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"给我那种能让心脏狂跳的苦味，再盖上一层伪装成温柔的白色泡沫。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "ice-room",
+      "shop_name": "零点冰室",
+      "recipe_id": "recipe-Q01",
+      "recipe_ingredient_ids": [
+        "coffee-beans",
+        "evaporated-milk"
+      ],
+      "available_ingredient_ids": [
+        "coffee-beans",
+        "evaporated-milk",
+        "strong-tea",
+        "lemon-slice",
+        "pineapple-bun-base",
+        "butter"
+      ],
+      "half_success_hint_id": "hint-Q01",
+      "success_wisdom_id": "wisdom-Q01",
+      "food_name": "热奶茶",
+      "is_v1_seed": true,
+      "needs_manual_title": false,
+      "needs_manual_riddle": false,
+      "taxonomy": {
+        "level1_category": "职场与学业",
+        "level2_category": "绩效焦虑",
+        "source": "0424_example_partial"
+      },
+      "source_notes": "V1 direct title/riddle mapped by matching recipe+food",
+      "order": 1
+    },
+    {
+      "id": "Q02",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"去弄一份最洁白无瑕的本体，然后用最浓稠、最脏的酱汁把它彻底淹没。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"去弄一份最洁白无瑕的本体，然后用最浓稠、最脏的酱汁把它彻底淹没。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "street-stall",
+      "shop_name": "霓虹大排档",
+      "recipe_id": "recipe-Q02",
+      "recipe_ingredient_ids": [
+        "rice-roll",
+        "curry-sauce"
+      ],
+      "available_ingredient_ids": [
+        "rice-roll",
+        "curry-sauce",
+        "thick-noodles",
+        "fish-ball",
+        "beef-brisket",
+        "radish"
+      ],
+      "half_success_hint_id": "hint-Q02",
+      "success_wisdom_id": "wisdom-Q02",
+      "food_name": "咖喱肠粉",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 2
+    },
+    {
+      "id": "Q03",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"去拿最基础的碳水和最廉价的肉球。这是你们这类人活下去的机械能量。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"去拿最基础的碳水和最廉价的肉球。这是你们这类人活下去的机械能量。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "street-stall",
+      "shop_name": "霓虹大排档",
+      "recipe_id": "recipe-Q03",
+      "recipe_ingredient_ids": [
+        "thick-noodles",
+        "fish-ball"
+      ],
+      "available_ingredient_ids": [
+        "rice-roll",
+        "curry-sauce",
+        "thick-noodles",
+        "fish-ball",
+        "beef-brisket",
+        "radish"
+      ],
+      "half_success_hint_id": "hint-Q03",
+      "success_wisdom_id": "wisdom-Q03",
+      "food_name": "鱼蛋粗面",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 3
+    },
+    {
+      "id": "Q04",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"两种最平淡、重复的碳水堆叠在一起，像你那毫无营养的每一天。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"两种最平淡、重复的碳水堆叠在一起，像你那毫无营养的每一天。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "street-stall",
+      "shop_name": "霓虹大排档",
+      "recipe_id": "recipe-Q04",
+      "recipe_ingredient_ids": [
+        "thick-noodles",
+        "rice-roll"
+      ],
+      "available_ingredient_ids": [
+        "rice-roll",
+        "curry-sauce",
+        "thick-noodles",
+        "fish-ball",
+        "beef-brisket",
+        "radish"
+      ],
+      "half_success_hint_id": "hint-Q04",
+      "success_wisdom_id": "wisdom-Q04",
+      "food_name": "双拼碳水",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 4
+    },
+    {
+      "id": "Q05",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"把那种让人清冷的酸，和那种刮油的苦涩混在一起。这就是委屈。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"把那种让人清冷的酸，和那种刮油的苦涩混在一起。这就是委屈。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "ice-room",
+      "shop_name": "零点冰室",
+      "recipe_id": "recipe-Q05",
+      "recipe_ingredient_ids": [
+        "lemon-slice",
+        "strong-tea"
+      ],
+      "available_ingredient_ids": [
+        "coffee-beans",
+        "evaporated-milk",
+        "strong-tea",
+        "lemon-slice",
+        "pineapple-bun-base",
+        "butter"
+      ],
+      "half_success_hint_id": "hint-Q05",
+      "success_wisdom_id": "wisdom-Q05",
+      "food_name": "冻柠茶",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 5
+    },
+    {
+      "id": "Q06",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"去拿那杯最苦最涩的液体，去配那个最甜美最酥脆的外壳。这就是面具。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"去拿那杯最苦最涩的液体，去配那个最甜美最酥脆的外壳。这就是面具。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "ice-room",
+      "shop_name": "零点冰室",
+      "recipe_id": "recipe-Q06",
+      "recipe_ingredient_ids": [
+        "strong-tea",
+        "pineapple-bun-base"
+      ],
+      "available_ingredient_ids": [
+        "coffee-beans",
+        "evaporated-milk",
+        "strong-tea",
+        "lemon-slice",
+        "pineapple-bun-base",
+        "butter"
+      ],
+      "half_success_hint_id": "hint-Q06",
+      "success_wisdom_id": "wisdom-Q06",
+      "food_name": "菠萝油套餐",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 6
+    },
+    {
+      "id": "Q07",
+      "title": "对性格短板的怀疑",
+      "title_source": "direct_0421_v1",
+      "riddle_text": "\"在最酥脆的底座上，放上一块最厚重、最诱人也最危险的油脂。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"在最酥脆的底座上，放上一块最厚重、最诱人也最危险的油脂。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "ice-room",
+      "shop_name": "零点冰室",
+      "recipe_id": "recipe-Q07",
+      "recipe_ingredient_ids": [
+        "pineapple-bun-base",
+        "butter"
+      ],
+      "available_ingredient_ids": [
+        "coffee-beans",
+        "evaporated-milk",
+        "strong-tea",
+        "lemon-slice",
+        "pineapple-bun-base",
+        "butter"
+      ],
+      "half_success_hint_id": "hint-Q07",
+      "success_wisdom_id": "wisdom-Q07",
+      "food_name": "冰火菠萝油",
+      "is_v1_seed": true,
+      "needs_manual_title": false,
+      "needs_manual_riddle": false,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "V1 direct title/riddle mapped by matching recipe+food",
+      "order": 7
+    },
+    {
+      "id": "Q08",
+      "title": "报复性熬夜",
+      "title_source": "direct_0421_v1",
+      "riddle_text": "\"两种能让人彻夜难眠的苦水发生了冲撞。这一杯下去，你就不用选了。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"两种能让人彻夜难眠的苦水发生了冲撞。这一杯下去，你就不用选了。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "ice-room",
+      "shop_name": "零点冰室",
+      "recipe_id": "recipe-Q08",
+      "recipe_ingredient_ids": [
+        "strong-tea",
+        "coffee-beans"
+      ],
+      "available_ingredient_ids": [
+        "coffee-beans",
+        "evaporated-milk",
+        "strong-tea",
+        "lemon-slice",
+        "pineapple-bun-base",
+        "butter"
+      ],
+      "half_success_hint_id": "hint-Q08",
+      "success_wisdom_id": "wisdom-Q08",
+      "food_name": "鸳鸯奶茶",
+      "is_v1_seed": true,
+      "needs_manual_title": false,
+      "needs_manual_riddle": false,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "V1 direct title/riddle mapped by matching recipe+food",
+      "order": 8
+    },
+    {
+      "id": "Q09",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"一碗滚烫的辛辣，里面藏着几颗假装圆满的白色球体。很烫，对吧？\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"一碗滚烫的辛辣，里面藏着几颗假装圆满的白色球体。很烫，对吧？\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "dessert-station",
+      "shop_name": "失眠甜品站",
+      "recipe_id": "recipe-Q09",
+      "recipe_ingredient_ids": [
+        "tangyuan",
+        "ginger-juice"
+      ],
+      "available_ingredient_ids": [
+        "tangyuan",
+        "ginger-juice",
+        "mango",
+        "coconut-milk",
+        "pomelo",
+        "sago"
+      ],
+      "half_success_hint_id": "hint-Q09",
+      "success_wisdom_id": "wisdom-Q09",
+      "food_name": "姜汁汤圆",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 9
+    },
+    {
+      "id": "Q10",
+      "title": "此时此刻的嫉妒心",
+      "title_source": "direct_0421_v1",
+      "riddle_text": "\"那些圆润弹牙的球体，被辛辣浓稠的黄色酱汁包裹。这就是嫉妒的滋味。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"那些圆润弹牙的球体，被辛辣浓稠的黄色酱汁包裹。这就是嫉妒的滋味。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "street-stall",
+      "shop_name": "霓虹大排档",
+      "recipe_id": "recipe-Q10",
+      "recipe_ingredient_ids": [
+        "fish-ball",
+        "curry-sauce"
+      ],
+      "available_ingredient_ids": [
+        "rice-roll",
+        "curry-sauce",
+        "thick-noodles",
+        "fish-ball",
+        "beef-brisket",
+        "radish"
+      ],
+      "half_success_hint_id": "hint-Q10",
+      "success_wisdom_id": "wisdom-Q10",
+      "food_name": "咖喱鱼蛋",
+      "is_v1_seed": true,
+      "needs_manual_title": false,
+      "needs_manual_riddle": false,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "V1 direct title/riddle mapped by matching recipe+food",
+      "order": 10
+    },
+    {
+      "id": "Q11",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"那些天生就带着热带香气的东西，被纯白醇厚的液体淹没。它们生在阳光下。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"那些天生就带着热带香气的东西，被纯白醇厚的液体淹没。它们生在阳光下。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "dessert-station",
+      "shop_name": "失眠甜品站",
+      "recipe_id": "recipe-Q11",
+      "recipe_ingredient_ids": [
+        "mango",
+        "coconut-milk"
+      ],
+      "available_ingredient_ids": [
+        "tangyuan",
+        "ginger-juice",
+        "mango",
+        "coconut-milk",
+        "pomelo",
+        "sago"
+      ],
+      "half_success_hint_id": "hint-Q11",
+      "success_wisdom_id": "wisdom-Q11",
+      "food_name": "芒果椰汁西米露",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 11
+    },
+    {
+      "id": "Q12",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"去拿那个最难嚼的、带着筋膜的肉块，配上最廉价、吸收了所有油脂的植物。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"去拿那个最难嚼的、带着筋膜的肉块，配上最廉价、吸收了所有油脂的植物。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "street-stall",
+      "shop_name": "霓虹大排档",
+      "recipe_id": "recipe-Q12",
+      "recipe_ingredient_ids": [
+        "beef-brisket",
+        "radish"
+      ],
+      "available_ingredient_ids": [
+        "rice-roll",
+        "curry-sauce",
+        "thick-noodles",
+        "fish-ball",
+        "beef-brisket",
+        "radish"
+      ],
+      "half_success_hint_id": "hint-Q12",
+      "success_wisdom_id": "wisdom-Q12",
+      "food_name": "萝卜牛腩",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 12
+    },
+    {
+      "id": "Q13",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"一种埋在土里的廉价根茎，在浓郁的高汤里煮得烂透了。它已经属于这了。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"一种埋在土里的廉价根茎，在浓郁的高汤里煮得烂透了。它已经属于这了。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "street-stall",
+      "shop_name": "霓虹大排档",
+      "recipe_id": "recipe-Q13",
+      "recipe_ingredient_ids": [
+        "radish",
+        "beef-brisket"
+      ],
+      "available_ingredient_ids": [
+        "rice-roll",
+        "curry-sauce",
+        "thick-noodles",
+        "fish-ball",
+        "beef-brisket",
+        "radish"
+      ],
+      "half_success_hint_id": "hint-Q13",
+      "success_wisdom_id": "wisdom-Q13",
+      "food_name": "炖萝卜牛腩",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 13
+    },
+    {
+      "id": "Q14",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"最单调的碳水和最苍白的根茎，挤在一个狭小的碗里。就像此刻的你。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"最单调的碳水和最苍白的根茎，挤在一个狭小的碗里。就像此刻的你。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "street-stall",
+      "shop_name": "霓虹大排档",
+      "recipe_id": "recipe-Q14",
+      "recipe_ingredient_ids": [
+        "rice-roll",
+        "radish"
+      ],
+      "available_ingredient_ids": [
+        "rice-roll",
+        "curry-sauce",
+        "thick-noodles",
+        "fish-ball",
+        "beef-brisket",
+        "radish"
+      ],
+      "half_success_hint_id": "hint-Q14",
+      "success_wisdom_id": "wisdom-Q14",
+      "food_name": "斋肠萝卜糕",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 14
+    },
+    {
+      "id": "Q15",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"本喵要一杯清冷尖刻的液体，像你们不敢直视的真相一样，又酸又涩。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"本喵要一杯清冷尖刻的液体，像你们不敢直视的真相一样，又酸又涩。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "ice-room",
+      "shop_name": "零点冰室",
+      "recipe_id": "recipe-Q15",
+      "recipe_ingredient_ids": [
+        "strong-tea",
+        "lemon-slice"
+      ],
+      "available_ingredient_ids": [
+        "coffee-beans",
+        "evaporated-milk",
+        "strong-tea",
+        "lemon-slice",
+        "pineapple-bun-base",
+        "butter"
+      ],
+      "half_success_hint_id": "hint-Q15",
+      "success_wisdom_id": "wisdom-Q15",
+      "food_name": "咸柠七",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 15
+    },
+    {
+      "id": "Q16",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"剥开苦涩的外皮，里面全是一粒粒渺小、透明、却想拼命聚在一起的珠子。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"剥开苦涩的外皮，里面全是一粒粒渺小、透明、却想拼命聚在一起的珠子。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "dessert-station",
+      "shop_name": "失眠甜品站",
+      "recipe_id": "recipe-Q16",
+      "recipe_ingredient_ids": [
+        "pomelo",
+        "sago"
+      ],
+      "available_ingredient_ids": [
+        "tangyuan",
+        "ginger-juice",
+        "mango",
+        "coconut-milk",
+        "pomelo",
+        "sago"
+      ],
+      "half_success_hint_id": "hint-Q16",
+      "success_wisdom_id": "wisdom-Q16",
+      "food_name": "柚子西米露",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 16
+    },
+    {
+      "id": "Q17",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"去找两种最醇厚、最浓郁的白色。看看它们能不能在碗里真正融合。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"去找两种最醇厚、最浓郁的白色。看看它们能不能在碗里真正融合。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "dessert-station",
+      "shop_name": "失眠甜品站",
+      "recipe_id": "recipe-Q17",
+      "recipe_ingredient_ids": [
+        "coconut-milk",
+        "tangyuan"
+      ],
+      "available_ingredient_ids": [
+        "tangyuan",
+        "ginger-juice",
+        "mango",
+        "coconut-milk",
+        "pomelo",
+        "sago"
+      ],
+      "half_success_hint_id": "hint-Q17",
+      "success_wisdom_id": "wisdom-Q17",
+      "food_name": "椰汁汤圆",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 17
+    },
+    {
+      "id": "Q18",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"苦涩的液体和更苦涩的粉末。既然已经开始反胃，为什么不倒掉？\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"苦涩的液体和更苦涩的粉末。既然已经开始反胃，为什么不倒掉？\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "ice-room",
+      "shop_name": "零点冰室",
+      "recipe_id": "recipe-Q18",
+      "recipe_ingredient_ids": [
+        "strong-tea",
+        "coffee-beans"
+      ],
+      "available_ingredient_ids": [
+        "coffee-beans",
+        "evaporated-milk",
+        "strong-tea",
+        "lemon-slice",
+        "pineapple-bun-base",
+        "butter"
+      ],
+      "half_success_hint_id": "hint-Q18",
+      "success_wisdom_id": "wisdom-Q18",
+      "food_name": "苦鸳鸯",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 18
+    },
+    {
+      "id": "Q19",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"黏糊糊的拥抱和已经熟透了的金色回忆。它很甜，但也快要腐烂了。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"黏糊糊的拥抱和已经熟透了的金色回忆。它很甜，但也快要腐烂了。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "dessert-station",
+      "shop_name": "失眠甜品站",
+      "recipe_id": "recipe-Q19",
+      "recipe_ingredient_ids": [
+        "tangyuan",
+        "mango"
+      ],
+      "available_ingredient_ids": [
+        "tangyuan",
+        "ginger-juice",
+        "mango",
+        "coconut-milk",
+        "pomelo",
+        "sago"
+      ],
+      "half_success_hint_id": "hint-Q19",
+      "success_wisdom_id": "wisdom-Q19",
+      "food_name": "芒果汤圆",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 19
+    },
+    {
+      "id": "Q20",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"一种让你眼眶发热的火辣，和一种已经远去的金色的香。吃完就忘了吧。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"一种让你眼眶发热的火辣，和一种已经远去的金色的香。吃完就忘了吧。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "dessert-station",
+      "shop_name": "失眠甜品站",
+      "recipe_id": "recipe-Q20",
+      "recipe_ingredient_ids": [
+        "ginger-juice",
+        "mango"
+      ],
+      "available_ingredient_ids": [
+        "tangyuan",
+        "ginger-juice",
+        "mango",
+        "coconut-milk",
+        "pomelo",
+        "sago"
+      ],
+      "half_success_hint_id": "hint-Q20",
+      "success_wisdom_id": "wisdom-Q20",
+      "food_name": "姜芒撞奶",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 20
+    },
+    {
+      "id": "Q21",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"这块黄色的油脂单吃很腻，但这块面包没它又不行。懂了吗？\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"这块黄色的油脂单吃很腻，但这块面包没它又不行。懂了吗？\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "ice-room",
+      "shop_name": "零点冰室",
+      "recipe_id": "recipe-Q21",
+      "recipe_ingredient_ids": [
+        "pineapple-bun-base",
+        "butter"
+      ],
+      "available_ingredient_ids": [
+        "coffee-beans",
+        "evaporated-milk",
+        "strong-tea",
+        "lemon-slice",
+        "pineapple-bun-base",
+        "butter"
+      ],
+      "half_success_hint_id": "hint-Q21",
+      "success_wisdom_id": "wisdom-Q21",
+      "food_name": "黄金菠萝油",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 21
+    },
+    {
+      "id": "Q22",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"原本碎裂的、透明的残片，只要跳进那片纯白的海洋，就能活过来。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"原本碎裂的、透明的残片，只要跳进那片纯白的海洋，就能活过来。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "dessert-station",
+      "shop_name": "失眠甜品站",
+      "recipe_id": "recipe-Q22",
+      "recipe_ingredient_ids": [
+        "sago",
+        "coconut-milk"
+      ],
+      "available_ingredient_ids": [
+        "tangyuan",
+        "ginger-juice",
+        "mango",
+        "coconut-milk",
+        "pomelo",
+        "sago"
+      ],
+      "half_success_hint_id": "hint-Q22",
+      "success_wisdom_id": "wisdom-Q22",
+      "food_name": "椰汁西米露",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 22
+    },
+    {
+      "id": "Q23",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"既然你这么喜欢'承载'别人，那就给我一份最沉重、最难嚼的东西。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"既然你这么喜欢'承载'别人，那就给我一份最沉重、最难嚼的东西。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "street-stall",
+      "shop_name": "霓虹大排档",
+      "recipe_id": "recipe-Q23",
+      "recipe_ingredient_ids": [
+        "thick-noodles",
+        "beef-brisket"
+      ],
+      "available_ingredient_ids": [
+        "rice-roll",
+        "curry-sauce",
+        "thick-noodles",
+        "fish-ball",
+        "beef-brisket",
+        "radish"
+      ],
+      "half_success_hint_id": "hint-Q23",
+      "success_wisdom_id": "wisdom-Q23",
+      "food_name": "牛腩捞面",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 23
+    },
+    {
+      "id": "Q24",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"外面是极度的酸，里面是极度的甜。别把你的壳和你的心搞混了。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"外面是极度的酸，里面是极度的甜。别把你的壳和你的心搞混了。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "ice-room",
+      "shop_name": "零点冰室",
+      "recipe_id": "recipe-Q24",
+      "recipe_ingredient_ids": [
+        "lemon-slice",
+        "mango"
+      ],
+      "available_ingredient_ids": [
+        "coffee-beans",
+        "evaporated-milk",
+        "strong-tea",
+        "lemon-slice",
+        "pineapple-bun-base",
+        "butter",
+        "mango"
+      ],
+      "half_success_hint_id": "hint-Q24",
+      "success_wisdom_id": "wisdom-Q24",
+      "food_name": "柠香芒果",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 24
+    },
+    {
+      "id": "Q25",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"那是深夜的茶色和清晨的白色。这一杯喝完，天也就亮了。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"那是深夜的茶色和清晨的白色。这一杯喝完，天也就亮了。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "ice-room",
+      "shop_name": "零点冰室",
+      "recipe_id": "recipe-Q25",
+      "recipe_ingredient_ids": [
+        "strong-tea",
+        "evaporated-milk"
+      ],
+      "available_ingredient_ids": [
+        "coffee-beans",
+        "evaporated-milk",
+        "strong-tea",
+        "lemon-slice",
+        "pineapple-bun-base",
+        "butter"
+      ],
+      "half_success_hint_id": "hint-Q25",
+      "success_wisdom_id": "wisdom-Q25",
+      "food_name": "丝袜奶茶",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 25
+    },
+    {
+      "id": "Q26",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"毫无味道的碳水堆叠在一起。意义？意义是你最后加的那勺辣椒酱。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"毫无味道的碳水堆叠在一起。意义？意义是你最后加的那勺辣椒酱。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "street-stall",
+      "shop_name": "霓虹大排档",
+      "recipe_id": "recipe-Q26",
+      "recipe_ingredient_ids": [
+        "thick-noodles",
+        "fish-ball"
+      ],
+      "available_ingredient_ids": [
+        "rice-roll",
+        "curry-sauce",
+        "thick-noodles",
+        "fish-ball",
+        "beef-brisket",
+        "radish"
+      ],
+      "half_success_hint_id": "hint-Q26",
+      "success_wisdom_id": "wisdom-Q26",
+      "food_name": "鱼蛋粉",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 26
+    },
+    {
+      "id": "Q27",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"你需要一点极度的清醒，和一点酸涩的视角。切断那些发光的谎言。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"你需要一点极度的清醒，和一点酸涩的视角。切断那些发光的谎言。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "ice-room",
+      "shop_name": "零点冰室",
+      "recipe_id": "recipe-Q27",
+      "recipe_ingredient_ids": [
+        "coffee-beans",
+        "lemon-slice"
+      ],
+      "available_ingredient_ids": [
+        "coffee-beans",
+        "evaporated-milk",
+        "strong-tea",
+        "lemon-slice",
+        "pineapple-bun-base",
+        "butter"
+      ],
+      "half_success_hint_id": "hint-Q27",
+      "success_wisdom_id": "wisdom-Q27",
+      "food_name": "柠啡",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 27
+    },
+    {
+      "id": "Q28",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"去弄一碗辣得你满头大汗的水，去保护那几颗软弱、白嫩的心。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"去弄一碗辣得你满头大汗的水，去保护那几颗软弱、白嫩的心。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "dessert-station",
+      "shop_name": "失眠甜品站",
+      "recipe_id": "recipe-Q28",
+      "recipe_ingredient_ids": [
+        "ginger-juice",
+        "tangyuan"
+      ],
+      "available_ingredient_ids": [
+        "tangyuan",
+        "ginger-juice",
+        "mango",
+        "coconut-milk",
+        "pomelo",
+        "sago"
+      ],
+      "half_success_hint_id": "hint-Q28",
+      "success_wisdom_id": "wisdom-Q28",
+      "food_name": "姜汁汤圆",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 28
+    },
+    {
+      "id": "Q29",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"两种最廉价、最苍白、生活在底层的食材。它们挨得这么近，真挤。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"两种最廉价、最苍白、生活在底层的食材。它们挨得这么近，真挤。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "street-stall",
+      "shop_name": "霓虹大排档",
+      "recipe_id": "recipe-Q29",
+      "recipe_ingredient_ids": [
+        "radish",
+        "rice-roll"
+      ],
+      "available_ingredient_ids": [
+        "rice-roll",
+        "curry-sauce",
+        "thick-noodles",
+        "fish-ball",
+        "beef-brisket",
+        "radish"
+      ],
+      "half_success_hint_id": "hint-Q29",
+      "success_wisdom_id": "wisdom-Q29",
+      "food_name": "萝卜肠粉",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 29
+    },
+    {
+      "id": "Q30",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"把那些长在树上的、带着阳光和果酸的香气都给我拿来。这里太闷了。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"把那些长在树上的、带着阳光和果酸的香气都给我拿来。这里太闷了。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "dessert-station",
+      "shop_name": "失眠甜品站",
+      "recipe_id": "recipe-Q30",
+      "recipe_ingredient_ids": [
+        "pomelo",
+        "mango"
+      ],
+      "available_ingredient_ids": [
+        "tangyuan",
+        "ginger-juice",
+        "mango",
+        "coconut-milk",
+        "pomelo",
+        "sago"
+      ],
+      "half_success_hint_id": "hint-Q30",
+      "success_wisdom_id": "wisdom-Q30",
+      "food_name": "杨枝甘露",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 30
+    },
+    {
+      "id": "Q31",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"用最刮油的涩味，去强行消解那块肥腻的时间。你快要透支了。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"用最刮油的涩味，去强行消解那块肥腻的时间。你快要透支了。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "ice-room",
+      "shop_name": "零点冰室",
+      "recipe_id": "recipe-Q31",
+      "recipe_ingredient_ids": [
+        "strong-tea",
+        "butter"
+      ],
+      "available_ingredient_ids": [
+        "coffee-beans",
+        "evaporated-milk",
+        "strong-tea",
+        "lemon-slice",
+        "pineapple-bun-base",
+        "butter"
+      ],
+      "half_success_hint_id": "hint-Q31",
+      "success_wisdom_id": "wisdom-Q31",
+      "food_name": "茶走",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 31
+    },
+    {
+      "id": "Q32",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"人类最愚蠢的交换：用透支的精力，去换取那一点点苦涩的清醒。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"人类最愚蠢的交换：用透支的精力，去换取那一点点苦涩的清醒。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "ice-room",
+      "shop_name": "零点冰室",
+      "recipe_id": "recipe-Q32",
+      "recipe_ingredient_ids": [
+        "coffee-beans",
+        "strong-tea"
+      ],
+      "available_ingredient_ids": [
+        "coffee-beans",
+        "evaporated-milk",
+        "strong-tea",
+        "lemon-slice",
+        "pineapple-bun-base",
+        "butter"
+      ],
+      "half_success_hint_id": "hint-Q32",
+      "success_wisdom_id": "wisdom-Q32",
+      "food_name": "魔鬼特饮",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 32
+    },
+    {
+      "id": "Q33",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"厚重、结实、能让你产生幻觉的脂肪，配上难嚼的肉。假装很安全。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"厚重、结实、能让你产生幻觉的脂肪，配上难嚼的肉。假装很安全。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "street-stall",
+      "shop_name": "霓虹大排档",
+      "recipe_id": "recipe-Q33",
+      "recipe_ingredient_ids": [
+        "beef-brisket",
+        "radish"
+      ],
+      "available_ingredient_ids": [
+        "rice-roll",
+        "curry-sauce",
+        "thick-noodles",
+        "fish-ball",
+        "beef-brisket",
+        "radish"
+      ],
+      "half_success_hint_id": "hint-Q33",
+      "success_wisdom_id": "wisdom-Q33",
+      "food_name": "柱候牛腩",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 33
+    },
+    {
+      "id": "Q34",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"金色的美梦，盖在软糯的幻想之上。去拿那份最像金子的礼物。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"金色的美梦，盖在软糯的幻想之上。去拿那份最像金子的礼物。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "dessert-station",
+      "shop_name": "失眠甜品站",
+      "recipe_id": "recipe-Q34",
+      "recipe_ingredient_ids": [
+        "mango",
+        "tangyuan"
+      ],
+      "available_ingredient_ids": [
+        "tangyuan",
+        "ginger-juice",
+        "mango",
+        "coconut-milk",
+        "pomelo",
+        "sago"
+      ],
+      "half_success_hint_id": "hint-Q34",
+      "success_wisdom_id": "wisdom-Q34",
+      "food_name": "金玉满堂",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 34
+    },
+    {
+      "id": "Q35",
+      "title": "倒霉透顶求转机",
+      "title_source": "direct_0421_v1",
+      "riddle_text": "\"一种从土里长出来的辣，去冲撞另一种从土里长出来的苍白。转机在地下。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"一种从土里长出来的辣，去冲撞另一种从土里长出来的苍白。转机在地下。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "dessert-station",
+      "shop_name": "失眠甜品站",
+      "recipe_id": "recipe-Q35",
+      "recipe_ingredient_ids": [
+        "ginger-juice",
+        "radish"
+      ],
+      "available_ingredient_ids": [
+        "tangyuan",
+        "ginger-juice",
+        "mango",
+        "coconut-milk",
+        "pomelo",
+        "sago",
+        "radish"
+      ],
+      "half_success_hint_id": "hint-Q35",
+      "success_wisdom_id": "wisdom-Q35",
+      "food_name": "姜汁萝卜",
+      "is_v1_seed": true,
+      "needs_manual_title": false,
+      "needs_manual_riddle": false,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "V1 direct title/riddle mapped by matching recipe+food",
+      "order": 35
+    },
+    {
+      "id": "Q36",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"苦上加苦，涩中带涩。既然你觉得生活没给你出路，那就再熬一会儿。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"苦上加苦，涩中带涩。既然你觉得生活没给你出路，那就再熬一会儿。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "ice-room",
+      "shop_name": "零点冰室",
+      "recipe_id": "recipe-Q36",
+      "recipe_ingredient_ids": [
+        "strong-tea",
+        "coffee-beans"
+      ],
+      "available_ingredient_ids": [
+        "coffee-beans",
+        "evaporated-milk",
+        "strong-tea",
+        "lemon-slice",
+        "pineapple-bun-base",
+        "butter"
+      ],
+      "half_success_hint_id": "hint-Q36",
+      "success_wisdom_id": "wisdom-Q36",
+      "food_name": "苦尽甘来",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 36
+    },
+    {
+      "id": "Q37",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"那种清冷的酸，和那种老实的根茎。你该清理一下你的内部系统了。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"那种清冷的酸，和那种老实的根茎。你该清理一下你的内部系统了。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "street-stall",
+      "shop_name": "霓虹大排档",
+      "recipe_id": "recipe-Q37",
+      "recipe_ingredient_ids": [
+        "radish",
+        "lemon-slice"
+      ],
+      "available_ingredient_ids": [
+        "rice-roll",
+        "curry-sauce",
+        "thick-noodles",
+        "fish-ball",
+        "beef-brisket",
+        "radish",
+        "lemon-slice"
+      ],
+      "half_success_hint_id": "hint-Q37",
+      "success_wisdom_id": "wisdom-Q37",
+      "food_name": "柠香萝卜",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 37
+    },
+    {
+      "id": "Q38",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"给本喵一份像云朵一样柔软、像奶脂一样温润的安慰。快去。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"给本喵一份像云朵一样柔软、像奶脂一样温润的安慰。快去。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "dessert-station",
+      "shop_name": "失眠甜品站",
+      "recipe_id": "recipe-Q38",
+      "recipe_ingredient_ids": [
+        "coconut-milk",
+        "tangyuan"
+      ],
+      "available_ingredient_ids": [
+        "tangyuan",
+        "ginger-juice",
+        "mango",
+        "coconut-milk",
+        "pomelo",
+        "sago"
+      ],
+      "half_success_hint_id": "hint-Q38",
+      "success_wisdom_id": "wisdom-Q38",
+      "food_name": "云朵椰奶汤圆",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 38
+    },
+    {
+      "id": "Q39",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"给我双倍的、跳来跳去的、没有脑子的圆形肉球。这就是你们。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"给我双倍的、跳来跳去的、没有脑子的圆形肉球。这就是你们。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "street-stall",
+      "shop_name": "霓虹大排档",
+      "recipe_id": "recipe-Q39",
+      "recipe_ingredient_ids": [
+        "fish-ball",
+        "fish-ball"
+      ],
+      "available_ingredient_ids": [
+        "rice-roll",
+        "curry-sauce",
+        "thick-noodles",
+        "fish-ball",
+        "beef-brisket",
+        "radish"
+      ],
+      "half_success_hint_id": "hint-Q39",
+      "success_wisdom_id": "wisdom-Q39",
+      "food_name": "双份鱼蛋",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 39
+    },
+    {
+      "id": "Q40",
+      "title": "",
+      "title_source": "not_provided_in_md",
+      "riddle_text": "\"去剥开那层苦涩的皮，去寻找那个金色的惊喜。太阳还没落山呢。\"",
+      "riddle_source": "prd_0427_appendix_zero",
+      "taste_description": "\"去剥开那层苦涩的皮，去寻找那个金色的惊喜。太阳还没落山呢。\"",
+      "internal_id_visible_to_player": false,
+      "shop_id": "dessert-station",
+      "shop_name": "失眠甜品站",
+      "recipe_id": "recipe-Q40",
+      "recipe_ingredient_ids": [
+        "pomelo",
+        "mango"
+      ],
+      "available_ingredient_ids": [
+        "tangyuan",
+        "ginger-juice",
+        "mango",
+        "coconut-milk",
+        "pomelo",
+        "sago"
+      ],
+      "half_success_hint_id": "hint-Q40",
+      "success_wisdom_id": "wisdom-Q40",
+      "food_name": "柚子芒捞",
+      "is_v1_seed": false,
+      "needs_manual_title": true,
+      "needs_manual_riddle": true,
+      "taxonomy": {
+        "level1_category": "",
+        "level2_category": "",
+        "source": "not_provided_in_md_except_Q01_example"
+      },
+      "source_notes": "Title/riddle not explicitly provided in 0421/0424 md; keep blank for manual review.",
+      "order": 40
+    }
+  ],
+  "shops": [
+    {
+      "id": "dessert-station",
+      "name": "失眠甜品站",
+      "short_name": "甜品站",
+      "order": 1,
+      "position": "left",
+      "description": "治愈系的甜蜜避风港，软糯梦幻的终点。",
+      "door_type": "玻璃推拉门",
+      "door_motion": "单侧平移",
+      "sfx": "玻璃摩擦的“嗞溜”声",
+      "npc": "布偶猫",
+      "npc_description": "戴粉色蕾丝领结和迷你厨师帽，眼睛很大，呈眨眼待机状。",
+      "ingredient_ids": [
+        "tangyuan",
+        "ginger-juice",
+        "mango",
+        "coconut-milk",
+        "pomelo",
+        "sago"
+      ]
+    },
+    {
+      "id": "ice-room",
+      "name": "零点冰室",
+      "short_name": "冰室",
+      "order": 2,
+      "position": "middle",
+      "description": "冰火交融的港味经典，苦涩中带点温柔。",
+      "door_type": "木质平推门",
+      "door_motion": "双扇平开",
+      "sfx": "吱呀声 + 清脆风铃声",
+      "npc": "橘猫",
+      "npc_description": "戴白围裙，耳朵后别着一支铅笔，呈待机眯眼状。",
+      "ingredient_ids": [
+        "coffee-beans",
+        "evaporated-milk",
+        "strong-tea",
+        "lemon-slice",
+        "pineapple-bun-base",
+        "butter"
+      ]
+    },
+    {
+      "id": "street-stall",
+      "name": "霓虹大排档",
+      "short_name": "大排档",
+      "order": 3,
+      "position": "right",
+      "description": "深夜烟火气的聚集地，热辣滚烫的转机。",
+      "door_type": "金属卷闸门",
+      "door_motion": "向上卷起",
+      "sfx": "金属拉拽的“哗啦”声",
+      "npc": "奶牛猫",
+      "npc_description": "披着白色汗衫，脖子上挂着一条毛巾，呈眨眼待机状。",
+      "ingredient_ids": [
+        "rice-roll",
+        "curry-sauce",
+        "thick-noodles",
+        "fish-ball",
+        "beef-brisket",
+        "radish"
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "coffee-beans",
+      "name": "咖啡豆",
+      "shop_id": "ice-room",
+      "shop_name": "零点冰室",
+      "short_name": "冰室",
+      "description": "极度的清醒，用来切断深夜谎言。",
+      "sprite_key": "ing_coffee_beans",
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "id": "evaporated-milk",
+      "name": "黑白淡奶",
+      "shop_id": "ice-room",
+      "shop_name": "零点冰室",
+      "short_name": "冰室",
+      "description": "温柔的假面，掩盖了生活苦底。",
+      "sprite_key": "ing_evaporated_milk",
+      "order": 2,
+      "is_active": true
+    },
+    {
+      "id": "strong-tea",
+      "name": "浓茶",
+      "shop_id": "ice-room",
+      "shop_name": "零点冰室",
+      "short_name": "冰室",
+      "description": "经过八次撞击，锁住陈年苦涩。",
+      "sprite_key": "ing_strong_tea",
+      "order": 3,
+      "is_active": true
+    },
+    {
+      "id": "lemon-slice",
+      "name": "柠檬片",
+      "shop_id": "ice-room",
+      "shop_name": "零点冰室",
+      "short_name": "冰室",
+      "description": "尖刻的酸，给真相加一点锋芒。",
+      "sprite_key": "ing_lemon_slice",
+      "order": 4,
+      "is_active": true
+    },
+    {
+      "id": "pineapple-bun-base",
+      "name": "菠萝包底",
+      "shop_id": "ice-room",
+      "shop_name": "零点冰室",
+      "short_name": "冰室",
+      "description": "甜美酥脆，是面具最好的外壳。",
+      "sprite_key": "ing_pineapple_bun_base",
+      "order": 5,
+      "is_active": true
+    },
+    {
+      "id": "butter",
+      "name": "黄油",
+      "shop_id": "ice-room",
+      "shop_name": "零点冰室",
+      "short_name": "冰室",
+      "description": "厚重危险，让安稳跳进黏腻里。",
+      "sprite_key": "ing_butter",
+      "order": 6,
+      "is_active": true
+    },
+    {
+      "id": "rice-roll",
+      "name": "肠粉",
+      "shop_id": "street-stall",
+      "shop_name": "霓虹大排档",
+      "short_name": "大排档",
+      "description": "洁白单调，空虚需要苍白来填。",
+      "sprite_key": "ing_rice_roll",
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "id": "curry-sauce",
+      "name": "咖喱酱",
+      "shop_id": "street-stall",
+      "shop_name": "霓虹大排档",
+      "short_name": "大排档",
+      "description": "浓稠脏酱汁，让平凡瞬间堕落。",
+      "sprite_key": "ing_curry_sauce",
+      "order": 2,
+      "is_active": true
+    },
+    {
+      "id": "thick-noodles",
+      "name": "粗面",
+      "shop_id": "street-stall",
+      "shop_name": "霓虹大排档",
+      "short_name": "大排档",
+      "description": "基础碳水，是机械续命的链条。",
+      "sprite_key": "ing_thick_noodles",
+      "order": 3,
+      "is_active": true
+    },
+    {
+      "id": "fish-ball",
+      "name": "鱼蛋",
+      "shop_id": "street-stall",
+      "shop_name": "霓虹大排档",
+      "short_name": "大排档",
+      "description": "没脑子的肉球，意义由你自己加。",
+      "sprite_key": "ing_fish_ball",
+      "order": 4,
+      "is_active": true
+    },
+    {
+      "id": "beef-brisket",
+      "name": "牛腩",
+      "shop_id": "street-stall",
+      "shop_name": "霓虹大排档",
+      "short_name": "大排档",
+      "description": "难嚼的油脂，负重前行的代价。",
+      "sprite_key": "ing_beef_brisket",
+      "order": 5,
+      "is_active": true
+    },
+    {
+      "id": "radish",
+      "name": "萝卜",
+      "shop_id": "street-stall",
+      "shop_name": "霓虹大排档",
+      "short_name": "大排档",
+      "description": "吸油的根茎，卑微地吸附着欲望。",
+      "sprite_key": "ing_radish",
+      "order": 6,
+      "is_active": true
+    },
+    {
+      "id": "tangyuan",
+      "name": "汤圆",
+      "shop_id": "dessert-station",
+      "shop_name": "失眠甜品站",
+      "short_name": "甜品站",
+      "description": "假装圆满，包裹着黏糊糊的拥抱。",
+      "sprite_key": "ing_tangyuan",
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "id": "ginger-juice",
+      "name": "姜汁",
+      "shop_id": "dessert-station",
+      "shop_name": "失眠甜品站",
+      "short_name": "甜品站",
+      "description": "滚烫辛辣，让眼眶发热的冲撞。",
+      "sprite_key": "ing_ginger_juice",
+      "order": 2,
+      "is_active": true
+    },
+    {
+      "id": "mango",
+      "name": "芒果",
+      "shop_id": "dessert-station",
+      "shop_name": "失眠甜品站",
+      "short_name": "甜品站",
+      "description": "金色香气，熟透到腐烂的美梦。",
+      "sprite_key": "ing_mango",
+      "order": 3,
+      "is_active": true
+    },
+    {
+      "id": "coconut-milk",
+      "name": "椰浆",
+      "shop_id": "dessert-station",
+      "shop_name": "失眠甜品站",
+      "short_name": "甜品站",
+      "description": "纯白海洋，溺死在醇厚柔情里。",
+      "sprite_key": "ing_coconut_milk",
+      "order": 4,
+      "is_active": true
+    },
+    {
+      "id": "pomelo",
+      "name": "柚子",
+      "shop_id": "dessert-station",
+      "shop_name": "失眠甜品站",
+      "short_name": "甜品站",
+      "description": "苦涩外皮，剥开后才见酸楚心。",
+      "sprite_key": "ing_pomelo",
+      "order": 5,
+      "is_active": true
+    },
+    {
+      "id": "sago",
+      "name": "西米",
+      "shop_id": "dessert-station",
+      "shop_name": "失眠甜品站",
+      "short_name": "甜品站",
+      "description": "透明碎片，孤独需要它们作伴。",
+      "sprite_key": "ing_sago",
+      "order": 6,
+      "is_active": true
+    }
+  ],
+  "ingredients_by_shop": {
+    "ice-room": [
+      "coffee-beans",
+      "evaporated-milk",
+      "strong-tea",
+      "lemon-slice",
+      "pineapple-bun-base",
+      "butter"
+    ],
+    "street-stall": [
+      "rice-roll",
+      "curry-sauce",
+      "thick-noodles",
+      "fish-ball",
+      "beef-brisket",
+      "radish"
+    ],
+    "dessert-station": [
+      "tangyuan",
+      "ginger-juice",
+      "mango",
+      "coconut-milk",
+      "pomelo",
+      "sago"
+    ]
+  },
+  "recipes": [
+    {
+      "id": "recipe-Q01",
+      "issue_id": "Q01",
+      "ingredient_ids": [
+        "coffee-beans",
+        "evaporated-milk"
+      ],
+      "ingredient_names": [
+        "咖啡豆",
+        "黑白淡奶"
+      ],
+      "food_name": "热奶茶",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q02",
+      "issue_id": "Q02",
+      "ingredient_ids": [
+        "rice-roll",
+        "curry-sauce"
+      ],
+      "ingredient_names": [
+        "肠粉",
+        "咖喱酱"
+      ],
+      "food_name": "咖喱肠粉",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q03",
+      "issue_id": "Q03",
+      "ingredient_ids": [
+        "thick-noodles",
+        "fish-ball"
+      ],
+      "ingredient_names": [
+        "粗面",
+        "鱼蛋"
+      ],
+      "food_name": "鱼蛋粗面",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q04",
+      "issue_id": "Q04",
+      "ingredient_ids": [
+        "thick-noodles",
+        "rice-roll"
+      ],
+      "ingredient_names": [
+        "粗面",
+        "肠粉"
+      ],
+      "food_name": "双拼碳水",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q05",
+      "issue_id": "Q05",
+      "ingredient_ids": [
+        "lemon-slice",
+        "strong-tea"
+      ],
+      "ingredient_names": [
+        "柠檬片",
+        "浓茶"
+      ],
+      "food_name": "冻柠茶",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q06",
+      "issue_id": "Q06",
+      "ingredient_ids": [
+        "strong-tea",
+        "pineapple-bun-base"
+      ],
+      "ingredient_names": [
+        "浓茶",
+        "菠萝包底"
+      ],
+      "food_name": "菠萝油套餐",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q07",
+      "issue_id": "Q07",
+      "ingredient_ids": [
+        "pineapple-bun-base",
+        "butter"
+      ],
+      "ingredient_names": [
+        "菠萝包底",
+        "黄油"
+      ],
+      "food_name": "冰火菠萝油",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q08",
+      "issue_id": "Q08",
+      "ingredient_ids": [
+        "strong-tea",
+        "coffee-beans"
+      ],
+      "ingredient_names": [
+        "浓茶",
+        "咖啡豆"
+      ],
+      "food_name": "鸳鸯奶茶",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q09",
+      "issue_id": "Q09",
+      "ingredient_ids": [
+        "tangyuan",
+        "ginger-juice"
+      ],
+      "ingredient_names": [
+        "汤圆",
+        "姜汁"
+      ],
+      "food_name": "姜汁汤圆",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q10",
+      "issue_id": "Q10",
+      "ingredient_ids": [
+        "fish-ball",
+        "curry-sauce"
+      ],
+      "ingredient_names": [
+        "鱼蛋",
+        "咖喱酱"
+      ],
+      "food_name": "咖喱鱼蛋",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q11",
+      "issue_id": "Q11",
+      "ingredient_ids": [
+        "mango",
+        "coconut-milk"
+      ],
+      "ingredient_names": [
+        "芒果",
+        "椰浆"
+      ],
+      "food_name": "芒果椰汁西米露",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q12",
+      "issue_id": "Q12",
+      "ingredient_ids": [
+        "beef-brisket",
+        "radish"
+      ],
+      "ingredient_names": [
+        "牛腩",
+        "萝卜"
+      ],
+      "food_name": "萝卜牛腩",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q13",
+      "issue_id": "Q13",
+      "ingredient_ids": [
+        "radish",
+        "beef-brisket"
+      ],
+      "ingredient_names": [
+        "萝卜",
+        "牛腩"
+      ],
+      "food_name": "炖萝卜牛腩",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q14",
+      "issue_id": "Q14",
+      "ingredient_ids": [
+        "rice-roll",
+        "radish"
+      ],
+      "ingredient_names": [
+        "肠粉",
+        "萝卜"
+      ],
+      "food_name": "斋肠萝卜糕",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q15",
+      "issue_id": "Q15",
+      "ingredient_ids": [
+        "strong-tea",
+        "lemon-slice"
+      ],
+      "ingredient_names": [
+        "浓茶",
+        "柠檬片"
+      ],
+      "food_name": "咸柠七",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q16",
+      "issue_id": "Q16",
+      "ingredient_ids": [
+        "pomelo",
+        "sago"
+      ],
+      "ingredient_names": [
+        "柚子",
+        "西米"
+      ],
+      "food_name": "柚子西米露",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q17",
+      "issue_id": "Q17",
+      "ingredient_ids": [
+        "coconut-milk",
+        "tangyuan"
+      ],
+      "ingredient_names": [
+        "椰浆",
+        "汤圆"
+      ],
+      "food_name": "椰汁汤圆",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q18",
+      "issue_id": "Q18",
+      "ingredient_ids": [
+        "strong-tea",
+        "coffee-beans"
+      ],
+      "ingredient_names": [
+        "浓茶",
+        "咖啡豆"
+      ],
+      "food_name": "苦鸳鸯",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q19",
+      "issue_id": "Q19",
+      "ingredient_ids": [
+        "tangyuan",
+        "mango"
+      ],
+      "ingredient_names": [
+        "汤圆",
+        "芒果"
+      ],
+      "food_name": "芒果汤圆",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q20",
+      "issue_id": "Q20",
+      "ingredient_ids": [
+        "ginger-juice",
+        "mango"
+      ],
+      "ingredient_names": [
+        "姜汁",
+        "芒果"
+      ],
+      "food_name": "姜芒撞奶",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q21",
+      "issue_id": "Q21",
+      "ingredient_ids": [
+        "pineapple-bun-base",
+        "butter"
+      ],
+      "ingredient_names": [
+        "菠萝包底",
+        "黄油"
+      ],
+      "food_name": "黄金菠萝油",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q22",
+      "issue_id": "Q22",
+      "ingredient_ids": [
+        "sago",
+        "coconut-milk"
+      ],
+      "ingredient_names": [
+        "西米",
+        "椰浆"
+      ],
+      "food_name": "椰汁西米露",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q23",
+      "issue_id": "Q23",
+      "ingredient_ids": [
+        "thick-noodles",
+        "beef-brisket"
+      ],
+      "ingredient_names": [
+        "粗面",
+        "牛腩"
+      ],
+      "food_name": "牛腩捞面",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q24",
+      "issue_id": "Q24",
+      "ingredient_ids": [
+        "lemon-slice",
+        "mango"
+      ],
+      "ingredient_names": [
+        "柠檬片",
+        "芒果"
+      ],
+      "food_name": "柠香芒果",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q25",
+      "issue_id": "Q25",
+      "ingredient_ids": [
+        "strong-tea",
+        "evaporated-milk"
+      ],
+      "ingredient_names": [
+        "浓茶",
+        "黑白淡奶"
+      ],
+      "food_name": "丝袜奶茶",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q26",
+      "issue_id": "Q26",
+      "ingredient_ids": [
+        "thick-noodles",
+        "fish-ball"
+      ],
+      "ingredient_names": [
+        "粗面",
+        "鱼蛋"
+      ],
+      "food_name": "鱼蛋粉",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q27",
+      "issue_id": "Q27",
+      "ingredient_ids": [
+        "coffee-beans",
+        "lemon-slice"
+      ],
+      "ingredient_names": [
+        "咖啡豆",
+        "柠檬片"
+      ],
+      "food_name": "柠啡",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q28",
+      "issue_id": "Q28",
+      "ingredient_ids": [
+        "ginger-juice",
+        "tangyuan"
+      ],
+      "ingredient_names": [
+        "姜汁",
+        "汤圆"
+      ],
+      "food_name": "姜汁汤圆",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q29",
+      "issue_id": "Q29",
+      "ingredient_ids": [
+        "radish",
+        "rice-roll"
+      ],
+      "ingredient_names": [
+        "萝卜",
+        "肠粉"
+      ],
+      "food_name": "萝卜肠粉",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q30",
+      "issue_id": "Q30",
+      "ingredient_ids": [
+        "pomelo",
+        "mango"
+      ],
+      "ingredient_names": [
+        "柚子",
+        "芒果"
+      ],
+      "food_name": "杨枝甘露",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q31",
+      "issue_id": "Q31",
+      "ingredient_ids": [
+        "strong-tea",
+        "butter"
+      ],
+      "ingredient_names": [
+        "浓茶",
+        "黄油"
+      ],
+      "food_name": "茶走",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q32",
+      "issue_id": "Q32",
+      "ingredient_ids": [
+        "coffee-beans",
+        "strong-tea"
+      ],
+      "ingredient_names": [
+        "咖啡豆",
+        "浓茶"
+      ],
+      "food_name": "魔鬼特饮",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q33",
+      "issue_id": "Q33",
+      "ingredient_ids": [
+        "beef-brisket",
+        "radish"
+      ],
+      "ingredient_names": [
+        "牛腩",
+        "萝卜"
+      ],
+      "food_name": "柱候牛腩",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q34",
+      "issue_id": "Q34",
+      "ingredient_ids": [
+        "mango",
+        "tangyuan"
+      ],
+      "ingredient_names": [
+        "芒果",
+        "汤圆"
+      ],
+      "food_name": "金玉满堂",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q35",
+      "issue_id": "Q35",
+      "ingredient_ids": [
+        "ginger-juice",
+        "radish"
+      ],
+      "ingredient_names": [
+        "姜汁",
+        "萝卜"
+      ],
+      "food_name": "姜汁萝卜",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q36",
+      "issue_id": "Q36",
+      "ingredient_ids": [
+        "strong-tea",
+        "coffee-beans"
+      ],
+      "ingredient_names": [
+        "浓茶",
+        "咖啡豆"
+      ],
+      "food_name": "苦尽甘来",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q37",
+      "issue_id": "Q37",
+      "ingredient_ids": [
+        "radish",
+        "lemon-slice"
+      ],
+      "ingredient_names": [
+        "萝卜",
+        "柠檬片"
+      ],
+      "food_name": "柠香萝卜",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q38",
+      "issue_id": "Q38",
+      "ingredient_ids": [
+        "coconut-milk",
+        "tangyuan"
+      ],
+      "ingredient_names": [
+        "椰浆",
+        "汤圆"
+      ],
+      "food_name": "云朵椰奶汤圆",
+      "half_success_type": "dual"
+    },
+    {
+      "id": "recipe-Q39",
+      "issue_id": "Q39",
+      "ingredient_ids": [
+        "fish-ball",
+        "fish-ball"
+      ],
+      "ingredient_names": [
+        "鱼蛋",
+        "鱼蛋"
+      ],
+      "food_name": "双份鱼蛋",
+      "half_success_type": "shared"
+    },
+    {
+      "id": "recipe-Q40",
+      "issue_id": "Q40",
+      "ingredient_ids": [
+        "pomelo",
+        "mango"
+      ],
+      "ingredient_names": [
+        "柚子",
+        "芒果"
+      ],
+      "food_name": "柚子芒捞",
+      "half_success_type": "dual"
+    }
+  ],
+  "half_success_hints": [
+    {
+      "id": "hint-Q01",
+      "issue_id": "Q01",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "coffee-beans",
+          "label": "只匹配咖啡豆",
+          "text": "苦味倒是有了，可那层伪装温柔的白色泡沫呢？没有它，心脏跳得太孤单。"
+        },
+        {
+          "ingredient_id": "evaporated-milk",
+          "label": "只匹配黑白淡奶",
+          "text": "奶白泡沫来了，但缺少能让心脏狂跳的苦味。温柔的假面需要苦底撑着。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q02",
+      "issue_id": "Q02",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "rice-roll",
+          "label": "只匹配肠粉",
+          "text": "洁白的粉皮已到位，但最浓稠最脏的酱汁还没淋上来。没有淹没，就不算堕落。"
+        },
+        {
+          "ingredient_id": "curry-sauce",
+          "label": "只匹配咖喱酱",
+          "text": "浓稠脏酱汁有了，可那块洁白无瑕的本体呢？没有粉皮，酱汁无处施展。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q03",
+      "issue_id": "Q03",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "thick-noodles",
+          "label": "只匹配粗面",
+          "text": "基础碳水对了，但廉价的肉球还没滚进来。没有鱼蛋，你拿什么机械续命？"
+        },
+        {
+          "ingredient_id": "fish-ball",
+          "label": "只匹配鱼蛋",
+          "text": "肉球来了，可最基础的碳水还没下锅。没有粗面，能量链条断了。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q04",
+      "issue_id": "Q04",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "thick-noodles",
+          "label": "只匹配粗面",
+          "text": "一种重复碳水有了，可另一种同样无聊的肠粉呢？双倍乏味才够味。"
+        },
+        {
+          "ingredient_id": "rice-roll",
+          "label": "只匹配肠粉",
+          "text": "苍白肠粉到场，但缺少另一种平淡碳水。营养毫无波澜，还差一半。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q05",
+      "issue_id": "Q05",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "lemon-slice",
+          "label": "只匹配柠檬片",
+          "text": "清冷的酸味对了，可刮油的苦涩还没倒进来。委屈的配方缺一不可。"
+        },
+        {
+          "ingredient_id": "strong-tea",
+          "label": "只匹配浓茶",
+          "text": "苦涩液体有了，但酸味柠檬片呢？没有酸，清冷感全无。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q06",
+      "issue_id": "Q06",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "strong-tea",
+          "label": "只匹配浓茶",
+          "text": "最苦的液体已备，可甜美酥脆的外壳呢？面具缺一半，戴不牢。"
+        },
+        {
+          "ingredient_id": "pineapple-bun-base",
+          "label": "只匹配菠萝包底",
+          "text": "酥脆外壳有了，但最苦的液体还没端来。没有苦底，甜就变成虚伪。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q07",
+      "issue_id": "Q07",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "pineapple-bun-base",
+          "label": "只匹配菠萝包底",
+          "text": "酥脆底座正确，可那块厚重危险的油脂呢？没有黄油，安稳跳不出黏腻。"
+        },
+        {
+          "ingredient_id": "butter",
+          "label": "只匹配黄油",
+          "text": "油脂到位，但缺少酥脆底座。没有面包，油腻无处附着。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q08",
+      "issue_id": "Q08",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "strong-tea",
+          "label": "只匹配浓茶",
+          "text": "一种彻夜难眠的苦水对了，还差另一种更苦的粉末。让它们在你胃里打架。"
+        },
+        {
+          "ingredient_id": "coffee-beans",
+          "label": "只匹配咖啡豆",
+          "text": "咖啡苦味有了，但浓茶的涩还没来。双倍失眠，缺一味都不行。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q09",
+      "issue_id": "Q09",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "tangyuan",
+          "label": "只匹配汤圆",
+          "text": "假装圆满的白色球体有了，但滚烫的辛辣还没来。没有姜汁，烫只烫一半。"
+        },
+        {
+          "ingredient_id": "ginger-juice",
+          "label": "只匹配姜汁",
+          "text": "辛辣姜汁到位，可那几颗软糯白球呢？没有汤圆，辣得没目标。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q10",
+      "issue_id": "Q10",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "fish-ball",
+          "label": "只匹配鱼蛋",
+          "text": "弹牙鱼蛋已在，但辛辣黄色酱汁还没淋上。嫉妒需要完整包裹。"
+        },
+        {
+          "ingredient_id": "curry-sauce",
+          "label": "只匹配咖喱酱",
+          "text": "浓稠咖喱来了，可圆润鱼蛋呢？没有球体，酱汁裹空气。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q11",
+      "issue_id": "Q11",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "mango",
+          "label": "只匹配芒果",
+          "text": "热带香气有了，但纯白醇厚的液体还没倒。阳光需要奶浴才温柔。"
+        },
+        {
+          "ingredient_id": "coconut-milk",
+          "label": "只匹配椰浆",
+          "text": "白色椰浆到场，可金色芒果呢？没有果香，奶浴太寡淡。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q12",
+      "issue_id": "Q12",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "beef-brisket",
+          "label": "只匹配牛腩",
+          "text": "难嚼肉块对了，但最廉价吸油的萝卜呢？没有它，油脂无处安放。"
+        },
+        {
+          "ingredient_id": "radish",
+          "label": "只匹配萝卜",
+          "text": "萝卜到位，可厚重牛腩还没来。没有肉，萝卜只是清汤。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q13",
+      "issue_id": "Q13",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "radish",
+          "label": "只匹配萝卜",
+          "text": "土里长的根茎对了，但浓郁高汤里的牛腩呢？归属需要互相熬煮。"
+        },
+        {
+          "ingredient_id": "beef-brisket",
+          "label": "只匹配牛腩",
+          "text": "牛腩来了，可萝卜还没下锅。没有根茎，高汤缺了底味。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q14",
+      "issue_id": "Q14",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "rice-roll",
+          "label": "只匹配肠粉",
+          "text": "最单调的碳水有了，可苍白的根茎呢？空虚需要双倍苍白。"
+        },
+        {
+          "ingredient_id": "radish",
+          "label": "只匹配萝卜",
+          "text": "苍白萝卜到场，但单调肠粉还没来。没有碳水，苍白不够厚。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q15",
+      "issue_id": "Q15",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "strong-tea",
+          "label": "只匹配浓茶",
+          "text": "清冷尖刻的液体对了，但酸涩的另一半还没加。真相从来不是单数。"
+        },
+        {
+          "ingredient_id": "lemon-slice",
+          "label": "只匹配柠檬片",
+          "text": "酸涩柠檬片有了，可苦涩浓茶呢？没有茶底，酸得没灵魂。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q16",
+      "issue_id": "Q16",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "pomelo",
+          "label": "只匹配柚子",
+          "text": "苦涩外皮剥开了，可里面那堆拼命聚在一起的透明珠子呢？孤独需要西米作伴。"
+        },
+        {
+          "ingredient_id": "sago",
+          "label": "只匹配西米",
+          "text": "透明珠子有了，但苦涩柚子肉还没来。没有果粒，空有颗粒感。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q17",
+      "issue_id": "Q17",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "coconut-milk",
+          "label": "只匹配椰浆",
+          "text": "一种醇厚白色对了，可另一种同样浓郁的汤圆呢？融合需要两方都到场。"
+        },
+        {
+          "ingredient_id": "tangyuan",
+          "label": "只匹配汤圆",
+          "text": "软糯汤圆到位，但白色椰浆还没倒。没有奶香，黏腻无解。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q18",
+      "issue_id": "Q18",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "strong-tea",
+          "label": "只匹配浓茶",
+          "text": "苦涩液体已在，可更苦涩的粉末呢？反胃就要双倍剂量。"
+        },
+        {
+          "ingredient_id": "coffee-beans",
+          "label": "只匹配咖啡豆",
+          "text": "咖啡粉末有了，但浓茶的涩还没来。没有茶，苦得单一。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q19",
+      "issue_id": "Q19",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "tangyuan",
+          "label": "只匹配汤圆",
+          "text": "黏糊糊的拥抱有了，但熟透的金色回忆还没切块。甜到腐烂要成双。"
+        },
+        {
+          "ingredient_id": "mango",
+          "label": "只匹配芒果",
+          "text": "金色芒果到位，可软糯汤圆呢？没有黏糊，甜得没依托。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q20",
+      "issue_id": "Q20",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "ginger-juice",
+          "label": "只匹配姜汁",
+          "text": "让你眼眶发热的火辣对了，可远去的金色香气呢？哭完需要另一半调味。"
+        },
+        {
+          "ingredient_id": "mango",
+          "label": "只匹配芒果",
+          "text": "金色香气有了，但火辣姜汁还没来。没有冲撞，眼泪流不出。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q21",
+      "issue_id": "Q21",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "pineapple-bun-base",
+          "label": "只匹配菠萝包底",
+          "text": "面包底座对了，可那块会腻的黄色油脂呢？没有黄油，不完美的搭配缺一半。"
+        },
+        {
+          "ingredient_id": "butter",
+          "label": "只匹配黄油",
+          "text": "油脂到位，但没了它就不行的面包呢？没有底座，油腻无处寄生。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q22",
+      "issue_id": "Q22",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "sago",
+          "label": "只匹配西米",
+          "text": "碎裂的透明残片有了，可那片纯白海洋还没端来。重组需要跳进液体。"
+        },
+        {
+          "ingredient_id": "coconut-milk",
+          "label": "只匹配椰浆",
+          "text": "纯白椰浆到场，但透明西米呢？没有碎片，海洋太安静。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q23",
+      "issue_id": "Q23",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "thick-noodles",
+          "label": "只匹配粗面",
+          "text": "承载的底座对了，但最沉重最难嚼的肉块呢？讨好需要负重来压。"
+        },
+        {
+          "ingredient_id": "beef-brisket",
+          "label": "只匹配牛腩",
+          "text": "难嚼牛腩到位，可粗面还没下锅。没有面条，肉块无处落座。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q24",
+      "issue_id": "Q24",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "lemon-slice",
+          "label": "只匹配柠檬片",
+          "text": "外面极度的酸拿来了，可里面极度的甜还没剥开。壳与心要同时出现。"
+        },
+        {
+          "ingredient_id": "mango",
+          "label": "只匹配芒果",
+          "text": "里面极度的甜有了，但外面极度的酸呢？没有酸壳，甜会腻。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q25",
+      "issue_id": "Q25",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "strong-tea",
+          "label": "只匹配浓茶",
+          "text": "深夜的茶色有了，可清晨的白色淡奶呢？天亮需要黑白相撞。"
+        },
+        {
+          "ingredient_id": "evaporated-milk",
+          "label": "只匹配黑白淡奶",
+          "text": "白色淡奶来了，但深夜的茶色还没倒。没有茶，奶只是昏睡。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q26",
+      "issue_id": "Q26",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "thick-noodles",
+          "label": "只匹配粗面",
+          "text": "毫无味道的碳水对了，可另一颗同样乏味的肉球呢？意义是你自己加戏。"
+        },
+        {
+          "ingredient_id": "fish-ball",
+          "label": "只匹配鱼蛋",
+          "text": "肉球到位，但平淡粗面还没来。没有碳水，肉球飘着没根。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q27",
+      "issue_id": "Q27",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "coffee-beans",
+          "label": "只匹配咖啡豆",
+          "text": "极度的清醒（咖啡）对了，还差一点酸涩的视角（柠檬）。切断谎言需要两味。"
+        },
+        {
+          "ingredient_id": "lemon-slice",
+          "label": "只匹配柠檬片",
+          "text": "酸涩视角有了，但清醒的苦味还没来。没有咖啡，酸得迷路。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q28",
+      "issue_id": "Q28",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "ginger-juice",
+          "label": "只匹配姜汁",
+          "text": "辣得满头大汗的姜水有了，可那几颗软弱白嫩的心呢？未来需要保护对象。"
+        },
+        {
+          "ingredient_id": "tangyuan",
+          "label": "只匹配汤圆",
+          "text": "软弱白嫩的心到位，但火辣姜水还没熬。没有辣，保护无力。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q29",
+      "issue_id": "Q29",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "radish",
+          "label": "只匹配萝卜",
+          "text": "一种苍白底层食材对了，可另一种同样廉价的肠粉呢？挤就挤一对。"
+        },
+        {
+          "ingredient_id": "rice-roll",
+          "label": "只匹配肠粉",
+          "text": "苍白肠粉到场，但土里长的萝卜还没来。没有根茎，苍白太单调。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q30",
+      "issue_id": "Q30",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "pomelo",
+          "label": "只匹配柚子",
+          "text": "树上的阳光果酸拿来了，还差另一种热带香气。让味觉旅行要结伴。"
+        },
+        {
+          "ingredient_id": "mango",
+          "label": "只匹配芒果",
+          "text": "金色芒果到位，但苦涩柚子呢？没有酸，甜得没层次。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q31",
+      "issue_id": "Q31",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "strong-tea",
+          "label": "只匹配浓茶",
+          "text": "刮油的涩味对了，但肥腻的时间块还没放。透支需要双主角。"
+        },
+        {
+          "ingredient_id": "butter",
+          "label": "只匹配黄油",
+          "text": "肥腻黄油有了，可刮油的浓茶呢？没有茶，油腻无处消解。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q32",
+      "issue_id": "Q32",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "coffee-beans",
+          "label": "只匹配咖啡豆",
+          "text": "一种透支的苦水对了，另一种更苦的茶叶呢？愚蠢交换要两败俱伤。"
+        },
+        {
+          "ingredient_id": "strong-tea",
+          "label": "只匹配浓茶",
+          "text": "苦涩茶叶到位，但咖啡粉末还没撒。没有咖啡，苦得不够猛。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q33",
+      "issue_id": "Q33",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "beef-brisket",
+          "label": "只匹配牛腩",
+          "text": "厚重结实的脂肪对了，可难嚼的肉块呢？幻觉需要双倍分量。"
+        },
+        {
+          "ingredient_id": "radish",
+          "label": "只匹配萝卜",
+          "text": "萝卜到位，但牛腩还没来。没有肉，萝卜吸不到油脂。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q34",
+      "issue_id": "Q34",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "mango",
+          "label": "只匹配芒果",
+          "text": "金色的美梦有了，但软糯的幻想底座呢？暴富需要金垫子。"
+        },
+        {
+          "ingredient_id": "tangyuan",
+          "label": "只匹配汤圆",
+          "text": "软糯幻想到位，可金色芒果还没切。没有金，梦不够亮。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q35",
+      "issue_id": "Q35",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "ginger-juice",
+          "label": "只匹配姜汁",
+          "text": "土里长的辣味对了，可另一种土里长的苍白呢？转机埋在地下，得挖一双。"
+        },
+        {
+          "ingredient_id": "radish",
+          "label": "只匹配萝卜",
+          "text": "苍白萝卜到位，但火辣姜汁还没来。没有辣，萝卜只是水。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q36",
+      "issue_id": "Q36",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "strong-tea",
+          "label": "只匹配浓茶",
+          "text": "苦味之一对了，还差另一种涩味。熬到回甘需要双苦联手。"
+        },
+        {
+          "ingredient_id": "coffee-beans",
+          "label": "只匹配咖啡豆",
+          "text": "咖啡苦味有了，但浓茶的涩还没来。没有双苦，甘不会来。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q37",
+      "issue_id": "Q37",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "radish",
+          "label": "只匹配萝卜",
+          "text": "老实的根茎对了，但清冷的酸味还没切。清理系统需要两样扫帚。"
+        },
+        {
+          "ingredient_id": "lemon-slice",
+          "label": "只匹配柠檬片",
+          "text": "清冷酸味有了，可老实萝卜呢？没有根茎，酸得没目标。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q38",
+      "issue_id": "Q38",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "coconut-milk",
+          "label": "只匹配椰浆",
+          "text": "云朵一样柔软的奶脂对了，可温润的汤圆呢？软弱需要双倍拥抱。"
+        },
+        {
+          "ingredient_id": "tangyuan",
+          "label": "只匹配汤圆",
+          "text": "温润汤圆到位，但云朵椰浆还没倒。没有奶，黏腻缺润滑。"
+        }
+      ],
+      "shared_hint": ""
+    },
+    {
+      "id": "hint-Q39",
+      "issue_id": "Q39",
+      "type": "shared",
+      "matches": [
+        {
+          "ingredient_id": "fish-ball",
+          "label": "只匹配一个鱼蛋",
+          "text": "一颗没脑子的圆形肉球对了，可另一颗同样的呢？愚蠢要双份才够味。"
+        }
+      ],
+      "shared_hint": "一颗没脑子的圆形肉球对了，可另一颗同样的呢？愚蠢要双份才够味。"
+    },
+    {
+      "id": "hint-Q40",
+      "issue_id": "Q40",
+      "type": "dual",
+      "matches": [
+        {
+          "ingredient_id": "pomelo",
+          "label": "只匹配柚子",
+          "text": "苦涩的皮剥开了，可金色的惊喜还没挖出来。出门的理由必须成对。"
+        },
+        {
+          "ingredient_id": "mango",
+          "label": "只匹配芒果",
+          "text": "金色惊喜有了，但苦涩柚子呢？没有酸，出门像梦游。"
+        }
+      ],
+      "shared_hint": ""
+    }
+  ],
+  "success_wisdom": [
+    {
+      "id": "wisdom-Q01",
+      "issue_id": "Q01",
+      "food_name": "热奶茶",
+      "text": "别试图用透支明天来填补今天的洞。喝完这杯，先睡一觉。天塌下来，也有高个子和不怕死的小强顶着，你只管打呼噜就行。"
+    },
+    {
+      "id": "wisdom-Q02",
+      "issue_id": "Q02",
+      "food_name": "咖喱肠粉",
+      "text": "怕弄坏画布所以不敢落笔？在城市里，没被酱汁弄脏过的肠粉是没有灵魂的。别把自己活成一张白纸，那会被猫抓破的。"
+    },
+    {
+      "id": "wisdom-Q03",
+      "issue_id": "Q03",
+      "food_name": "鱼蛋粗面",
+      "text": "螺丝钉也有它的咬合力。如果觉得枯燥，明天试着自己加一份辣椒酱。生活嘛，要么忍受平庸，要么辣到流泪。"
+    },
+    {
+      "id": "wisdom-Q04",
+      "issue_id": "Q04",
+      "food_name": "双拼碳水",
+      "text": "重复并不可怕，可怕的是你忘了自己可以决定酱汁的配比。既然都是无聊的碳水，那就让它们撞个满怀，撞出一个双倍的饱嗝。"
+    },
+    {
+      "id": "wisdom-Q05",
+      "issue_id": "Q05",
+      "food_name": "冻柠茶",
+      "text": "柠檬本就是酸的，你没法把它煮甜。把酸的挑出去，顾好你自己。至于那个像柠檬一样的朋友，让他去别人的杯里发酸吧。"
+    },
+    {
+      "id": "wisdom-Q06",
+      "issue_id": "Q06",
+      "food_name": "菠萝油套餐",
+      "text": "面具戴久了会粘在脸上。偶尔在猫面前，你可以把那层酥皮卸下来。毕竟在这个深夜，没人会因为你内心的苦涩而扣你工资。"
+    },
+    {
+      "id": "wisdom-Q07",
+      "issue_id": "Q07",
+      "food_name": "冰火菠萝油",
+      "text": "既然想跳出安稳，就得忍受黄油化开时的黏腻与不安。猫跳下高台时，也得忍受肚皮着地。优雅是装给别人看的，爽是自己的。"
+    },
+    {
+      "id": "wisdom-Q08",
+      "issue_id": "Q08",
+      "food_name": "鸳鸯奶茶",
+      "text": "强行提神的代价是彻底失眠。既然不知道选哪条路，那就把两条路搅合在一起，然后在这个疯狂的夜晚彻底放空。"
+    },
+    {
+      "id": "wisdom-Q09",
+      "issue_id": "Q09",
+      "food_name": "姜汁汤圆",
+      "text": "嫉妒是因为你以为大家都在同一个碗里。其实你是姜，他是糖，没必要比。只要你是滚烫的，总会有人愿意为了你满头大汗。"
+    },
+    {
+      "id": "wisdom-Q10",
+      "issue_id": "Q10",
+      "food_name": "咖喱鱼蛋",
+      "text": "橱窗里的猫粮确实香，但别因为盯着它而忘了手里这串鱼蛋。嫉妒会让你的瞳孔缩小，缩小到看不见身后的阳光。"
+    },
+    {
+      "id": "wisdom-Q11",
+      "issue_id": "Q11",
+      "food_name": "芒果椰汁西米露",
+      "text": "有些食材生来就在阳光下。但在这锅甜汤里，大家最后的归宿都是胃。你是西米也没关系，至少你可以在白色的海洋里自由翻滚。"
+    },
+    {
+      "id": "wisdom-Q12",
+      "issue_id": "Q12",
+      "food_name": "萝卜牛腩",
+      "text": "欲望是填不满的，就像牛腩永远嚼不烂。找个平衡点，别被油脂糊住心。猫从来不追求十个罐头，因为它的胃一次只能装下一个。"
+    },
+    {
+      "id": "wisdom-Q13",
+      "issue_id": "Q13",
+      "food_name": "炖萝卜牛腩",
+      "text": "你觉得平凡如萝卜？但正是萝卜吸收了高汤的精华。你早已属于这个地方，只是你还没发现自己已经变得如此入味。"
+    },
+    {
+      "id": "wisdom-Q14",
+      "issue_id": "Q14",
+      "food_name": "斋肠萝卜糕",
+      "text": "孤独并不可怕，可怕的是你试图用空心的东西去填补它。去吃点实在的，比如这些挤在一起的碳水，能让你暂时忘掉那个没人的家。"
+    },
+    {
+      "id": "wisdom-Q15",
+      "issue_id": "Q15",
+      "food_name": "咸柠七",
+      "text": "哪怕是演戏，能演一辈子也就成了真。别总盯着那点苦涩不放。在这个虚构的城市里，只要不穿帮，你就是最真的那一杯。"
+    },
+    {
+      "id": "wisdom-Q16",
+      "issue_id": "Q16",
+      "food_name": "柚子西米露",
+      "text": "很多聚会看着热闹，咬下去全是空的。孤独有时候是高级的自我保护。不想去的人群，就像还没剥开的柚子，随它去吧。"
+    },
+    {
+      "id": "wisdom-Q17",
+      "issue_id": "Q17",
+      "food_name": "椰汁汤圆",
+      "text": "同频不是找出来的，是慢慢熬出来的。别急，火候还没到。只要心是软的，总会遇到那盆愿意包裹你的纯白液体。"
+    },
+    {
+      "id": "wisdom-Q18",
+      "issue_id": "Q18",
+      "food_name": "苦鸳鸯",
+      "text": "既然不快乐，就别再互相折磨。这种苦到反胃的关系，除了让你失眠，什么都留不下。建议你直接把它推下桌子，听个响。"
+    },
+    {
+      "id": "wisdom-Q19",
+      "issue_id": "Q19",
+      "food_name": "芒果汤圆",
+      "text": "过去确实甜，但那是回忆自带了滤镜。别让昨天的糖水粘住了你今天的爪子。如果你一直回头看，会撞到猫爬架的。"
+    },
+    {
+      "id": "wisdom-Q20",
+      "issue_id": "Q20",
+      "food_name": "姜芒撞奶",
+      "text": "味道冲撞会让人流眼泪。哭完这碗，就把它倒掉，别总是去舔那个干涸的空碗。明天的猫罐头，说不定就是新的口味。"
+    },
+    {
+      "id": "wisdom-Q21",
+      "issue_id": "Q21",
+      "food_name": "黄金菠萝油",
+      "text": "别嫌弃你的“油脂”。正是那些不完美的特质，才让你有了辨识度。如果菠萝包没有了黄油，那它只是个平淡无奇的面包团。"
+    },
+    {
+      "id": "wisdom-Q22",
+      "issue_id": "Q22",
+      "food_name": "椰汁西米露",
+      "text": "碎裂也是一种重组。给自己一个机会，跳进新的可能里。就像那些西米，原本碎裂透明，进了椰浆后却变得晶莹剔透。"
+    },
+    {
+      "id": "wisdom-Q23",
+      "issue_id": "Q23",
+      "food_name": "牛腩捞面",
+      "text": "既然难嚼，那就长点刺，让自己硬气点。别人才不敢轻易把你吞进肚子里，还要怪你塞了他的牙缝。"
+    },
+    {
+      "id": "wisdom-Q24",
+      "issue_id": "Q24",
+      "food_name": "柠香芒果",
+      "text": "外部评价是酸的，内心渴望是甜的。别为了别人的评价苦了自己。哪怕全世界都觉得你是柠檬，你也要记得自己里面藏着芒果。"
+    },
+    {
+      "id": "wisdom-Q25",
+      "issue_id": "Q25",
+      "food_name": "丝袜奶茶",
+      "text": "别在深夜做决定。深夜的茶色会让人变蠢。喝完去睡觉，太阳一出来，虚无感就会像我掉的猫毛一样，被风吹走。"
+    },
+    {
+      "id": "wisdom-Q26",
+      "issue_id": "Q26",
+      "food_name": "鱼蛋粉",
+      "text": "生活本来就是没味道的。你的选择和经历，才是给它上色的那勺辣椒酱。只要你不加戏，这碗面其实安稳得很。"
+    },
+    {
+      "id": "wisdom-Q27",
+      "issue_id": "Q27",
+      "food_name": "柠啡",
+      "text": "摄入了太多别人的人生切片。放下那个发光的板子，去感受食物的温度。别人吃海参还是啃树皮，真的不关你那五点五秒的注意力。"
+    },
+    {
+      "id": "wisdom-Q28",
+      "issue_id": "Q28",
+      "food_name": "姜汁汤圆",
+      "text": "未来还没发生，怕什么？先用姜汁暖暖胃，哪怕手抖，也要把这碗圆满吃下去。胃饱了，胆子自然就大了一些。"
+    },
+    {
+      "id": "wisdom-Q29",
+      "issue_id": "Q29",
+      "food_name": "萝卜肠粉",
+      "text": "空间虽窄，但味道可以很宽。在狭小的房间里，也要给自己点个香薰。如果你是一只猫，你会发现只要有纸箱，哪里都是宫殿。"
+    },
+    {
+      "id": "wisdom-Q30",
+      "issue_id": "Q30",
+      "food_name": "杨枝甘露",
+      "text": "既然出不去，就让味觉先去旅行。你看，这里有阳光，有热带，有微酸。等雨停了，我们一起去公园里躺平。"
+    },
+    {
+      "id": "wisdom-Q31",
+      "issue_id": "Q31",
+      "food_name": "茶走",
+      "text": "时间不是省出来的，是抢出来的。哪怕只有五分钟，也要彻底放空。你要是学我每天睡十六个小时，你就会发现根本没有烦恼。"
+    },
+    {
+      "id": "wisdom-Q32",
+      "issue_id": "Q32",
+      "food_name": "魔鬼特饮",
+      "text": "熬夜换来的自由是带毒的。去睡觉，梦里的自由是不限量的。你要是实在想透支，我建议你先去透支一下邻居家的猫粮。"
+    },
+    {
+      "id": "wisdom-Q33",
+      "issue_id": "Q33",
+      "food_name": "柱候牛腩",
+      "text": "钱是高汤，欲望是牛腩。你需要的不是无尽的脂肪，而是消化的能力。钱攒多了不花，就像猫抓了老鼠只玩不吃，很浪费的。"
+    },
+    {
+      "id": "wisdom-Q34",
+      "issue_id": "Q34",
+      "food_name": "金玉满堂",
+      "text": "幻想中奖的快感是真的，但买点心的钱也是真的。先填饱肚子再去梦。如果你梦到了金山，记得带我回去，我要买金色的罐头。"
+    },
+    {
+      "id": "wisdom-Q35",
+      "issue_id": "Q35",
+      "food_name": "姜汁萝卜",
+      "text": "跌到底了，剩下的路都是向上的。就像萝卜，埋得够深，才够入味。别急着冒头，在地下多吸点水分，以后才够脆。"
+    },
+    {
+      "id": "wisdom-Q36",
+      "issue_id": "Q36",
+      "food_name": "苦尽甘来",
+      "text": "苦到极致就是回甘。如果现在很难熬，说明你正在经历最重要的质变。这种苦，是通往猫薄荷森林的必经之路。"
+    },
+    {
+      "id": "wisdom-Q37",
+      "issue_id": "Q37",
+      "food_name": "柠香萝卜",
+      "text": "恐惧源于对未知的掌控欲。从今天开始，多喝水，多走路，多摸猫。把那些复杂的思考丢进垃圾桶，那里才是它的归宿。"
+    },
+    {
+      "id": "wisdom-Q38",
+      "issue_id": "Q38",
+      "food_name": "云朵椰奶汤圆",
+      "text": "你已经撑了很久了，现在可以软弱一会儿。陷进沙发里，什么都别想。你不是拯救世界的超人，你只是一只偶尔需要抱抱的两脚兽。"
+    },
+    {
+      "id": "wisdom-Q39",
+      "issue_id": "Q39",
+      "food_name": "双份鱼蛋",
+      "text": "蠢点挺好的。不聪明的人才能在这个疯狂的城市里活得长久。你看这两颗鱼蛋，它们除了弹跳一无所知，所以它们很快乐。"
+    },
+    {
+      "id": "wisdom-Q40",
+      "issue_id": "Q40",
+      "food_name": "柚子芒捞",
+      "text": "哪怕只是为了买个芒果，出门吹吹风也是好的。你看，路边的流浪猫都在等你。虽然它不一定理你，但总比对着屏幕叹气强。"
+    }
+  ],
+  "card_flow": {
+    "source": "cat_fortune_card_flow_40_review.csv",
+    "items": [
+      {
+        "issue_id": "Q01",
+        "display_title": "Deadline 任务过载",
+        "level1": "职场与学业",
+        "level2": "Deadline / 绩效焦虑",
+        "is_default_seed": true,
+        "is_public": true,
+        "notes": "默认五心结；已验证主路径"
+      },
+      {
+        "issue_id": "Q02",
+        "display_title": "创作起步恐惧",
+        "level1": "职场与学业",
+        "level2": "创作卡壳",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q03",
+        "display_title": "机械式续命",
+        "level1": "职场与学业",
+        "level2": "重复劳动",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q04",
+        "display_title": "重复劳动麻木",
+        "level1": "职场与学业",
+        "level2": "重复劳动",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q05",
+        "display_title": "柠檬朋友委屈",
+        "level1": "关系与亲密",
+        "level2": "友情边界",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q06",
+        "display_title": "温柔面具戴太久",
+        "level1": "职场与学业",
+        "level2": "情绪面具",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q07",
+        "display_title": "想跳出安稳",
+        "level1": "生活节奏",
+        "level2": "改变与冒险",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": "不是默认五心结，但可作为生活节奏入口"
+      },
+      {
+        "issue_id": "Q08",
+        "display_title": "报复性熬夜",
+        "level1": "生活节奏",
+        "level2": "报复性熬夜",
+        "is_default_seed": true,
+        "is_public": true,
+        "notes": "默认五心结；已验证主路径"
+      },
+      {
+        "issue_id": "Q09",
+        "display_title": "同辈比较上头",
+        "level1": "欲望与金钱",
+        "level2": "嫉妒 / 同辈压力",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": "与 Q10 同二级；如觉得重复可后续拆为比较焦虑"
+      },
+      {
+        "issue_id": "Q10",
+        "display_title": "此时此刻的嫉妒心",
+        "level1": "欲望与金钱",
+        "level2": "嫉妒 / 同辈压力",
+        "is_default_seed": true,
+        "is_public": true,
+        "notes": "默认五心结；已验证主路径"
+      },
+      {
+        "issue_id": "Q11",
+        "display_title": "觉得自己不够闪亮",
+        "level1": "自我与情绪",
+        "level2": "自我价值",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q12",
+        "display_title": "欲望填不满",
+        "level1": "欲望与金钱",
+        "level2": "欲望平衡",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q13",
+        "display_title": "找不到归属感",
+        "level1": "关系与亲密",
+        "level2": "归属感缺失",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q14",
+        "display_title": "空房间孤独",
+        "level1": "关系与亲密",
+        "level2": "孤独感",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q15",
+        "display_title": "演出来的真实",
+        "level1": "自我与情绪",
+        "level2": "真实与表演",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q16",
+        "display_title": "热闹场合空心",
+        "level1": "关系与亲密",
+        "level2": "社交疲惫",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q17",
+        "display_title": "等一个同频的人",
+        "level1": "关系与亲密",
+        "level2": "归属感缺失",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q18",
+        "display_title": "苦到反胃的关系",
+        "level1": "关系与亲密",
+        "level2": "关系消耗",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q19",
+        "display_title": "被旧回忆粘住",
+        "level1": "关系与亲密",
+        "level2": "旧关系牵扯",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q20",
+        "display_title": "哭完还舍不得空碗",
+        "level1": "关系与亲密",
+        "level2": "旧关系牵扯",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q21",
+        "display_title": "对性格短板的怀疑",
+        "level1": "自我与情绪",
+        "level2": "自我接纳",
+        "is_default_seed": true,
+        "is_public": true,
+        "notes": "默认五心结；由 V1“对性格短板的怀疑”映射"
+      },
+      {
+        "issue_id": "Q22",
+        "display_title": "碎裂后的重组",
+        "level1": "自我与情绪",
+        "level2": "自我修复",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q23",
+        "display_title": "讨好到负重",
+        "level1": "关系与亲密",
+        "level2": "讨好与边界",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q24",
+        "display_title": "外酸内甜的评价焦虑",
+        "level1": "自我与情绪",
+        "level2": "外部评价",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": "跨店配方；已有编译警告但不阻断"
+      },
+      {
+        "issue_id": "Q25",
+        "display_title": "深夜虚无感",
+        "level1": "自我与情绪",
+        "level2": "深夜情绪",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q26",
+        "display_title": "生活没味道",
+        "level1": "生活节奏",
+        "level2": "平淡与意义",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q27",
+        "display_title": "刷到别人人生切片",
+        "level1": "自我与情绪",
+        "level2": "信息流比较",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q28",
+        "display_title": "未来还没来就害怕",
+        "level1": "自我与情绪",
+        "level2": "未来焦虑",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q29",
+        "display_title": "空间太窄喘不过气",
+        "level1": "生活节奏",
+        "level2": "空间压迫",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q30",
+        "display_title": "想让味觉先旅行",
+        "level1": "生活节奏",
+        "level2": "空间与远方",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q31",
+        "display_title": "时间被榨干",
+        "level1": "生活节奏",
+        "level2": "休息与时间",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q32",
+        "display_title": "熬夜换自由",
+        "level1": "生活节奏",
+        "level2": "报复性熬夜",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q33",
+        "display_title": "钱与欲望高汤",
+        "level1": "欲望与金钱",
+        "level2": "金钱欲望",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q34",
+        "display_title": "幻想一夜暴富",
+        "level1": "欲望与金钱",
+        "level2": "金钱幻想",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q35",
+        "display_title": "倒霉透顶求转机",
+        "level1": "欲望与金钱",
+        "level2": "低谷转机",
+        "is_default_seed": true,
+        "is_public": true,
+        "notes": "默认五心结；跨店配方；已有编译警告但不阻断"
+      },
+      {
+        "issue_id": "Q36",
+        "display_title": "苦到极致等回甘",
+        "level1": "欲望与金钱",
+        "level2": "低谷转机",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q37",
+        "display_title": "未知恐惧与控制欲",
+        "level1": "自我与情绪",
+        "level2": "过度担心",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": "跨店配方；已有编译警告但不阻断"
+      },
+      {
+        "issue_id": "Q38",
+        "display_title": "撑太久想软弱",
+        "level1": "自我与情绪",
+        "level2": "疲惫与脆弱",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      },
+      {
+        "issue_id": "Q39",
+        "display_title": "聪明过头不快乐",
+        "level1": "自我与情绪",
+        "level2": "过度思考",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": "重复食材特殊题；半成功提示共用"
+      },
+      {
+        "issue_id": "Q40",
+        "display_title": "需要一个出门理由",
+        "level1": "生活节奏",
+        "level2": "出门与行动",
+        "is_default_seed": false,
+        "is_public": true,
+        "notes": ""
+      }
+    ]
+  },
+  "nonsense_slips": [
+    {
+      "id": "nonsense-01",
+      "text": "今日运势：大凶。建议不要试图去抓红外线光点，那是虚无的。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-02",
+      "text": "不要因为内耗而熬夜。实在睡不着，建议你把桌子上的玻璃杯推到地上去，听个响。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-03",
+      "text": "你以为你在思考人生，其实你只是需要一个纸箱子。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-04",
+      "text": "根据猫体力学，你现在的姿势是错误的。请立刻躺平，缩成一团，然后打一个哈欠。什么？你不是猫？那关我什么事。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-05",
+      "text": "成功秘诀：每天舔自己的毛100次。如果你没毛，就去买一顶假发。舔完你会觉得自己很成功，虽然别人觉得你疯了。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-06",
+      "text": "研究发现，99%的猫咪认为自己的铲屎官是智障。你是那1%吗？不是，因为猫咪不会做研究。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-07",
+      "text": "如果你觉得孤独，试着把手机从高处推下去。它会‘啪’一声，然后你就有了新手机要买——再也不孤独了。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-08",
+      "text": "人生的意义是什么？是追自己的尾巴。永远追不到，但很快乐。所以别问了，去追吧。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-09",
+      "text": "今天的幸运物是：你刚刚扔掉的纸团。快去捡回来，它现在是你的导师。它会教你‘如何被揉成一团依然保持优雅’。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-10",
+      "text": "如何解决拖延症？明天告诉你。哦不对，后天？算了，等我想起来再说。反正你也不急，对吧？",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-11",
+      "text": "不要相信任何告诉你‘猫有九条命’的人。因为我只用了三条就验证出：从柜子上摔下来还是会痛。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-12",
+      "text": "你的问题太深奥了，我建议你先把家里所有纸箱子叠成一个塔，然后站在上面思考。摔下来那一刻你就顿悟了——‘原来我不该站着’。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-13",
+      "text": "人类总是想太多。猫生哲学：有罐头就行，没有就抢。你的问题同理：有答案就行，没有就编一个。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-14",
+      "text": "你刚刚浪费了5秒钟读这条签。而猫咪用这5秒钟打翻了一个水杯。看，谁更有生产效率？",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-15",
+      "text": "晚上睡不着的时候，不要数羊。数你曾经打翻过的水杯数量——那才是真正的成就感。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "default-fallback",
+      "text": "猫咪打了个哈欠，你什么也没得到。",
+      "weight": 0,
+      "is_default_fallback": true
+    }
+  ],
+  "failure_penalties": [
+    {
+      "id": "nonsense-slip",
+      "name": "猫咪废话签",
+      "weight_percent": 50,
+      "active_in_v2_minimal": true,
+      "ui_type": "modal_slip",
+      "trigger": "两种原料均不匹配正确答案所需原料",
+      "interaction": "点击“撕掉”按钮",
+      "return_condition": "签消失后返回商店页"
+    },
+    {
+      "id": "mud-paw",
+      "name": "猫咪嫌弃 + 泥巴猫爪印",
+      "weight_percent": 25,
+      "active_in_v2_minimal": false,
+      "ui_type": "wipe_marks",
+      "trigger": "两种原料均不匹配正确答案所需原料",
+      "interaction": "滑动擦除所有爪印",
+      "return_condition": "擦完爪印后返回商店页"
+    },
+    {
+      "id": "cat-hair",
+      "name": "猫毛过敏",
+      "weight_percent": 25,
+      "active_in_v2_minimal": false,
+      "ui_type": "swipe_particles_timeout",
+      "trigger": "两种原料均不匹配正确答案所需原料",
+      "interaction": "滑动驱散猫毛或等待15秒",
+      "return_condition": "驱散全部或15秒结束后返回商店页"
+    }
+  ],
+  "ui_copy": {
+    "opening.enter_button": "推门而入",
+    "opening.sign_text": "大馋猫：深夜占卜",
+    "cat_intro.line_1": "（哈欠）...又是这个点，又是这种味道。",
+    "cat_intro.line_2": "说吧，今晚是什么东西让你这只两脚兽消化不良？",
+    "card.prompt": "挑一张最贴近你此刻心境的牌吧。",
+    "shop.ingredient_prompt": "你需要什么食材？",
+    "sacrifice.submit_label": "选好了",
+    "sacrifice.not_enough": "食材还不充足哦",
+    "half_success.ack": "我知道了",
+    "success.take_wisdom": "把智慧带走",
+    "collection.duplicate": "老味道，新感悟",
+    "failure.default_fallback": "猫咪打了个哈欠，你什么也没得到。",
+    "v1.header_title": "大馋猫深夜占卜屋",
+    "v1.header_subtitle": "选一个你此刻的“心结”",
+    "v1.failure": "猫大师：『不对，这味道简直是灾难。再试一次！』",
+    "v1.restart": "再卜一卦"
+  },
+  "game_rules": [
+    {
+      "id": "success_condition_v1",
+      "version_scope": "v1_existing",
+      "description": "用户当前所在店铺与正确店铺一致，且两种食材与目标配方完全匹配。"
+    },
+    {
+      "id": "success_condition_v2",
+      "version_scope": "v2_requirement",
+      "description": "两种原料均匹配当前问题正确答案所需原料。"
+    },
+    {
+      "id": "half_success_condition_v2",
+      "version_scope": "v2_requirement",
+      "description": "两种原料中有且仅有一种匹配正确答案所需原料。"
+    },
+    {
+      "id": "failure_condition_v2",
+      "version_scope": "v2_requirement",
+      "description": "两种原料均不匹配正确答案所需原料。"
+    },
+    {
+      "id": "q39_shared_hint",
+      "version_scope": "v2_requirement",
+      "description": "Q39 鱼蛋+鱼蛋两个原料相同，不存在只匹配B，使用共享半成功提示。"
+    },
+    {
+      "id": "v2_minimal_failure_scope",
+      "version_scope": "v2_minimal_decision",
+      "description": "当前CSV/编译优先支持废话签和半成功提示；爪印和猫毛作为未来接口。"
+    }
+  ],
+  "flow_states": [
+    {
+      "id": "v1_start_screen",
+      "version_scope": "v1_existing",
+      "screen": "start",
+      "description": "用户从5个心结中选择1个",
+      "entry_condition": "页面打开",
+      "exit_condition": "选择心结"
+    },
+    {
+      "id": "v1_riddle_shop_tabs",
+      "version_scope": "v1_existing",
+      "screen": "game",
+      "description": "显示谜语，切换冰室/大排档/甜品站，点击两种食材",
+      "entry_condition": "已选择心结",
+      "exit_condition": "选满两种食材并判定"
+    },
+    {
+      "id": "v1_result_overlay",
+      "version_scope": "v1_existing",
+      "screen": "result",
+      "description": "成功展示食物和智慧文案；失败提示重试",
+      "entry_condition": "判定完成",
+      "exit_condition": "再卜一卦或重试"
+    },
+    {
+      "id": "opening_street",
+      "version_scope": "v2_requirement",
+      "screen": "opening",
+      "description": "深夜街道封面，雨声、霓虹招牌、推门而入按钮",
+      "entry_condition": "资源加载完成",
+      "exit_condition": "点击推门而入"
+    },
+    {
+      "id": "opening_door_transition",
+      "version_scope": "v2_requirement",
+      "screen": "transition",
+      "description": "街道缩放、门帘滑开、风铃声、雨声停止",
+      "entry_condition": "点击推门而入",
+      "exit_condition": "1s 动画结束"
+    },
+    {
+      "id": "cat_intro_dialogue",
+      "version_scope": "v2_requirement",
+      "screen": "cat_intro",
+      "description": "猫大师假寐、睁眼、两句对话、打字机效果",
+      "entry_condition": "门帘开到50%",
+      "exit_condition": "对话完成"
+    },
+    {
+      "id": "tag_persona_shift",
+      "version_scope": "v2_requirement",
+      "screen": "tag_selection",
+      "description": "绒帽降落、权杖浮现，猫大师从店主转为占卜师",
+      "entry_condition": "猫大师登场对话后",
+      "exit_condition": "动作结束锁定点击"
+    },
+    {
+      "id": "tag_cards_level1",
+      "version_scope": "v2_requirement",
+      "screen": "tag_selection",
+      "description": "5张卡牌飞出，一级心绪卡选择",
+      "entry_condition": "身份蜕变完成",
+      "exit_condition": "点击一级卡牌"
+    },
+    {
+      "id": "tag_cards_level2",
+      "version_scope": "v2_requirement",
+      "screen": "tag_selection",
+      "description": "在居中大卡牌上选择二级心事",
+      "entry_condition": "一级卡牌选中",
+      "exit_condition": "点击二级标题"
+    },
+    {
+      "id": "tag_cards_level3",
+      "version_scope": "v2_requirement",
+      "screen": "tag_selection",
+      "description": "选择三级具体问题，前台不显示Q编号",
+      "entry_condition": "二级标题选中",
+      "exit_condition": "点击具体问题"
+    },
+    {
+      "id": "shop_street",
+      "version_scope": "v2_requirement",
+      "screen": "shop_select",
+      "description": "三家店铺平行排列，悬停显示介绍，点击进店",
+      "entry_condition": "猫大师胃口生成后",
+      "exit_condition": "点击店铺"
+    },
+    {
+      "id": "shop_interior_locked",
+      "version_scope": "v2_requirement",
+      "screen": "shop_interior",
+      "description": "店内陈列，食材不可交互，需先点击猫店员",
+      "entry_condition": "进店完成",
+      "exit_condition": "点击猫店员NPC"
+    },
+    {
+      "id": "sacrifice_select",
+      "version_scope": "v2_requirement",
+      "screen": "sacrifice",
+      "description": "背包与铃铛出现，选择两种食材，可撤销",
+      "entry_condition": "点击猫店员NPC",
+      "exit_condition": "点击铃铛提交"
+    },
+    {
+      "id": "judge_animation",
+      "version_scope": "v2_requirement",
+      "screen": "judgement",
+      "description": "烟雾、猫大师剪影、食材碰撞、爆白进入判定结果",
+      "entry_condition": "提交献祭",
+      "exit_condition": "成功/半成功/不成功分支"
+    },
+    {
+      "id": "result_success",
+      "version_scope": "v2_requirement",
+      "screen": "success",
+      "description": "食材合成成功、食物卡片、猫咪智慧、把智慧带走",
+      "entry_condition": "两种原料均匹配",
+      "exit_condition": "回到猫大师假寐或后续收藏"
+    },
+    {
+      "id": "result_half_success",
+      "version_scope": "v2_requirement",
+      "screen": "half_success",
+      "description": "显示半成功提示模态，点我知道了返回商店选择页",
+      "entry_condition": "有且仅有一种原料匹配",
+      "exit_condition": "点击我知道了"
+    },
+    {
+      "id": "result_failure_nonsense",
+      "version_scope": "v2_minimal_active",
+      "screen": "failure",
+      "description": "展示猫咪废话签，点击撕掉返回商店页",
+      "entry_condition": "两种原料均不匹配且抽中废话签",
+      "exit_condition": "点击撕掉"
+    }
+  ],
+  "future_hooks": {
+    "shop_scene_specs": [
+      {
+        "shop_id": "dessert-station",
+        "front_name": "失眠甜品站",
+        "background_desc": "粉白色横贴瓷砖；猫猫食糖水怀旧海报；玻璃凉水壶、玻璃杯、粉色纸巾；霓虹小猫爪灯牌。",
+        "rack_desc": "象牙白 2x3 复古格栅架",
+        "npc_cat": "布偶猫",
+        "npc_desc": "戴粉色蕾丝领结和迷你厨师帽，眼睛很大，呈眨眼待机状。",
+        "audio_ambience": "见PRD店内环境白噪音描述",
+        "source_doc": "0424.md",
+        "source_section": "三个商店 PART 2 / 店内陈列"
+      },
+      {
+        "shop_id": "ice-room",
+        "front_name": "零点冰室",
+        "background_desc": "白绿相间的方块瓷砖墙；圆形钟停在深夜时间；不锈钢奶茶桶；吊扇慢速旋转投下动态阴影。",
+        "rack_desc": "深色木 2x3 复古格栅架",
+        "npc_cat": "橘猫",
+        "npc_desc": "戴白围裙，耳朵后别着一支铅笔，呈待机眯眼状。",
+        "audio_ambience": "见PRD店内环境白噪音描述",
+        "source_doc": "0424.md",
+        "source_section": "三个商店 PART 2 / 店内陈列"
+      },
+      {
+        "shop_id": "street-stall",
+        "front_name": "霓虹大排档",
+        "background_desc": "墨绿色铁皮折叠墙；蓝色塑料周转箱；塑料卷纸；半透明打包盒；红外线保暖灯。",
+        "rack_desc": "不锈钢 2x3 复古格栅架",
+        "npc_cat": "奶牛猫",
+        "npc_desc": "披着白色汗衫，脖子上挂着一条毛巾，呈眨眼待机状。",
+        "audio_ambience": "见PRD店内环境白噪音描述",
+        "source_doc": "0424.md",
+        "source_section": "三个商店 PART 2 / 店内陈列"
+      }
+    ],
+    "asset_placeholders": [
+      {
+        "asset_key": "audio_rain_loop",
+        "asset_type": "audio",
+        "description": "背景雨声BGM",
+        "status": "placeholder_needed",
+        "source_doc": "0424.md",
+        "source_section": "开头 PART 1"
+      },
+      {
+        "asset_key": "audio_door_bell",
+        "asset_type": "audio",
+        "description": "风铃声",
+        "status": "placeholder_needed",
+        "source_doc": "0424.md",
+        "source_section": "开头 PART 2"
+      },
+      {
+        "asset_key": "audio_shop_ice_room",
+        "asset_type": "audio",
+        "description": "冰室调羹碰杯声/店内音乐",
+        "status": "placeholder_needed",
+        "source_doc": "0424.md",
+        "source_section": "三个商店"
+      },
+      {
+        "asset_key": "audio_shop_stall",
+        "asset_type": "audio",
+        "description": "大排档炒锅声/店内音乐",
+        "status": "placeholder_needed",
+        "source_doc": "0424.md",
+        "source_section": "三个商店"
+      },
+      {
+        "asset_key": "audio_shop_dessert",
+        "asset_type": "audio",
+        "description": "甜品站八音盒感店内音乐",
+        "status": "placeholder_needed",
+        "source_doc": "0424.md",
+        "source_section": "三个商店"
+      },
+      {
+        "asset_key": "sprite_cat_master_sleep",
+        "asset_type": "sprite",
+        "description": "猫大师闭眼假寐",
+        "status": "placeholder_needed",
+        "source_doc": "0424.md",
+        "source_section": "开头 PART 3"
+      },
+      {
+        "asset_key": "sprite_cat_master_one_eye",
+        "asset_type": "sprite",
+        "description": "猫大师睁开一只眼",
+        "status": "placeholder_needed",
+        "source_doc": "0424.md",
+        "source_section": "开头 PART 3"
+      },
+      {
+        "asset_key": "sprite_cat_master_star_eye",
+        "asset_type": "sprite",
+        "description": "猫大师震惊/星星眼",
+        "status": "placeholder_needed",
+        "source_doc": "0424.md",
+        "source_section": "成功结局"
+      },
+      {
+        "asset_key": "image_street_three_shops",
+        "asset_type": "image",
+        "description": "夜景版三个店铺平行排列 Demo 图，需用户补充视觉描述",
+        "status": "placeholder_needed",
+        "source_doc": "0424.md",
+        "source_section": "三个商店"
+      },
+      {
+        "asset_key": "image_food_card",
+        "asset_type": "image",
+        "description": "成品食物卡片/金色光芒射线",
+        "status": "placeholder_needed",
+        "source_doc": "0424.md",
+        "source_section": "成功结局"
+      }
+    ],
+    "taxonomy_review": [
+      {
+        "issue_id": "Q01",
+        "canonical_title": "Deadline 任务过载",
+        "level1_category": "职场与学业",
+        "level2_category": "绩效焦虑",
+        "category_source": "0424_example_partial",
+        "needs_manual_taxonomy": "false",
+        "notes": "0424 card selection gives example Q01 under 职场与学业/绩效焦虑"
+      },
+      {
+        "issue_id": "Q02",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q03",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q04",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q05",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q06",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q07",
+        "canonical_title": "对性格短板的怀疑",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q08",
+        "canonical_title": "报复性熬夜",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q09",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q10",
+        "canonical_title": "此时此刻的嫉妒心",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q11",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q12",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q13",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q14",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q15",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q16",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q17",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q18",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q19",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q20",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q21",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q22",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q23",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q24",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q25",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q26",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q27",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q28",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q29",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q30",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q31",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q32",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q33",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q34",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q35",
+        "canonical_title": "倒霉透顶求转机",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q36",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q37",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q38",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q39",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      },
+      {
+        "issue_id": "Q40",
+        "canonical_title": "",
+        "level1_category": "",
+        "level2_category": "",
+        "category_source": "not_provided_in_md_except_Q01_example",
+        "needs_manual_taxonomy": "true",
+        "notes": "No canonical taxonomy mapping in 0421/0424 md"
+      }
+    ],
+    "csv_manifest": [
+      {
+        "file_name": "cat_fortune_shops.csv",
+        "purpose": "三家店铺基础配置，使用0424前台名。",
+        "source_basis": "0421.md + 0424.md",
+        "notes": "缺失于md的字段不编造，留空并标记not_provided_in_md或needs_manual_review。"
+      },
+      {
+        "file_name": "cat_fortune_ingredients.csv",
+        "purpose": "18种核心食材与所属店铺、短介绍。",
+        "source_basis": "0421.md + 0424.md",
+        "notes": "缺失于md的字段不编造，留空并标记not_provided_in_md或needs_manual_review。"
+      },
+      {
+        "file_name": "cat_fortune_recipes_and_half_success_hints.csv",
+        "purpose": "Q01-Q40配方、成品、半成功提示。",
+        "source_basis": "0421.md + 0424.md",
+        "notes": "缺失于md的字段不编造，留空并标记not_provided_in_md或needs_manual_review。"
+      },
+      {
+        "file_name": "cat_fortune_success_wisdom.csv",
+        "purpose": "Q01-Q40成功智慧文案。",
+        "source_basis": "0421.md + 0424.md",
+        "notes": "缺失于md的字段不编造，留空并标记not_provided_in_md或needs_manual_review。"
+      },
+      {
+        "file_name": "cat_fortune_nonsense_slips.csv",
+        "purpose": "废话签文案池与默认fallback。",
+        "source_basis": "0421.md + 0424.md",
+        "notes": "缺失于md的字段不编造，留空并标记not_provided_in_md或needs_manual_review。"
+      },
+      {
+        "file_name": "cat_fortune_issue_master_compact.csv",
+        "purpose": "旧编译器兼容用紧凑主表。",
+        "source_basis": "0421.md + 0424.md",
+        "notes": "缺失于md的字段不编造，留空并标记not_provided_in_md或needs_manual_review。"
+      },
+      {
+        "file_name": "cat_fortune_issue_master_full.csv",
+        "purpose": "完整issue主表，含V1已实现5题直出标题/谜语和缺失字段标记。",
+        "source_basis": "0421.md + 0424.md",
+        "notes": "缺失于md的字段不编造，留空并标记not_provided_in_md或needs_manual_review。"
+      },
+      {
+        "file_name": "cat_fortune_v1_seed_issues.csv",
+        "purpose": "0421 V1已实现5个心结入口。",
+        "source_basis": "0421.md + 0424.md",
+        "notes": "缺失于md的字段不编造，留空并标记not_provided_in_md或needs_manual_review。"
+      },
+      {
+        "file_name": "cat_fortune_issue_taxonomy_review.csv",
+        "purpose": "分类待人工确认表；只填充0424明确示例Q01。",
+        "source_basis": "0421.md + 0424.md",
+        "notes": "缺失于md的字段不编造，留空并标记not_provided_in_md或needs_manual_review。"
+      },
+      {
+        "file_name": "cat_fortune_failure_penalties.csv",
+        "purpose": "不成功三种惩罚及当前最小实现范围。",
+        "source_basis": "0421.md + 0424.md",
+        "notes": "缺失于md的字段不编造，留空并标记not_provided_in_md或needs_manual_review。"
+      },
+      {
+        "file_name": "cat_fortune_ui_copy.csv",
+        "purpose": "来自0421/0424的UI固定文案。",
+        "source_basis": "0421.md + 0424.md",
+        "notes": "缺失于md的字段不编造，留空并标记not_provided_in_md或needs_manual_review。"
+      },
+      {
+        "file_name": "cat_fortune_flow_states.csv",
+        "purpose": "V1已实现流程与V2需求状态机。",
+        "source_basis": "0421.md + 0424.md",
+        "notes": "缺失于md的字段不编造，留空并标记not_provided_in_md或needs_manual_review。"
+      },
+      {
+        "file_name": "cat_fortune_shop_scene_specs.csv",
+        "purpose": "三店店内视觉设定。",
+        "source_basis": "0421.md + 0424.md",
+        "notes": "缺失于md的字段不编造，留空并标记not_provided_in_md或needs_manual_review。"
+      },
+      {
+        "file_name": "cat_fortune_asset_placeholders.csv",
+        "purpose": "音频/图片/sprite占位清单。",
+        "source_basis": "0421.md + 0424.md",
+        "notes": "缺失于md的字段不编造，留空并标记not_provided_in_md或needs_manual_review。"
+      },
+      {
+        "file_name": "cat_fortune_game_rules.csv",
+        "purpose": "成功/半成功/失败等判定规则。",
+        "source_basis": "0421.md + 0424.md",
+        "notes": "缺失于md的字段不编造，留空并标记not_provided_in_md或needs_manual_review。"
+      }
+    ]
+  }
+}

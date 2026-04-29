@@ -1,0 +1,53 @@
+{
+  "schema_version": "level1-visual-map-0427-v1",
+  "project": "cat-fortune-v4",
+  "purpose": "Map V3/V4 reviewed Chinese Level-1 card-flow categories to PRD 0427 visual card assets. This is UI configuration only; it does not change taxonomy or runtime issue data.",
+  "notes": [
+    "Keep V3/V4 logical level1 names unchanged.",
+    "Use PRD 0427 card artwork through content/asset-map-0427.json asset keys.",
+    "Do not display internal Q ids in the UI.",
+    "PRD visual labels differ from the V3/V4 Chinese category names; this map bridges them."
+  ],
+  "items": [
+    {
+      "level1": "职场与学业",
+      "prd_label": "career",
+      "asset_key": "card.career",
+      "visual_title": "Career & Study",
+      "display_order": 1,
+      "notes": "对应 PRD career card；逻辑分类保持“职场与学业”。"
+    },
+    {
+      "level1": "关系与亲密",
+      "prd_label": "society",
+      "asset_key": "card.society",
+      "visual_title": "Society & Relations",
+      "display_order": 2,
+      "notes": "V3/V4 的“关系与亲密”使用 PRD society card 视觉。"
+    },
+    {
+      "level1": "自我与情绪",
+      "prd_label": "emotion",
+      "asset_key": "card.emotion",
+      "visual_title": "Emotion & Self",
+      "display_order": 3,
+      "notes": "V3/V4 的“自我与情绪”使用 PRD emotion card 视觉。"
+    },
+    {
+      "level1": "生活节奏",
+      "prd_label": "city",
+      "asset_key": "card.city",
+      "visual_title": "City & Everyday",
+      "display_order": 4,
+      "notes": "V3/V4 的“生活节奏”使用 PRD city card 视觉。"
+    },
+    {
+      "level1": "欲望与金钱",
+      "prd_label": "desire",
+      "asset_key": "card.desire",
+      "visual_title": "Desire & Luck",
+      "display_order": 5,
+      "notes": "V3/V4 的“欲望与金钱”使用 PRD desire card 视觉。"
+    }
+  ]
+}

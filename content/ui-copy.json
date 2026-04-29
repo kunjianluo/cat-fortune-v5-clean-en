@@ -1,0 +1,64 @@
+{
+  "opening": {
+    "enter_button": "推门而入",
+    "title_sign": "大馋猫：深夜占卜",
+    "master_line_1": "（哈欠）...又是这个点，又是这种味道。",
+    "master_line_2": "说吧，今晚是什么东西让你这只两脚兽消化不良？"
+  },
+  "intro": {
+    "persona_prompt": "（抖动耳朵）喵 (ฅ´ω`ฅ)……别傻站着，深夜的丧气最容易钻进心底。挑一张最贴近你此刻心境的牌吧。",
+    "demo_prompt": "(抖动耳朵)...喵 (ฅ´ω`ฅ)……心绪沉重的时候，灵魂也会变得‘难消化’。挑一张最贴近你此刻心境的牌吧。"
+  },
+  "card_selection": {
+    "prompt": "挑一张最贴近你此刻心境的牌吧。",
+    "initial_frame": "说吧，今晚是什么东西让你这只两脚兽消化不良？",
+    "example_category_lv1": "职场与学业",
+    "example_category_lv2_a": "绩效焦虑",
+    "example_category_lv2_b": "价值迷失",
+    "issue_number_visibility_note": "不要显示编号Q01."
+  },
+  "shop_street": {
+    "dessert_station_name": "失眠甜品站",
+    "ice_room_name": "零点冰室",
+    "street_stall_name": "霓虹大排档",
+    "dessert_station_desc": "治愈系的甜蜜避风港，软糯梦幻的终点。",
+    "ice_room_desc": "冰火交融的港味经典，苦涩中带点温柔。",
+    "street_stall_desc": "深夜烟火气的聚集地，热辣滚烫的转机。"
+  },
+  "shop_interior": {
+    "ingredient_prompt": "你需要什么食材？",
+    "leave_label": "离开",
+    "submit_label": "选好了",
+    "inactive_grid_hint": "需要先与点击店员npc、与其沟通。"
+  },
+  "sacrifice": {
+    "submit_label": "献祭",
+    "alternate_submit_label": "提交",
+    "insufficient_ingredients": "食材还不充足哦",
+    "success_condition": "两种原料 均匹配 。",
+    "half_success_condition": "两种原料中 有且仅有一种 匹配正确答案所需原料。",
+    "failure_condition": "两种原料 均不匹配 正确答案所需原料。"
+  },
+  "half_success": {
+    "acknowledge": "我知道了",
+    "modal_source_note": "根据当前问题代码（如Q01）和玩家唯一选对的那个原料，从附录一中取出对应的提示文案。",
+    "shared_hint_rule": "Q39「鱼蛋+鱼蛋」两个原料相同。此时不存在“只匹配B”的情况。"
+  },
+  "failure": {
+    "nonsense_slip_title": "猫咪废话签",
+    "tear_slip": "撕掉",
+    "mud_paw_prompt": "猫咪嫌弃你的食物，留下爪印跑了",
+    "cat_hair_prompt": "猫咪气得炸毛，漫天猫毛让你喷嚏连连！快挥挥手赶走它们～",
+    "default_nonsense_slip": "猫咪打了个哈欠，你什么也没得到。"
+  },
+  "success": {
+    "result_prefix": "成功合出：",
+    "take_wisdom": "把智慧带走",
+    "wisdom_suffix": "喵。"
+  },
+  "collection": {
+    "duplicate_hint": "老味道，新感悟",
+    "collection_name": "账本（Collection）",
+    "interruption_note": "若玩家在此步骤刷新网页，系统应自动记录该次合成成功，下次打开直接跳转卡册红点提醒。"
+  }
+}

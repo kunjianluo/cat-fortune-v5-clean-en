@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meowracle Hat</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="is-initial-loading">
+  <div id="initial-loader" class="initial-loader" role="status" aria-live="polite" aria-busy="true">
+    <div class="loader-cat" aria-hidden="true">🐱</div>
+    <div id="initial-loader-text" class="loader-text">猫猫加载中……</div>
+    <div class="loader-progress" aria-hidden="true">
+      <div id="initial-loader-bar" class="loader-progress-bar"></div>
+    </div>
+    <div id="initial-loader-percent" class="loader-percent">0%</div>
+  </div>
+
+  <main id="game-stage" class="game-stage">
+    <section id="opening-screen" class="opening-screen" aria-labelledby="opening-title">
+      <div class="street-silhouette" aria-hidden="true">
+        <div class="shop-block shop-block-left"></div>
+        <div class="shop-block shop-block-center"></div>
+        <div class="shop-block shop-block-right"></div>
+      </div>
+      <div class="opening-content">
+        <h1 id="opening-title" class="neon-title">大馋猫：深夜占卜</h1>
+        <button id="enter-door-btn" class="door-btn" type="button" aria-label="推门而入" disabled>
+          <span class="door-btn-label">推门而入</span>
+        </button>
+        <div id="opening-status" class="opening-status" aria-live="polite">正在加载猫大师的菜单……</div>
+      </div>
+      <div id="opening-transition-layer" class="opening-transition-layer" aria-hidden="true" hidden>
+        <img id="opening-transition-gif" class="opening-transition-gif" alt="" />
+        <div class="opening-transition-fallback" aria-hidden="true">深夜小店正在换场。</div>
+      </div>
+    </section>
+
+    <nav id="game-nav" class="game-nav" aria-label="游戏导航" hidden>
+      <button id="global-home-btn" class="nav-icon-btn" type="button" aria-label="返回开始">
+        <img id="global-home-icon" class="nav-icon-img" alt="" />
+        <span class="nav-icon-label">Home</span>
+      </button>
+      <button id="global-return-btn" class="nav-icon-btn" type="button" aria-label="返回上一页">
+        <img id="global-return-icon" class="nav-icon-img" alt="" />
+        <span class="nav-icon-label">Return</span>
+      </button>
+      <button id="global-language-btn" class="nav-icon-btn language-toggle-btn v4-language-toggle" type="button" aria-label="Switch language">EN</button>
+    </nav>
+
+    <section id="cat-intro-screen" class="cat-intro-screen cat-speech-intro" aria-labelledby="intro-dialogue" tabindex="-1" hidden>
+      <div class="intro-stage cat-speech-stage">
+        <div class="intro-dialogue-box cat-speech-bubble">
+          <p id="intro-dialogue" aria-live="polite">（哈欠）……又是这个点，又是这种味道。</p>
+          <button id="intro-continue-btn" class="intro-continue-btn cat-speech-continue" type="button">继续</button>
+        </div>
+      </div>
+    </section>
+
+    <div id="cat-master-entrance-layer" class="cat-master-entrance-layer" aria-hidden="true" hidden>
+      <img id="cat-master-entrance-image" class="cat-master-entrance-image" alt="" />
+      <div class="cat-master-entrance-fallback" aria-hidden="true">猫大师正在醒来。</div>
+    </div>
+
+    <div id="header">
+      <h2>大馋猫：深夜占卜</h2>
+      <div class="header-subtitle">选一个你此刻的心结</div>
+      <button id="collection-book-button" class="collection-book-button" type="button" aria-label="打开收藏账本">
+        <span class="collection-book-label">账本</span>
+        <span id="collection-book-count" class="collection-book-count" aria-label="已收藏 0 张">0</span>
+      </button>
+    </div>
+
+    <div id="game-container">
+      <div id="start-screen" aria-live="polite">
+        <div id="seed-selection-panel" class="start-card">
+          <div class="start-title">选一个你此刻的心结</div>
+          <div class="start-subtitle">猫大师只先听五种最熟悉的烦恼。</div>
+          <div id="issue-buttons" class="mood-card-grid"></div>
+          <button id="expanded-card-flow-btn" class="expanded-card-flow-btn" type="button">探索更多心结</button>
+        </div>
+
+        <div id="card-flow-panel" class="card-flow-panel" hidden>
+          <div id="level1-info-bar" class="level1-info-bar" hidden>
+            <button id="level1-home-btn" class="level1-home-btn" type="button" aria-label="返回开始">
+              <img id="level1-home-icon" class="level1-info-icon" alt="" />
+            </button>
+            <div id="level1-info-prompt" class="level1-info-prompt">Choose your mood:</div>
+            <button id="level1-return-btn" class="level1-return-btn" type="button" aria-label="返回上一页">
+              <img id="level1-return-icon" class="level1-info-icon" alt="" />
+            </button>
+            <button id="level1-language-btn" class="level1-language-btn language-toggle-btn v4-language-toggle" type="button" aria-label="Switch language">EN</button>
+            <img id="level1-logo-icon" class="level1-info-logo" alt="" aria-hidden="true" />
+          </div>
+          <div class="card-flow-oracle" aria-hidden="true">
+            <div class="star-circle">
+              <span class="star-dot"></span>
+              <span class="star-dot"></span>
+              <span class="star-dot"></span>
+              <span class="star-dot"></span>
+              <span class="star-dot"></span>
+              <span class="star-dot"></span>
+            </div>
+            <div class="oracle-cat">🐱</div>
+            <div class="oracle-copy">
+              <div class="oracle-title">猫大师开始摆牌</div>
+              <div class="oracle-subtitle">今晚翻开整理过的心绪卡</div>
+            </div>
+          </div>
+          <div class="card-flow-header">
+            <button id="card-flow-back-btn" class="card-flow-back" type="button">返回</button>
+            <div class="card-flow-heading">
+              <div id="card-flow-title" class="card-flow-title">完整心绪卡牌</div>
+              <div id="card-flow-subtitle" class="card-flow-subtitle">临时整理入口</div>
+            </div>
+          </div>
+          <div id="card-flow-grid" class="card-flow-grid"></div>
+          <div id="card-flow-light-orb" class="card-flow-light-orb" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <section id="issue-play-screen" class="issue-play-screen" aria-labelledby="issue-play-title">
+        <div class="issue-brief-card">
+          <div id="cat-master" class="issue-brief-cat" aria-hidden="true">🐱</div>
+          <div class="issue-brief-copy">
+            <div class="issue-brief-eyebrow">猫大师听见了</div>
+            <h3 id="issue-play-title" class="issue-title">选一个你此刻的心结</h3>
+            <div id="issue-shop-anchor" class="issue-shop-anchor">店铺还没亮灯</div>
+            <p id="riddle-box" class="issue-riddle">选一个你此刻的心结，猫大师才肯开口。</p>
+          </div>
+        </div>
+
+        <div id="shop-ui" class="shop-interior-panel">
+          <div class="shop-atmosphere" aria-hidden="true"></div>
+          <div class="shop-tabs" id="shop-tabs"></div>
+
+          <div class="ingredient-rack-shell">
+            <div class="rack-heading">
+              <span class="rack-title">食材架</span>
+              <span class="rack-note">点两味，放上柜台</span>
+            </div>
+            <div id="ingredients" class="ingredient-grid ingredient-rack"></div>
+          </div>
+
+          <div id="sacrifice-counter" class="sacrifice-counter">
+            <div class="counter-heading">
+              <span class="counter-title">献祭柜台</span>
+              <span class="counter-note">点击槽位可取回</span>
+            </div>
+            <div class="hint-text">食材放满两格后，按柜台铃交给猫大师。</div>
+            <div id="sacrifice-area" class="sacrifice-area" aria-live="polite">
+              <button class="sacrifice-slot" id="sacrifice-slot-0" type="button" data-slot-index="0">
+                <span class="slot-label">献祭槽 1</span>
+                <span class="slot-value">等待食材</span>
+              </button>
+              <button class="sacrifice-slot" id="sacrifice-slot-1" type="button" data-slot-index="1">
+                <span class="slot-label">献祭槽 2</span>
+                <span class="slot-value">等待食材</span>
+              </button>
+            </div>
+            <button class="issue-btn submit-btn" id="submit-btn" type="button" aria-disabled="true">
+              <span class="submit-ring-visual" aria-hidden="true">
+                <img id="submit-ring-icon" class="submit-ring-icon" alt="" hidden />
+              </span>
+              <span class="submit-label">按铃：选好了</span>
+            </button>
+            <div id="feedback" class="feedback" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="taste-description-screen" class="taste-description-screen" aria-labelledby="taste-description-title" hidden>
+      <div class="taste-scene">
+        <button id="taste-return-btn" class="taste-return-btn" type="button" aria-label="返回上一页">
+          <img id="taste-return-icon" class="taste-return-icon" alt="" />
+          <span class="taste-return-label">返回</span>
+        </button>
+        <div class="taste-dialog-box">
+          <p id="taste-cat-line" class="taste-cat-line">Meow...this is a ‘味道题面’</p>
+          <h3 id="taste-description-title" class="taste-description-title">今晚的味道</h3>
+          <p id="taste-description-text" class="taste-description-text"></p>
+          <button id="taste-get-btn" class="taste-get-btn" type="button">Get!</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop-street-screen" class="shop-street-screen" aria-labelledby="shop-street-title" hidden>
+      <div class="shop-street-stage">
+        <button id="shop-street-return-btn" class="shop-street-return-btn" type="button" aria-label="返回心绪卡">
+          <img id="shop-street-return-icon" class="shop-street-return-icon" alt="" />
+          <span class="shop-street-return-label">返回</span>
+        </button>
+        <div class="shop-street-copy">
+          <div class="shop-street-kicker">深夜三店街</div>
+          <h3 id="shop-street-title" class="shop-street-title">沿着味道找店</h3>
+          <p id="shop-street-subtitle" class="shop-street-subtitle">猫大师把谜面递给你，街上的招牌亮了起来。</p>
+        </div>
+        <div id="shop-street-buildings" class="shop-street-buildings" aria-label="选择店铺">
+          <button class="shop-building-btn dessert-station" type="button" data-shop-id="dessert-station">
+            <span class="shop-building-image" aria-hidden="true"></span>
+            <span class="shop-building-label">甜品站</span>
+            <span class="shop-building-target-label">今晚的味道在这里</span>
+          </button>
+          <button class="shop-building-btn ice-room" type="button" data-shop-id="ice-room">
+            <span class="shop-building-image" aria-hidden="true"></span>
+            <span class="shop-building-label">冰室</span>
+            <span class="shop-building-target-label">今晚的味道在这里</span>
+          </button>
+          <button class="shop-building-btn street-stall" type="button" data-shop-id="street-stall">
+            <span class="shop-building-image" aria-hidden="true"></span>
+            <span class="shop-building-label">大排档</span>
+            <span class="shop-building-target-label">今晚的味道在这里</span>
+          </button>
+        </div>
+        <div id="shop-street-hint" class="shop-street-hint" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <div id="taste-transition-overlay" class="taste-transition-overlay" aria-hidden="true" hidden></div>
+
+    <div id="shop-entry-overlay" class="shop-entry-overlay" role="status" aria-live="polite" hidden>
+      <div class="shop-entry-card">
+        <div id="shop-entry-sign" class="shop-entry-sign">深夜小店</div>
+        <div id="shop-entry-door" class="shop-entry-door" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </div>
+        <div id="shop-entry-caption" class="shop-entry-caption">猫大师正在开门。</div>
+      </div>
+    </div>
+
+    <div id="judgement-overlay" class="judgement-overlay" role="status" aria-live="polite" hidden>
+      <div class="judgement-smoke" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="judgement-flash" aria-hidden="true"></div>
+      <div class="judgement-card">
+        <div class="judgement-fusion-stage" aria-hidden="true">
+          <div class="judgement-cat-shadow">猫</div>
+          <div class="judgement-ingredient-card left">
+            <span id="judgement-ingredient-left">神秘食材</span>
+          </div>
+          <div class="judgement-fusion-core"></div>
+          <div class="judgement-ingredient-card right">
+            <span id="judgement-ingredient-right">神秘食材</span>
+          </div>
+        </div>
+        <div class="judgement-cat" aria-hidden="true">🐱</div>
+        <p class="judgement-text">猫大师眯起眼，正在闻这两味食材的命数……</p>
+      </div>
+    </div>
+
+    <div id="overlay" class="result-overlay" role="dialog" aria-modal="true" aria-labelledby="food-name">
+      <div class="result-shell">
+        <div class="result-cat-stage" aria-hidden="true">
+          <img id="result-cat-image" class="result-cat-image" alt="" hidden />
+          <div id="result-cat-fallback" class="result-cat-fallback">🐱</div>
+        </div>
+        <div id="result-card" class="result-card">
+          <div id="result-eyebrow" class="result-eyebrow">猫大师端上一道夜宵</div>
+          <div id="food-result" class="food-icon">🍜</div>
+          <h3 id="food-name">获得食物</h3>
+          <p id="wisdom-text" class="result-text">猫咪智慧加载中...</p>
+          <div id="collection-feedback" class="collection-feedback" aria-live="polite"></div>
+          <div class="result-action-area">
+            <button class="issue-btn result-action-btn" id="result-action-btn" type="button">把智慧带走</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="collection-book-overlay" class="collection-book-overlay" role="dialog" aria-modal="true" aria-labelledby="collection-book-title" hidden>
+      <div class="collection-book-panel">
+        <div class="collection-book-header">
+          <div>
+            <div class="collection-book-eyebrow">深夜账本</div>
+            <h3 id="collection-book-title">带走的夜宵智慧</h3>
+          </div>
+          <button id="collection-book-close" class="collection-book-close" type="button" aria-label="关闭账本">×</button>
+        </div>
+        <div id="collection-book-grid" class="collection-book-grid"></div>
+      </div>
+    </div>
+
+    <div id="penalty-overlay" class="penalty-overlay" role="dialog" aria-modal="true" aria-labelledby="penalty-title" hidden>
+      <div id="penalty-card" class="penalty-card">
+        <h3 id="penalty-title" class="penalty-title">猫咪惩罚</h3>
+        <p id="penalty-instruction" class="penalty-instruction">猫大师正在判断这份失败的命数。</p>
+        <div id="penalty-stage" class="penalty-stage" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <div id="stage-preload-overlay" class="stage-preload-overlay" role="status" aria-live="polite" hidden>
+      <div class="loader-cat" aria-hidden="true">🐱</div>
+      <div id="stage-preload-text" class="loader-text">猫猫还在整理占卜道具……</div>
+      <div class="loader-progress" aria-hidden="true">
+        <div id="stage-preload-bar" class="loader-progress-bar"></div>
+      </div>
+      <div id="stage-preload-percent" class="loader-percent">0%</div>
+    </div>
+  </main>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>

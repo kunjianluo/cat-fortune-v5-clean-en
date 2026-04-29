@@ -1,0 +1,101 @@
+{
+  "_comment": "Nonsense-slip text entries are directly sourced from Markdown PRD Appendix Two, plus a default fallback line from the failure fallback rule.",
+  "nonsense_slips": [
+    {
+      "id": "nonsense-01",
+      "text": "今日运势：大凶。建议不要试图去抓红外线光点，那是虚无的。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-02",
+      "text": "不要因为内耗而熬夜。实在睡不着，建议你把桌子上的玻璃杯推到地上去，听个响。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-03",
+      "text": "你以为你在思考人生，其实你只是需要一个纸箱子。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-04",
+      "text": "根据猫体力学，你现在的姿势是错误的。请立刻躺平，缩成一团，然后打一个哈欠。什么？你不是猫？那关我什么事。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-05",
+      "text": "成功秘诀：每天舔自己的毛100次。如果你没毛，就去买一顶假发。舔完你会觉得自己很成功，虽然别人觉得你疯了。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-06",
+      "text": "研究发现，99%的猫咪认为自己的铲屎官是智障。你是那1%吗？不是，因为猫咪不会做研究。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-07",
+      "text": "如果你觉得孤独，试着把手机从高处推下去。它会‘啪’一声，然后你就有了新手机要买——再也不孤独了。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-08",
+      "text": "人生的意义是什么？是追自己的尾巴。永远追不到，但很快乐。所以别问了，去追吧。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-09",
+      "text": "今天的幸运物是：你刚刚扔掉的纸团。快去捡回来，它现在是你的导师。它会教你‘如何被揉成一团依然保持优雅’。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-10",
+      "text": "如何解决拖延症？明天告诉你。哦不对，后天？算了，等我想起来再说。反正你也不急，对吧？",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-11",
+      "text": "不要相信任何告诉你‘猫有九条命’的人。因为我只用了三条就验证出：从柜子上摔下来还是会痛。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-12",
+      "text": "你的问题太深奥了，我建议你先把家里所有纸箱子叠成一个塔，然后站在上面思考。摔下来那一刻你就顿悟了——‘原来我不该站着’。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-13",
+      "text": "人类总是想太多。猫生哲学：有罐头就行，没有就抢。你的问题同理：有答案就行，没有就编一个。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-14",
+      "text": "你刚刚浪费了5秒钟读这条签。而猫咪用这5秒钟打翻了一个水杯。看，谁更有生产效率？",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "nonsense-15",
+      "text": "晚上睡不着的时候，不要数羊。数你曾经打翻过的水杯数量——那才是真正的成就感。",
+      "weight": 1,
+      "is_default_fallback": false
+    },
+    {
+      "id": "default-fallback",
+      "text": "猫咪打了个哈欠，你什么也没得到。",
+      "weight": 0,
+      "is_default_fallback": true
+    }
+  ]
+}
