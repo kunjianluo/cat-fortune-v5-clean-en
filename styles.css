@@ -3495,7 +3495,7 @@ body.is-initial-loading .game-stage {
   align-items: center;
   justify-content: center;
   min-height: 100%;
-  font-size: clamp(13px, 1.35vw, 16px);
+  font-size: clamp(2px, 1.05vw, 16px);
   line-height: 1.18;
   opacity: 1;
   overflow: hidden;
@@ -3515,7 +3515,7 @@ body.is-initial-loading .game-stage {
   max-height: calc(100% - 10px);
   margin: 0;
   color: #21170c;
-  font-size: clamp(12px, 1.22vw, 15px);
+  font-size: clamp(5px, 1.22vw, 15px);
   font-weight: 700;
   line-height: 1.18;
   text-align: center;
